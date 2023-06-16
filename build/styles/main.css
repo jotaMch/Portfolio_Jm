@@ -162,7 +162,7 @@ html {
 }
 @media (max-width: 767px) {
   .projects-list-item {
-    background-image: linear-gradient(45deg, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
+    background-image: linear-gradient(105deg, #b5a5ae, #c0a7ab, #c8aaa5, #cab09e, #c5b79b, #c6bf9d, #c5c7a1, #c2cfa7, #ccd9ac, #d5e3b1, #e0eeb6, #eaf8bb);
   }
 }
 .projects-list-item h3 {
