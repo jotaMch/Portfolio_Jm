@@ -1,0 +1,140 @@
+.especialidades {
+    padding: 180px 0;
+    box-shadow: #colors[shadowHabilidades]; 
+    background-color: rgb(0, 0, 0);
+
+    @media @breakpointTablet {
+        padding: 60px 0;
+    }
+
+    @media @breakpointMobile {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .informacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        @media @breakpointMobile {
+            flex-direction: column;
+        }
+
+        @media @breakpointTablet {
+            flex-direction: column
+        }
+    
+        .introducao {
+            max-width: 600px;
+            color: #colors[corAzul];
+
+            h2 {
+                padding-bottom: 40px;
+
+                @media @breakpointMobile {
+                    padding-bottom: 16px;
+                }
+            }
+
+            h3 {
+                font-size: 14px;
+                padding-bottom: 10px;
+
+                @media @breakpointMobile {
+                    padding-bottom: 18px;
+                }
+            }
+
+            p {
+                font-size: 14px;
+            }
+            
+            img {
+                margin: 14px 0 0;
+            }
+
+            &-sobre {
+                color: #colors[textColor];
+            }
+        }
+    
+        .habilidades{
+            ul {
+                display: grid;
+                grid-template-columns: repeat(5, 16%);
+                grid-column-gap: 28px; 
+                grid-row-gap: 18px; 
+                text-align: center;
+    
+                
+                @media @breakpointTablet {
+                    padding-top: 30px;
+                    justify-content: center;
+                    grid-template-columns: repeat(5, 18%);
+                }
+
+                @media @breakpointMobile {
+                    justify-content: center;
+                    grid-template-columns: repeat(2, 50%);
+                    grid-column-gap: 40px; 
+                    grid-row-gap: 10px;
+                }
+
+                li {
+                    .processando {
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            max-width: 16px;
+                            padding-right: 2px;
+                        }
+                    }
+                }
+            }
+            .skill {
+                box-shadow: 2px 2px 4px 2px rgb(26, 17, 1);
+    
+                @media @breakpointMobile {
+                    max-width: 126px;
+                }
+
+                @media @breakpointTablet {
+                    max-width: 226px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/*__________________________________________________*/
+/*
+input {
+    padding: 6px 8px;
+    margin: 20px 0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Zilla Slab', serif;
+    cursor: pointer;
+    color: #colors[textColor];
+    font-size: 12px;
+    background-image: #colors[corReverso];
+    border: none;
+
+    @media @breakpointMobile {
+        padding: 4px 6px;
+        font-size: 12px;
+        margin: 12px auto;
+    }
+
+    &:hover {
+        background-image: #colors[corGradiente];
+        color: #colors[textColor];
+        border: none;//2px solid #colors[corAzul];
+    }
+}*/

@@ -14,47 +14,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> <!--front-end-->
 </head>
 <body>
-    <header id="inicio">
+    <header>
+        <nav>
+            <ul>
+                <li onclick="scrollToSection('sobre')" >Sobre mim</li>
+                <li onclick="scrollToSection('skills')" >habilidades</li>
+                <li onclick="scrollToSection('projetos')">Projetos</li>
+                <li onclick="scrollToSection('contatos')">Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
         <div class="cabecalho">
-            <!--<img src="./src/images/inicio/Excellent Quality Statistics Help From Best Statisticians.webp" alt="">-->
             <h1>Jânderson Machado</h1>
             <h2 class="subtitle"></h2>
-            <div class="buttons">
-                <button type="button" onclick="scrollToSection('sobre')">Sobre mim</button>
-                <button type="button" onclick="scrollToSection('projetos')">Meus projetos</button>
-            </div>
         </div>
-    </header>
+    </section>
     <div class="container">
+        <div class="sobre-imagem">
+            <img src="./src/images/perfil-original.jpg" alt="">
+        </div>
         <div class="container-flex">
             <section id="sobre">
                 <div class="profile-bio">
-                    <img class="profile" src="src/images/perfil-original.jpg" />
-                    <h2></h2>
-                    <nav>
-                        <ul class="social-links">
-                            <li>
-                                <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
-                                    <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/jotaMch">
-                                    <img src="./src/images/github.svg" alt="Logo do github">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:jandersonmachado090@gmail.com">
-                                    <img src="./src/images/mail.svg" alt="Logo do Email">
-                                </a>
-                            </li>
-                            <li>
-                            <a href="https://wa.me/5521965063664">
-                                <img src="./src/images/icons8-whatsapp.svg" alt="Logo do whatsapp">
-                            </a>
-                            </li>
-                        </ul>
-                    </nav>
+                    <img class="profile" src="src/images/inicio/icons8-desenvolvedor-64.png" />
+                    <h2>Sobre mim</h2>
                     <p class="profile-bio-description">
                         Olá, me chamo Jânderson. Sou um desenvolvedor dedicado com 23 anos, resido no Rio de Janeiro e sou apaixonado por tecnologia. 
                         Atualmente, estou buscando oportunidades no mercado para colocar
@@ -85,9 +69,57 @@
                     </p>
                 </div>
             </section>
+        </div>
+
+            <section id="skills">
+                <div class="especialidades">
+                    <div class="informacao">
+                        <div class="introducao">
+                            <h2>Especialidades</h2>
+                            <h3>Minhas habilidades criativas e experiências</h3>
+                            <div class="introducao-sobre"> 
+                                <p>
+                                    Ao longo tempo, tenho me dedicado a aprimorar minhas habilidades 
+                                    em uma ampla gama de tecnologias, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
+                                    até frameworks populares como Bootstrap e bibliotecas como jQuery. Com essas ferramentas, sou capaz 
+                                    de estruturar o conteúdo, estilizar os elementos e adicionar interatividade às minhas criações.
+                                    Busquei dominar novas técnicas avançadas, como o uso do pré-processador de CSS, como Sass e Less, 
+                                    para escrever estilos mais eficientes e escaláveis. Além disso, automatizei 
+                                    tarefas com Grunt e Gulp, ganhando produtividade e eficiência em meus projetos.
+                                    Uma metodologia que adotei é o BEM (Block, Element, Modifier), que me ajuda a 
+                                    organizar e nomear as classes de forma clara e consistente, tornando meu código mais legível e sustentável.
+                                </p>
+                            </div>
+                            <img src="./src/images/icons/file-text (1).svg" alt="">
+                        </div>
+                        <div class="habilidades">
+                            <ul>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""><p>HTML</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p>CSS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><p>Javascrip</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt=""><p>Bootstrap</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" /><p>Jquery</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""><p>SASS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" /><p>LESS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /><p>Gulp</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg" /><p>Grunt</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                                    <div class="processando">
+                                        <img src="./src/images/icons/loader.svg" alt="icone loaded">
+                                        <p>
+                                            React
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!--Projetos-->
 
+        <div class="container-flex">
             <section id="projetos">
                 <h2 class="project">Meus Projetos</h2>
                 <nav>
@@ -107,8 +139,8 @@
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                                    <img src="./src/images/skills/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-30.png" >
-                                    <img src="./src/images/skills/icons8-grunt-30.png">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" >
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg">
                                 </div>
                                 <img src="./src/images/project/grif-shop.png" alt="">
                             </div>
@@ -201,6 +233,38 @@
                 <button type="button" onclick="scrollToSection('inicio')">
                     <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
                 </button>
+            </section>
+            <section id="contatos">
+                <div class="contatos-links">
+                    <h2>informações de contato</h2>
+                    <div class="links">
+                        <nav>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                        <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jotaMch">
+                                        <img src="./src/images/github.svg" alt="Logo do github">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:jandersonmachado090@gmail.com">
+                                        <img src="./src/images/mail.svg" alt="Logo do Email">
+                                    </a>
+                                </li>
+                                <li>
+                                <a href="https://wa.me/5521965063664">
+                                    <img src="./src/images/icons8-whatsapp.svg" alt="Logo do whatsapp">
+                                </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <p>"Existem soluções que funcionam e as melhores soluções"</p>
             </section>
         </div>
     </div>

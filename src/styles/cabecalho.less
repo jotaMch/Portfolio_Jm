@@ -1,6 +1,6 @@
 
 .cabecalho {
-    height: 100vh;
+    height: 84vh;
     width: 100%;
     text-align: center;
     margin: 0 auto;
@@ -9,19 +9,12 @@
     justify-content: center;
     //background-color: rgba(0,0,0,0.8);
 
-
-    @media @breakpointMobile {
-        width: 80%;
+    @media @breakpointTablet {
+        height: 52vh;
     }
 
-    img {
-        max-width: 240px;
-        border-radius: 500px;
-        margin: 0 auto;
-
-        @media @breakpointMobile {
-            max-width: 150px;
-        }
+    @media @breakpointMobile {
+        height: 74vh;
     }
 
     .buttons {
@@ -43,12 +36,6 @@
         font-family: 'Acme', sans-serif;
         font-size: 72px;   
 
-        background-image: linear-gradient(45deg, rgb(208, 197, 164)40%, rgb(207, 201, 182), rgb(207, 191, 154)60%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-
         @media @breakpointMobile {
             font-size: 42px;
         }
@@ -60,12 +47,6 @@
         font-family: 'Rowdies', cursive;
         margin: 12px auto;
         max-width: 800px;
-
-        background-image: linear-gradient(45deg, rgb(208, 197, 164)40%, rgb(207, 201, 182), rgb(207, 191, 154)60%);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
         
         @media @breakpointMobile {
             font-size: 18px;
@@ -73,31 +54,6 @@
             text-align: center;
             //max-width: 240px;
             //width: 100%;
-        }
-    }
-    
-    button {
-        padding: 6px 8px;
-        border-radius: 4px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        font-family: 'Zilla Slab', serif;
-        color: #colors[textColor];
-        text-transform: none;
-        font-size: 12px;
-        background-image: #colors[corReverso];
-        border: none;
-        transition: all ease .5s;
-
-        @media @breakpointMobile {
-            padding: 4px 6px;
-            font-size: 12px;
-            margin: 12px auto;
-        }
-
-        &:hover {
-            background-image: #colors[corGradiente];
-            color: #colors[textColor];
-            border: none;//2px solid #colors[corAzul];
         }
     }
 }

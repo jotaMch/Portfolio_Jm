@@ -1,0 +1,53 @@
+#contatos {
+    p {
+        text-align: center;
+        margin: 0 0 10px;
+        font-family: cursive;
+        font-style: italic;
+    }
+
+    .contatos-links {
+        max-width: 700px;
+        padding: 60px 0;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+        @media @breakpointTablet {
+            padding: 40px 0;
+        }
+
+        @media @breakpointMobile {
+            padding: 60px 0 20px;
+        }
+    
+        h2 {
+            border-bottom: 2px solid #colors[textColor];
+            padding: 10px 0;
+        }
+    
+        .links {
+    
+        .social-links {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin: 24px auto;
+    
+            li{
+    
+                img {
+                    max-width: 24px;
+                    transition: all ease .3s;
+    
+                    &:hover {
+                        transform: scale(1.3);
+                    }
+                }
+            }
+        }
+        }
+    }
+}

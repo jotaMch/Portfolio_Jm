@@ -1,23 +1,26 @@
-
 #inicio {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+
+      @media @breakpointTablet {
+        height: 40vh;
+    }
+
+    }
+  
+  #inicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url(../../src/images/inicio/laptop-2620118.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    
-    width: 100%;
-    height: 100vh;
-    
-    @media @breakpointMobile {
-}
-}
-
-#inicio::before {
-    content: "";
-    background-image: url(../../src/images/inicio/laptop-2620118.jpg);
-    opacity: 0.5; 
-    //position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
+    filter: blur(5px); /* Adiciona o efeito de borrão somente à imagem de fundo */
+    z-index: -1;
+  }

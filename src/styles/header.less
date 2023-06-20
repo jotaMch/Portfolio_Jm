@@ -1,0 +1,29 @@
+header {
+    padding: 8px 0;
+    background-color: black;
+    nav {
+        ul {
+            max-width: 560px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            height: 30px;
+
+            li {
+                cursor: pointer;
+                padding: 6px 8px;
+                font-family: 'Zilla Slab', serif;
+                color: #colors[textColor];
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                //transition: all ease .5s;
+
+                &:hover {
+                    border-bottom: 2px solid #colors[textColor];
+                }
+            }
+        }
+    }
+}
