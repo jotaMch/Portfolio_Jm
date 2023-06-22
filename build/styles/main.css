@@ -75,13 +75,18 @@ html {
     top: 37.2%;
   }
 }
+@media (max-width: 767px) {
+  .container .sobre-imagem {
+    top: 59.2%;
+  }
+}
 .container .sobre-imagem img {
   max-width: 148px;
   border-radius: 50%;
 }
 @media (max-width: 767px) {
   .container .sobre-imagem img {
-    max-width: 150px;
+    max-width: 100px;
   }
 }
 .container-flex {
