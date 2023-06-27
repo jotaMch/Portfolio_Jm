@@ -109,6 +109,24 @@ html {
     max-width: 80%;
   }
 }
+.container-flex .objetivo {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.container-flex .objetivo h2 {
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  margin: 30px 20px;
+  border-bottom: 2px solid #755d04;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-flex .objetivo h2 img {
+  max-width: 24px;
+}
 .container-flex button {
   position: absolute;
   right: 12%;
@@ -498,7 +516,12 @@ html {
   }
 }
 .especialidades .informacao .introducao p {
-  font-size: 14px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .especialidades .informacao .introducao p {
+    font-size: 14px;
+  }
 }
 .especialidades .informacao .introducao img {
   margin: 14px 0 0;
@@ -650,6 +673,7 @@ li {
   padding: 150px 0 0;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre {
@@ -666,7 +690,6 @@ li {
 #sobre .profile-bio {
   text-align: center;
   max-width: 540px;
-  transition: all ease 0.3s;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre .profile-bio {
@@ -697,6 +720,9 @@ li {
 #sobre .cursos {
   max-width: 570px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre .cursos {
@@ -704,11 +730,18 @@ li {
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  #sobre .cursos {
+    flex-direction: column;
+    position: relative;
+    margin-top: 22px;
+  }
+}
 #sobre .cursos h2 {
   font-weight: lighter;
   font-size: 20px;
+  margin-bottom: 14px;
   text-align: center;
-  margin: 30px 20px;
   border-bottom: 2px solid #755d04;
   display: flex;
   justify-content: center;

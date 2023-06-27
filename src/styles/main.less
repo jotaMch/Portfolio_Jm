@@ -34,6 +34,7 @@ li {
     padding: 150px 0 0;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     @media @breakpointTablet {
         display: block;
@@ -48,7 +49,6 @@ li {
     .profile-bio {
         text-align: center;
         max-width: 540px;
-        transition: all ease .3s;
         @media @breakpointTablet {
             margin: 0 auto;
         }
@@ -82,17 +82,26 @@ li {
     .cursos {
         max-width: 570px;
         width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
 
         @media @breakpointTablet {
             max-width: 656px;
             text-align: center;
         }
 
+        @media @breakpointMobile {
+            flex-direction: column;
+            position: relative;
+            margin-top: 22px;
+        }
+
         h2 {
             font-weight: lighter;
             font-size: 20px;
+            margin-bottom: 14px;
             text-align: center;
-            margin: 30px 20px;
             border-bottom: 2px solid #colors[textColor];
             display: flex;
             justify-content: center;
