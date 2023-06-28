@@ -59,7 +59,7 @@ html {
   height: 100vh;
 }
 .container {
-  background-color: black;
+  background-color: #d2dae2;
 }
 .container .sobre-imagem {
   display: flex;
@@ -83,6 +83,7 @@ html {
 .container .sobre-imagem img {
   max-width: 148px;
   border-radius: 50%;
+  box-shadow: 2px 8px 12px 2px #4b4a49;
 }
 @media (max-width: 767px) {
   .container .sobre-imagem img {
@@ -119,7 +120,7 @@ html {
   font-size: 20px;
   text-align: center;
   margin: 30px 20px;
-  border-bottom: 2px solid #755d04;
+  border-bottom: 2px solid #0e0d09;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,9 +134,9 @@ html {
   padding: 6px 8px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: #755d04;
-  background-color: #735f1a;
-  border: 2px solid #735f1a;
+  color: #0e0d09;
+  background-color: #056e74;
+  border: 2px solid #056e74;
   transition: all ease 0.5s;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -144,8 +145,8 @@ html {
   }
 }
 .container-flex button:hover {
-  background-color: transparent;
-  color: #f0db97;
+  background-color: #035155;
+  color: #035155;
 }
 .container-flex button img {
   filter: invert(100%);
@@ -161,7 +162,7 @@ html {
   margin: 0 auto ;
 }
 .projects-list-item {
-  border: 2px solid #f0db97;
+  border: 2px solid linear-gradient(90deg, transparent, #00a5c2, #00a5c2, #00a5c2, #00a5c2, transparent);
   margin: 28px 0;
   border-radius: 8px;
   border: none;
@@ -181,6 +182,11 @@ html {
   height: 254px;
   margin: 0 auto;
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .projects-list-item .card {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .projects-list-item .card {
     max-width: 280px;
@@ -192,12 +198,12 @@ html {
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 300ms;
-  box-shadow: 0px 0px 10px 1px #000000ee;
+  box-shadow: 0px 0px 10px 1px #a1c6d3;
   border-radius: 5px;
 }
 .projects-list-item .front,
 .projects-list-item .back {
-  background-color: #151515;
+  background-color: #a1c6d3;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -218,9 +224,9 @@ html {
   position: absolute;
   width: 99%;
   height: 99%;
-  background-color: #151515;
+  background-color: #a1c6d3;
   border-radius: 5px;
-  color: #755d04;
+  color: #0e0d09;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,7 +259,7 @@ html {
   display: block;
   width: 800px;
   height: 160%;
-  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  background: linear-gradient(90deg, transparent, #00a5c2, #00a5c2, #00a5c2, #00a5c2, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
 .projects-list-item .card:hover .content {
@@ -352,7 +358,7 @@ html {
   max-width: 352px;
   font-size: 14px;
   text-decoration: none;
-  background-color: #735f1a;
+  background-color: #056e74;
   display: block;
   padding: 14px 100px;
   margin-bottom: 20px;
@@ -360,7 +366,7 @@ html {
   color: #f5f6fa;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #735f1a;
+  border: 2px solid #056e74;
   transition: all ease 0.5s;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -375,7 +381,7 @@ html {
   }
 }
 .projects-list-item .description a:hover {
-  color: #735f1a;
+  color: #056e74;
   background-color: transparent;
 }
 .projects-list-item .title {
@@ -462,9 +468,9 @@ html {
   z-index: -1;
 }
 .especialidades {
-  padding: 180px 0;
-  box-shadow: 6px 0px 28px 8px rgba(255, 162, 0, 0.134);
-  background-color: #000000;
+  padding: 100px 0;
+  box-shadow: 4px 0px 28px 8px rgba(0, 165, 194, 0.445);
+  background-color: #d2dae2;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .especialidades {
@@ -496,7 +502,29 @@ html {
 }
 .especialidades .informacao .introducao {
   max-width: 600px;
-  color: #f0db97;
+  color: linear-gradient(90deg, transparent, #00a5c2, #00a5c2, #00a5c2, #00a5c2, transparent);
+}
+.especialidades .informacao .introducao .cv li {
+  background-color: #a1c6d3;
+  border-radius: 6px;
+  width: 60px;
+}
+.especialidades .informacao .introducao .cv li a {
+  padding: 6px 4px;
+  text-decoration: none;
+  color: #f5f6fa;
+  display: flex;
+  align-items: center;
+}
+.especialidades .informacao .introducao .cv li a img {
+  max-width: 20px;
+  padding-left: 2px;
+}
+@media (max-width: 767px) {
+  .especialidades .informacao .introducao .cv li a {
+    margin: 18px 0;
+    width: 30px;
+  }
 }
 .especialidades .informacao .introducao h2 {
   padding-bottom: 40px;
@@ -523,17 +551,8 @@ html {
     font-size: 14px;
   }
 }
-.especialidades .informacao .introducao img {
-  margin: 14px 0 0;
-}
-@media (max-width: 767px) {
-  .especialidades .informacao .introducao img {
-    margin: 18px 0;
-    width: 30px;
-  }
-}
 .especialidades .informacao .introducao-sobre {
-  color: #755d04;
+  color: #0e0d09;
 }
 .especialidades .informacao .habilidades ul {
   display: grid;
@@ -573,7 +592,12 @@ html {
   transform: scale(0.9, 0.9);
 }
 .especialidades .informacao .habilidades .skill {
-  box-shadow: 2px 2px 4px 2px #1a1101;
+  box-shadow: 2px 6px 14px 6px #aca79f;
+  border-radius: 10%;
+  transition: all ease 0.4s;
+}
+.especialidades .informacao .habilidades .skill:hover {
+  transform: scale(0.9);
 }
 @media (max-width: 767px) {
   .especialidades .informacao .habilidades .skill {
@@ -587,7 +611,7 @@ html {
 }
 header {
   padding: 8px 0;
-  background-color: black;
+  background-color: #d2dae2;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -604,13 +628,13 @@ header nav ul li {
   cursor: pointer;
   padding: 6px 8px;
   font-family: 'Zilla Slab', serif;
-  color: #755d04;
+  color: #056e74;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
 }
 header nav ul li:hover {
-  border-bottom: 2px solid #755d04;
+  border-bottom: 2px solid #0e0d09;
 }
 #contatos p {
   text-align: center;
@@ -638,7 +662,7 @@ header nav ul li:hover {
   }
 }
 #contatos .contatos-links h2 {
-  border-bottom: 2px solid #755d04;
+  border-bottom: 2px solid #0e0d09;
   padding: 10px 0;
 }
 #contatos .contatos-links .links .social-links {
@@ -664,7 +688,13 @@ header nav ul li:hover {
   font-family: 'Overpass', sans-serif;
 }
 body {
-  color: #755d04;
+  color: #0e0d09;
+}
+h1 {
+  color: #056e74;
+}
+h2 {
+  color: #056e74;
 }
 li {
   list-style: none;
@@ -673,7 +703,6 @@ li {
   padding: 150px 0 0;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre {
@@ -697,7 +726,7 @@ li {
   }
 }
 #sobre .profile-bio h2 {
-  border-bottom: 2px solid #755d04;
+  border-bottom: 2px solid #0e0d09;
   font-size: 20px;
   font-weight: lighter;
 }
@@ -720,12 +749,11 @@ li {
 #sobre .cursos {
   max-width: 570px;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  padding-top: 90px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre .cursos {
+    padding-top: 0;
     max-width: 656px;
     text-align: center;
   }
@@ -735,6 +763,7 @@ li {
     flex-direction: column;
     position: relative;
     margin-top: 22px;
+    padding-top: 0;
   }
 }
 #sobre .cursos h2 {
@@ -742,7 +771,7 @@ li {
   font-size: 20px;
   margin-bottom: 14px;
   text-align: center;
-  border-bottom: 2px solid #755d04;
+  border-bottom: 2px solid #0e0d09;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -771,7 +800,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border: 2px solid #f0db97;
+  border: 2px solid #035155;
   transition: all ease 0.2s;
 }
 h2 {

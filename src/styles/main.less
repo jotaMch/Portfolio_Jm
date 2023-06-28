@@ -25,6 +25,14 @@ body {
     color: #colors[textColor];
 }
 
+h1 {
+    color: #colors[buttonColor];
+}
+
+h2 {
+    color: #colors[buttonColor];
+}
+
 li {
     list-style: none;
 }
@@ -34,7 +42,6 @@ li {
     padding: 150px 0 0;
     display: flex;
     justify-content: space-between;
-    position: relative;
 
     @media @breakpointTablet {
         display: block;
@@ -82,11 +89,10 @@ li {
     .cursos {
         max-width: 570px;
         width: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        padding-top: 90px;
 
         @media @breakpointTablet {
+            padding-top: 0;
             max-width: 656px;
             text-align: center;
         }
@@ -95,6 +101,7 @@ li {
             flex-direction: column;
             position: relative;
             margin-top: 22px;
+            padding-top: 0;
         }
 
         h2 {

@@ -1,7 +1,7 @@
 .especialidades {
-    padding: 180px 0;
+    padding: 100px 0;
     box-shadow: #colors[shadowHabilidades]; 
-    background-color: rgb(0, 0, 0);
+    background-color: #colors[backgroundColor];
 
     @media @breakpointTablet {
         padding: 60px 0;
@@ -31,6 +31,31 @@
             max-width: 600px;
             color: #colors[corAzul];
 
+            .cv {
+                li {
+                    background-color: #colors[corProject];
+                    border-radius: 6px;
+                    width: 60px;
+
+                    a{
+                    padding: 6px 4px;
+                    text-decoration: none;
+                    color: #colors[textColorPrj];
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        max-width: 20px;
+                        padding-left: 2px;
+                    }
+                    @media @breakpointMobile {
+                        margin: 18px 0;
+                        width: 30px;
+                    }
+                }
+            }
+            }
+
             h2 {
                 padding-bottom: 40px;
 
@@ -53,15 +78,7 @@
                 @media @breakpointMobile {
                     font-size: 14px;
                 }
-            }
-            
-            img {
-                margin: 14px 0 0;
-                @media @breakpointMobile {
-                    margin: 18px 0;
-                    width: 30px;
-                }
-            }
+            }            
 
             &-sobre {
                 color: #colors[textColor];
@@ -113,7 +130,13 @@
                 }
             }
             .skill {
-                box-shadow: 2px 2px 4px 2px rgb(26, 17, 1);
+                box-shadow: 2px 6px 14px 6px rgb(172, 167, 159);
+                border-radius: 10%;
+                transition: all ease .4s;
+    
+                    &:hover {
+                        transform: scale(0.9);
+                    }
     
                 @media @breakpointMobile {
                     max-width: 126px;
