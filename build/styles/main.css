@@ -72,12 +72,12 @@ html {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .sobre-imagem {
-    top: 34%;
+    top: 30%;
   }
 }
 @media (max-width: 767px) {
   .container .sobre-imagem {
-    top: 52.4%;
+    top: 45%;
   }
 }
 .container .sobre-imagem img {
@@ -283,7 +283,7 @@ html {
 }
 @media (max-width: 767px) {
   .projects-list-item .front .img img {
-    height: 46.8%;
+    height: 52.8%;
   }
 }
 .projects-list-item .front .front-content {
@@ -463,7 +463,7 @@ html {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(5px);
+  filter: blur(2px);
   /* Adiciona o efeito de borrão somente à imagem de fundo */
   z-index: -1;
 }
@@ -503,6 +503,11 @@ html {
 .especialidades .informacao .introducao {
   max-width: 600px;
   color: linear-gradient(90deg, transparent, #00a5c2, #00a5c2, #00a5c2, #00a5c2, transparent);
+}
+@media (max-width: 767px) {
+  .especialidades .informacao .introducao .cv {
+    margin-left: 10px;
+  }
 }
 .especialidades .informacao .introducao .cv li {
   background-color: #a1c6d3;
@@ -714,6 +719,7 @@ li {
   #sobre {
     display: block;
     padding-bottom: 40px;
+    padding-top: 50px;
   }
 }
 #sobre .profile-bio {
