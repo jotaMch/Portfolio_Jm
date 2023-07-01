@@ -195,7 +195,7 @@
   padding: 6px 8px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  color: #0e0d09;
+  color: #023439;
   background-color: #056e74;
   border: 2px solid #056e74;
   transition: all ease 0.5s;
@@ -307,7 +307,7 @@
   height: 99%;
   background-color: #a1c6d3;
   border-radius: 5px;
-  color: #0e0d09;
+  color: #023439;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -586,7 +586,7 @@
   }
 }
 .especialidades .informacao .introducao-sobre {
-  color: #0e0d09;
+  color: #023439;
 }
 .especialidades .informacao .habilidades ul {
   display: grid;
@@ -708,7 +708,7 @@ header nav ul li:hover {
   }
 }
 #contatos .contatos-links h2 {
-  border-bottom: 2px solid #0e0d09;
+  border-bottom: 2px solid #023439;
   padding: 10px 0;
 }
 #contatos .contatos-links .links .social-links {
@@ -831,7 +831,7 @@ html {
   height: 100vh;
 }
 body {
-  color: #0e0d09;
+  color: #023439;
 }
 h1 {
   color: #056e74;
@@ -870,7 +870,7 @@ li {
   }
 }
 #sobre .profile-bio h2 {
-  border-bottom: 2px solid #0e0d09;
+  border-bottom: 2px solid #023439;
   font-size: 20px;
   font-weight: lighter;
 }
