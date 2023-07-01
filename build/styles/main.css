@@ -17,6 +17,19 @@
     height: 94vh;
   }
 }
+.cabecalho .perfil2 {
+  display: none;
+  max-width: 180px;
+  border-radius: 50%;
+  opacity: 80%;
+  margin: 20% auto 0;
+  box-shadow: 2px 2px 16px 0px rgba(8, 191, 223, 0.397);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .perfil2 {
+    margin: 8% auto 0;
+  }
+}
 .cabecalho .flex {
   display: flex;
   justify-content: space-between;
@@ -45,6 +58,11 @@
 }
 .cabecalho .flex p {
   width: 700px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .flex p {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .cabecalho .flex p {
@@ -83,6 +101,11 @@
 .cabecalho .flex .sobre-imagem div {
   display: flex;
   width: 350px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .flex .sobre-imagem div {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   .cabecalho .flex .sobre-imagem div {
@@ -805,7 +828,6 @@ header nav ul li:hover {
   margin-block: 10px;
   position: relative;
   border-radius: 4px;
-  transition: transform 0.5s;
   transform-origin: center;
   opacity: 0.25s;
 }
@@ -899,7 +921,8 @@ li {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #sobre .cursos {
-    padding-top: 0;
+    flex-direction: column;
+    padding: 0 0 26px;
     max-width: 656px;
     text-align: center;
   }

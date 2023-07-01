@@ -21,6 +21,17 @@ function animar() {
     }
 }
 
+function imgPerfil() {
+    const perfil2 = document.querySelector('.perfil2');
+    
+    if (perfil2.style.display === 'none') {
+        perfil2.style.display = 'block';
+    } else {
+        perfil2.style.display = 'none';
+    }
+}
+
+
 function showText() {
     const char = text.split("").reverse();
     const type = setInterval(() => {

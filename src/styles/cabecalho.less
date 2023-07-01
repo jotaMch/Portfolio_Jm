@@ -17,6 +17,20 @@
         height: 94vh;
     }
 
+    
+    .perfil2 {
+        display: none;
+        max-width: 180px;
+        border-radius: 50%;
+        opacity: 80%;
+        margin: 20% auto 0;
+        box-shadow: 2px 2px 16px 0px rgba(8, 191, 223, 0.397);
+
+        @media @breakpointTablet {
+            margin: 8% auto 0;
+        }
+    }
+
     .flex { //classe nova para teste
         display: flex;
         justify-content: space-between;
@@ -46,6 +60,10 @@
 
         p {
             width: 700px;
+
+            @media @breakpointTablet {
+                width: 100%;
+            }
             
             @media @breakpointMobile {
                 width: 100%;
@@ -71,6 +89,12 @@
             div {
                 display: flex;
                 width: 350px;
+
+            @media @breakpointTablet {
+                display: block;
+            }
+            
+
                 @media @breakpointMobile {
                     width: 100%;
                     flex-direction: column;
@@ -118,6 +142,7 @@
             //max-width: 240px;
             //width: 100%;
         }
+
     }
 
     
