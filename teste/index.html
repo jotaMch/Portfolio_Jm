@@ -11,6 +11,11 @@
 </head>
 <body>
     <div class="container">
+        <button type="button" onclick="animar()" id="btn">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <div class="myCard">
             <div class="innerCard">
                 <div class="frontSide">
@@ -39,5 +44,12 @@
         </div>
         
     </div>
+    <script>
+        
+function animar() {
+    const btn = document.getElementById('btn')
+    btn.classList.toggle('active')
+}
+    </script>
 </body>
 </html>

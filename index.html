@@ -16,27 +16,53 @@
 <body>
     <section id="inicio">
         <header>
-            <nav>
-                <ul>
-                    <li onclick="scrollToSection('sobre')" >Sobre mim</li>
-                    <li onclick="scrollToSection('skills')" >habilidades</li>
-                    <li onclick="scrollToSection('projetos')">Projetos</li>
-                    <li onclick="scrollToSection('contatos')">Contato</li>
-                </ul>
-            </nav>
+            <h2></h2>
+            <img class="perfil" src="./src/images/perfil-original.jpg" alt="">
+                <nav id="info">
+                    <ul>
+                        <li class="top" onclick="scrollToSection('sobre')" >Sobre mim</li>
+                        <li onclick="scrollToSection('skills')" >habilidades</li>
+                        <li onclick="scrollToSection('projetos')">Projetos</li>
+                        <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
+                    </ul>
+                </nav>
+                <button type="button" onclick="animar()" class="hamburguer" id="btn">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+            
         </header>
         <div class="cabecalho">
-            <h1>Jânderson Machado</h1>
-            <h2 class="subtitle "></h2>
+            <div class="flex">
+                <div class="sobre-imagem">
+                    <h1>Olá, me chamo Jânderson</h1>
+                    <div>
+                        <h2 class="subtitle "></h2>
+                        <img class="profile" src="src/images/inicio/icons8-desenvolvedor-64.png" />
+                    </div>
+                    <!--<img src="./src/images/perfil-original.jpg" alt="">-->
+                </div>
+                <div>
+                    <h2>Sobre mim</h2>
+                    <p class="profile-bio-description">
+                            Sou um desenvolvedor júnior dedicado e curioso, tenho 23 anos, estou constantemente buscando novas 
+                            habilidades e conhecimentos para aprimorar minha trajetória profissional. Resido no Rio de 
+                            Janeiro, tenho paixão pelo aprendizado contínuo e estou motivado a enfrentar desafios.
+                            <br><br>
+                            Estudo React e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
+                            para os usuários. Minha mentalidade curiosa me impulsiona a buscar soluções 
+                            e encontrar maneiras de aprimorar a experiência do cliente.
+                            <br><br>
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <div class="container">
-        <div class="sobre-imagem">
-            <img src="./src/images/perfil-original.jpg" alt="">
-        </div>
         <div class="container-flex">
             <section id="sobre">
-                <div class="profile-bio">
+                <!--<div class="profile-bio">
                     <img class="profile" src="src/images/inicio/icons8-desenvolvedor-64.png" />
                     <h2>Sobre mim</h2>
                     <p class="profile-bio-description">
@@ -47,9 +73,10 @@
                         estudo React e com isso busco aprimorar minha capacidade proporcionando
                         ótima usabilidade para os usuários.<br />
                     </p>
-                </div>
+                </div>-->
                 <div class="cursos">
-                    <h2><img src="./src/images/icons/book (1).svg" alt="book">Cursos / profissionalizante</h2>
+                    <div>
+                        <h2><img src="./src/images/icons/book (1).svg" alt="book">Cursos / profissionalizante</h2>
                     <nav>
                         <ul>
                             <li><img src="./src/images/icons/check-circle.svg" alt="icone v">Fundamento da gestão de projetos - Completo / FM2S</li>
@@ -58,18 +85,23 @@
                             <li><img src="./src/images/icons/loader.svg" alt="icone loaded">Estudo React do zero ao pro - Estudanto / EBAC</li>
                             <li><img src="./src/images/icons/book-open.svg" alt="book open">Estudo por fora da plataforma sempre bucando maior conhecimento desde 2022.</li>
                         </ul>
-                    </nav>                    
+                    </nav> 
+                    </div>                   
+                </div>
+                <div class="objetivo">
+                    <h2><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
+                        <p>
+                            Desejo contribuir com equipes criativas, onde possa trabalhar em projetos 
+                            desafiadores que me permitam aprender e crescer profissionalmente. 
+                            Estou comprometido em seguir as melhores práticas de desenvolvimento, 
+                            buscando desenvolver interfaces intuitivas e responsivas.
+                            <br>
+                            Acima de tudo, meu objetivo é contribuir para a criação de produtos digitais com melhor performace, 
+                            que atendam às necessidades dos usuários e proporcionem uma experiência agradável. 
+
+                        </p>
                 </div>
             </section>
-            <div class="objetivo">
-                <h2><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
-                    <p>
-                        Meu objetivo é aplicar minhas habilidades como desenvolvedor  
-                        para criar interfaces web modernas e responsivas utilizando as melhores práticas. 
-                        Obter oportunidades para contribuir em projetos desafiadores aprimorando minhas habilidades 
-                        técnicas com a meta de obter amplo conhecimento .
-                    </p>
-            </div>
         </div>
 
             <section id="skills">
@@ -80,13 +112,17 @@
                             <h3>Minhas habilidades criativas e experiências</h3>
                             <div class="introducao-sobre"> 
                                 <p>
-                                    Tenho me dedicado a aprimorar minhas habilidades 
-                                    em uma ampla gama de tecnologias, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
-                                    até frameworks populares como Bootstrap e bibliotecas como jQuery.<br>
-                                    Faço o uso do pré-processador de CSS, como (SASS / LESS),
-                                    automatização de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.
+                                    Tenho me dedicado a aprimorar minhas habilidades, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
+                                    até frameworks populares como Bootstrap e bibliotecas como jQuery.<br><br>
+
+
+                                    Faço o uso do pré-processador de CSS, como (SASS / LESS) organizando e dividindo arquivos,
+                                    automatização e minificação de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.<br><br>
+
+
                                     Uma metodologia que adotei é o BEM (Block, Element, Modifier), que me ajuda a 
                                     organizar e analisar meu código.
+                                    <br><br>
                                 </p>
                                 
                             </div>
@@ -206,9 +242,6 @@
                                     <div class="front-content">
                                     <small class="badge">Jota Motors</small>
                                         <div class="description">
-                                            <div class="title">
-                                            <p class="title">
-                                            </p></div>
                                             <p class="card-footer">
                                             code &nbsp; | &nbsp; project
                                             </p>
@@ -251,9 +284,6 @@
                                     <div class="front-content">
                                     <small class="badge">Galeria de fotos</small>
                                         <div class="description">
-                                            <div class="title">
-                                            <p class="title">
-                                            </p></div>
                                             <p class="card-footer">
                                             Code &nbsp; | &nbsp; Project
                                             </p>
@@ -266,10 +296,9 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        </div>
                                     </div>
-                                    </div>
-                                </div>                
+                                </div>
+                            </div>                
                         </li>
                     </ul>
                 </nav>

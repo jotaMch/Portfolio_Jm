@@ -1,9 +1,19 @@
 header {
-    padding: 8px 0;
+    padding: 10px 0;
     background-color: #colors[backgroundColor];
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 100%;         
+
+    .perfil {
+        max-width: 38px;
+        border-radius: 50%;
+        opacity: 80%;
+        box-shadow: 2px 2px 16px 0px rgba(8, 191, 223, 0.397);
+        position: absolute;
+        top: 6px;
+        left: 8px;
+    }
 
     nav {
         ul {
@@ -25,10 +35,13 @@ header {
                 //transition: all ease .5s;
 
                 &:hover {
-                    border-bottom: 2px solid #colors[textColor];
+                    border-bottom: 2px solid #colors[corMenu];
                 }
             }
         }
     }
 }
 
+.menu {
+    display: block;
+}

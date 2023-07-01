@@ -6,6 +6,7 @@
 @import "habilidades.less";
 @import "header.less";
 @import "contatos.less";
+@import "hamburguer.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
@@ -19,6 +20,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Overpass', sans-serif;
+}
+
+html {
+    height: 100vh;
 }
 
 body {
@@ -90,7 +95,9 @@ li {
     .cursos {
         max-width: 570px;
         width: 100%;
-        padding-top: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         @media @breakpointTablet {
             padding-top: 0;
@@ -110,7 +117,7 @@ li {
             font-size: 20px;
             margin-bottom: 14px;
             text-align: center;
-            border-bottom: 2px solid #colors[textColor];
+            border-bottom: 2px solid #colors[buttonColor];
             display: flex;
             justify-content: center;
             align-items: center;

@@ -1,0 +1,99 @@
+#inicio {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media @breakpointMobile {
+            justify-content: space-between;
+        }
+
+        h2 {
+            display: none;
+            @media @breakpointMobile {
+                display: block;
+            }
+        }
+
+        nav {
+            @media @breakpointMobile {
+                display: none;
+                
+                position: absolute;
+                top: 24%;
+                right: 0;
+                background-image: #colors[corAzulMenu];
+                border-radius: 4px;
+            }
+            ul {
+                max-width: 560px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 auto;
+                height: 30px;
+                
+                @media @breakpointMobile {
+                    flex-direction: column;
+                    height: 200px;
+                    padding: 24px 64px 30px 0;
+                    align-items: normal;
+                }
+                li {
+                    @media @breakpointMobile {
+                    color: rgba(157, 192, 2, 0.623);
+                }
+            }
+                .top {
+                    @media @breakpointMobile {
+                       // padding: 55px 0 0;
+                    }
+                }
+
+                .bottom {
+                    @media @breakpointMobile {
+                        //padding: 0 0 55px;
+                    }
+                }
+            }    
+        }
+        .hamburguer {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: none;
+
+            @media @breakpointMobile {
+                display: block;
+                position: absolute;
+                top: 10%;
+                right: 2%;
+            }
+
+            .line {
+                display: block;
+                width: 20px;
+                height: 3px;
+                background-color: #colors[buttonColor];
+                margin-block: 10px;
+                position: relative;
+                border-radius: 4px;
+                transition: transform .5s;
+                transform-origin: center;
+                opacity: .25s;
+            }
+
+            &.active .line:nth-child(1) {
+                transform: translateY(13px) rotate(-45deg);
+            }
+
+            &.active .line:nth-child(2) {
+                opacity: 0;
+            }
+
+            &.active .line:nth-child(3) {
+                transform: translateY(-13px) rotate(45deg);
+            }
+        }
+    }
+}

@@ -1,6 +1,4 @@
-html {
-    height: 100vh;
-}
+
 
 .container {   
     background-color: #colors[backgroundColor];
@@ -10,11 +8,11 @@ html {
     .sobre-imagem {
         display: flex;
         justify-content: center;
-
+/*
         position: absolute;
-        top: 52%; /* Ajuste a quantidade de pixels conforme necessário */
+        top: 52%; 
         left: 0;
-        width: 100%;
+        width: 100%;*/
         
         @media @breakpointTablet {
             top: 30%;
@@ -34,48 +32,50 @@ html {
             }
         }
     }
-}
 
-.container-flex {
-    max-width: 1260px;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    @media @breakpointMobile {
-        margin-bottom: 80px;
-        max-width: 80%;
-        //background-color: ;
-    }
-
-    @media @breakpointTablet {
-        max-width: 80%;
-        //background-color: ;
-    } 
-    margin-bottom: 180px;
-
-    .objetivo {
-        max-width: 700px;
-        text-align: center;
+    .container-flex {
+        max-width: 1260px;
+        width: 100%;
         margin: 0 auto;
-        h2 {
-            font-weight: lighter;
-            font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        @media @breakpointMobile {
+            margin-bottom: 80px;
+            max-width: 80%;
+            //background-color: ;
+        }
+
+        @media @breakpointTablet {
+            max-width: 80%;
+            //background-color: ;
+        } 
+        margin-bottom: 180px;
+
+        //objetivo 
+        .objetivo {
+            max-width: 580px;
             text-align: center;
-            margin: 30px 20px;
-            border-bottom: 2px solid #colors[textColor];
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        img {
-            max-width: 24px;
+            margin: 0 auto;
+            h2 {
+                font-weight: lighter;
+                font-size: 20px;
+                text-align: center;
+                margin: 2px 0 14px;
+                border-bottom: 2px solid #colors[buttonColor];
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            img {
+                max-width: 24px;
+            }
         }
     }
 }
 
 
+//botão para subir
     button {
         position: absolute;
         right: 12%;

@@ -2,6 +2,25 @@ const textSub = document.querySelector('.subtitle');
 const text = 'Desenvolvedor Front-end';
 const interval = 80;
 
+function animar() {
+    const info = document.querySelector('#info');
+    const btn = document.getElementById('btn');
+    const btnLine = document.querySelectorAll('.line');
+    btn.classList.toggle('active');
+
+    if (info.style.display === 'block') {
+        info.style.display = 'none';
+        btnLine.forEach(function(line) {
+            line.style.backgroundColor = '';
+        });
+    } else {
+        info.style.display = 'block';
+        btnLine.forEach(function(line) {
+            line.style.backgroundColor = 'rgb(208, 255, 0)';
+        });
+    }
+}
+
 function showText() {
     const char = text.split("").reverse();
     const type = setInterval(() => {

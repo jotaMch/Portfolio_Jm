@@ -99,3 +99,35 @@
       opacity: 0.3;
     }
   }
+
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+    .line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: red;
+        margin-block: 10px;
+        position: relative;
+        border-radius: 4px;
+        transition: transform .5s;
+        transform-origin: center;
+        opacity: .25s;
+    }
+
+    button.active .line:nth-child(1) {
+        transform: translateY(13px) rotate(-45deg);
+    }
+
+    button.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    button.active .line:nth-child(3) {
+        transform: translateY(-13px) rotate(45deg);
+    }
+    
