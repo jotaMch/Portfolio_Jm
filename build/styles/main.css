@@ -117,10 +117,6 @@
     top: 45%;
   }
 }
-.cabecalho .flex .sobre-imagem div {
-  display: flex;
-  width: 350px;
-}
 @media (min-width: 768px) and (max-width: 1023px) {
   .cabecalho .flex .sobre-imagem div {
     display: block;
@@ -129,13 +125,11 @@
 @media (max-width: 767px) {
   .cabecalho .flex .sobre-imagem div {
     width: 100%;
-    flex-direction: column;
     justify-content: center;
   }
 }
 .cabecalho .flex .sobre-imagem img {
   margin: 0 auto;
-  max-width: 48px;
 }
 .cabecalho h1 {
   font-family: 'Acme', sans-serif;
