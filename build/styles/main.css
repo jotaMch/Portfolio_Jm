@@ -132,7 +132,6 @@
   margin: 0 auto;
 }
 .cabecalho h1 {
-  font-family: 'Acme', sans-serif;
   font-size: 42px;
 }
 @media (max-width: 767px) {
@@ -142,7 +141,6 @@
 }
 .cabecalho h2 {
   font-size: 22px;
-  font-family: 'Rowdies', cursive;
   margin: 0 auto 0 0;
 }
 @media (max-width: 767px) {
@@ -152,8 +150,9 @@
     text-align: center;
   }
 }
-.font {
-  font-family: 'Acme', sans-serif;
+.violet {
+  color: #65024e;
+  font-weight: normal;
 }
 .container {
   background-color: #d2dae2;
@@ -210,7 +209,6 @@
 .container .container-flex .objetivo {
   max-width: 580px;
   text-align: center;
-  margin: 0 auto;
 }
 .container .container-flex .objetivo h2 {
   font-weight: lighter;
@@ -250,7 +248,6 @@
 }
 /*_________________________________________-*/
 .project {
-  font-family: 'Acme', sans-serif;
   text-align: center;
   margin-bottom: 18px;
   padding-top: 50px;
@@ -341,7 +338,7 @@
   position: absolute;
   width: 99%;
   height: 99%;
-  background-color: #a1c6d3;
+  background-color: #d2dae2;
   border-radius: 5px;
   color: #023439;
   display: flex;
@@ -356,13 +353,9 @@
 .projects-list-item .back-content .img-skills img {
   width: 30px;
   height: 30px;
-  background-image: linear-gradient(45deg, #f0db97 30%, #b99d49, #f0db97 60%);
+  background-image: linear-gradient(to top, #03c3ce, #25c7d1, #37cad4, #44ced7, #50d2da, #62d5de, #72d9e2, #80dce5, #96e0e9, #abe3ec, #bee7ee, #d0eaf0);
   border-radius: 2px;
   margin: 0 6px;
-  transition: all ease 0.3s;
-}
-.projects-list-item .back-content .img-skills img:hover {
-  transform: scale(1.3);
 }
 .projects-list-item .back-content p {
   font-size: 12.8px;
@@ -412,7 +405,7 @@
   width: fit-content;
 }
 .projects-list-item .description {
-  box-shadow: 0px 0px 10px 5px #00000088;
+  box-shadow: 0px 0px 10px 5px #222;
   width: 100%;
   padding: 4px;
   background-color: #00000099;
@@ -528,7 +521,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px);
+  filter: blur(1px);
   /* Adiciona o efeito de borrão somente à imagem de fundo */
   z-index: -1;
 }
@@ -721,7 +714,6 @@ header nav ul li:hover {
 #contatos p {
   text-align: center;
   margin: 0 0 10px;
-  font-family: cursive;
   font-style: italic;
 }
 #contatos .contatos-links {
@@ -789,7 +781,7 @@ header nav ul li:hover {
     position: absolute;
     top: 24%;
     right: 0;
-    background-image: linear-gradient(to top, #034745, #044e4c, #055553, #075c5a, #086361, #066b6b, #037275, #007a7f, #008490, #008da1, #0097b2, #07a0c4);
+    background-color: #d2dae2;
     border-radius: 4px;
   }
 }
@@ -811,7 +803,7 @@ header nav ul li:hover {
 }
 @media (max-width: 767px) {
   #inicio header nav ul li {
-    color: rgba(173, 192, 2, 0.767);
+    color: #023439;
   }
 }
 @media (max-width: 767px) {
@@ -852,6 +844,16 @@ header nav ul li:hover {
 }
 #inicio header .hamburguer.active .line:nth-child(3) {
   transform: translateY(-8px) rotate(45deg);
+}
+.title {
+  font-family: 'Abel', sans-serif;
+}
+.subtlt {
+  font-family: 'Mirza', cursive;
+  font-weight: bold;
+}
+.text {
+  font-family: 'K2D', sans-serif;
 }
 .marginBottom8 {
   margin-bottom: 8px;
@@ -984,8 +986,5 @@ button {
 button:hover {
   border: 2px solid #035155;
   transition: all ease 0.2s;
-}
-h2 {
-  font-family: 'Rowdies', cursive;
 }
 /*_______________________________________________________*/

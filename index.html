@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="build/styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet"><!--nome-->
-    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> <!--front-end-->
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=K2D&family=Mirza&display=swap" rel="stylesheet">
 </head>
 <body>
     <section id="inicio">
         <header>
-            <h2></h2>
+            <h2 class="subtlt"></h2>
             <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="">
                 <nav id="info">
                     <ul>
@@ -37,16 +34,16 @@
             <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
             <div class="flex">
                 <div class="sobre-imagem">
-                    <h1>Olá, me chamo Jânderson</h1>
+                    <h1 class="title">Olá, me chamo <span class="violet title">Jânderson</span></h1>
                     <div>
-                        <h2 class="subtitle "></h2>
+                        <h2 class="subtitle subtlt"></h2>
                     </div>
                     <img class="profile" src="src/images/inicio/icons8-desenvolvedor-64.png" />
                     <!--<img src="./src/images/perfil-original.jpg" alt="">-->
                 </div>
                 <div>
-                    <h2>Sobre mim</h2>
-                    <p class="profile-bio-description">
+                    <h2 class="subtlt">Sobre <span class="violet subtlt">mim</span></h2>
+                    <p class="profile-bio-description text">
                             Sou um desenvolvedor júnior dedicado, tenho 23 anos, estou constantemente buscando novas 
                             habilidades e conhecimentos para aprimorar minha trajetória profissional. Resido no Rio de 
                             Janeiro, tenho paixão pelo aprendizado contínuo e estou motivado a enfrentar desafios.
@@ -65,7 +62,7 @@
             <section id="sobre">
                 <div class="cursos">
                     <div>
-                        <h2><img src="./src/images/icons/book (1).svg" alt="book">Cursos / profissionalizante</h2>
+                        <h2 class="subtlt"><img src="./src/images/icons/book (1).svg" alt="book">Cursos / profissionalizante</h2>
                     <nav>
                         <ul>
                             <li><img src="./src/images/icons/check-circle.svg" alt="icone v">Fundamento da gestão de projetos - Completo / FM2S</li>
@@ -78,8 +75,8 @@
                     </div>                   
                 </div>
                 <div class="objetivo">
-                    <h2><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
-                        <p>
+                    <h2 class="subtlt"><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
+                        <p class="text">
                             Desejo contribuir com equipes criativas, onde possa trabalhar em projetos 
                             desafiadores que me permitam aprender e crescer profissionalmente. 
                             Estou comprometido em seguir as melhores práticas de desenvolvimento, 
@@ -97,10 +94,10 @@
                 <div class="especialidades">
                     <div class="informacao">
                         <div class="introducao">
-                            <h2>Especialidades</h2>
-                            <h3>Minhas habilidades criativas e experiências</h3>
+                            <h2 class="subtlt">Especia<span class="violet subtlt">lidades</span></h2>
+                            <h3 class="violet subtitle">Minhas habilidades criativas e experiências</h3>
                             <div class="introducao-sobre"> 
-                                <p>
+                                <p class="text">
                                     Tenho me dedicado a aprimorar minhas habilidades, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
                                     até frameworks populares como Bootstrap e bibliotecas como jQuery.<br><br>
 
@@ -126,19 +123,19 @@
                         </div>
                         <div class="habilidades">
                             <ul>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""><p>HTML</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p>CSS</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><p>Javascrip</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt=""><p>Bootstrap</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" /><p>Jquery</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""><p>SASS</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" /><p>LESS</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /><p>Gulp</p></li>
-                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg" /><p>Grunt</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""><p class="text">HTML</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p class="text">CSS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><p class="text">Javascrip</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt=""><p class="text">Bootstrap</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" /><p class="text">Jquery</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""><p class="text">SASS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" /><p class="text">LESS</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /><p class="text">Gulp</p></li>
+                                <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg" /><p class="text">Grunt</p></li>
                                 <li><img class="skill" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                                     <div class="processando">
                                         <img src="./src/images/icons/loader.svg" alt="icone loaded">
-                                        <p>
+                                        <p class="text">
                                             React
                                         </p>
                                     </div>
@@ -154,7 +151,7 @@
 
         <div class="container-flex">
             <section id="projetos">
-                <h2 class="project">Meus Projetos</h2>
+                <h2 class="project subtlt">Meus <span class="violet subtlt">Projetos</span></h2>
                 <nav>
                     <ul class="projects-list">
                         <li class="projects-list-item">
@@ -162,8 +159,8 @@
                                 <div class="content">
                                     <div class="back">
                                         <div class="back-content">
-                                            <h3 class="font">Grif Shop</h3>
-                                            <p>
+                                            <h3 class="subtlt">Grif Shop</h3>
+                                            <p class="text">
                                                 
                                                 Apresenta um menu interativo com o conteúdo da página onde mostra 
                                                 imagens do local em um carrosel, após isso temos 4 seções com o conteudo da loja. 
@@ -190,10 +187,10 @@
                                             Code &nbsp; | &nbsp; Project
                                             </p>
                                             <div class="btns">
-                                                <a class="github" href="https://github.com/jotaMch/Grif-shop-jm">
+                                                <a class="github subtlt" href="https://github.com/jotaMch/Grif-shop-jm">
                                                     Visite no Guthub
                                                 </a>
-                                                <a href="https://grif-shop-jm.vercel.app/">
+                                                <a class="subtlt" href="https://grif-shop-jm.vercel.app/">
                                                     Visite o projeto
                                                 </a>
                                             </div>
@@ -208,8 +205,8 @@
                                 <div class="content">
                                     <div class="back">
                                         <div class="back-content">
-                                            <h3 class="font">Jota Motors</h3>
-                                                <p>
+                                            <h3 class="subtlt">Jota Motors</h3>
+                                                <p class="text">
                 
                                                     Exibe uma possivel loja 
                                                     com fotos dos carros no carrosel do site, seçoes sobre a loja destaques e promoções e ao final 
@@ -254,8 +251,8 @@
                                 <div class="content">
                                     <div class="back">
                                         <div class="back-content">
-                                            <h3 class="font">NEWS page</h3>
-                                            <p>
+                                            <h3 class="subtlt">NEWS page</h3>
+                                            <p class="text">
                                                 
                                                 NEWS page é uma página de notícias onde pode ser últil para quem trabalha 
                                                 nessa área, foi desenvolvida apartir de uma breve pesquisa sobre os layouts
@@ -303,8 +300,8 @@
                                 <div class="content">
                                     <div class="back">
                                         <div class="back-content">
-                                            <h3 class="font">Galeria de fotos</h3>
-                                                <p>
+                                            <h3 class="subtlt">Galeria de fotos</h3>
+                                                <p class="text">
                                                     Galeria de fotos, um projeto feito para guardar imagens apartir de um link, 
                                                     um menu com animação onde mostra o campo do link e botões para adicionar e resetar.
                                                 </p>
@@ -347,7 +344,7 @@
             </section>
             <section id="contatos">
                 <div class="contatos-links">
-                    <h2>informações de contato</h2>
+                    <h2 class="subtlt">informações <span class="violet subtlt">de contato</span></h2>
                     <div class="links">
                         <nav>
                             <ul class="social-links">
@@ -375,7 +372,7 @@
                         </nav>
                     </div>
                 </div>
-                <p>"Existem soluções que funcionam e as melhores soluções"</p>
+                <p class="text">"Existem soluções que funcionam e as melhores soluções"</p>
             </section>
         </div>
     </div>

@@ -16,7 +16,7 @@ function animar() {
     } else {
         info.style.display = 'block';
         btnLine.forEach(function(line) {
-            line.style.backgroundColor = 'rgb(208, 255, 0)';
+            line.style.backgroundColor = '#41c7f8';
         });
     }
 }
