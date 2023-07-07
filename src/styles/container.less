@@ -57,6 +57,10 @@
         .objetivo {
             max-width: 580px;
             text-align: center;
+
+            @media @breakpointTablet {
+                margin: 0 auto;
+            }
             h2 {
                 font-weight: lighter;
                 font-size: 20px;
@@ -80,10 +84,10 @@
         right: 12%;
         padding: 6px 8px;
         border-radius: 50px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 30px #85027fa0;
         color: #colors[textColor];
-        background-color: #colors[buttonColor];
-        border: 2px solid #colors[buttonColor];
+        background-color: #colors[buttonColorGit];
+        border: 2px solid #colors[buttonColorGit];
         transition: all ease .5s;
 
         @media @breakpointTablet {
@@ -91,8 +95,8 @@
         }
 
         &:hover {
-            background-color: #colors[btnHover];
-            color: #colors[btnHover];
+            background-color: #colors[btnHoverGit];
+            border: 2px solid #colors[btnHoverGit];
         }
 
         img {

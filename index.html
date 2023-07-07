@@ -13,8 +13,11 @@
 <body>
     <section id="inicio">
         <header>
-            <h2 class="subtlt"></h2>
+            
             <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="">
+
+            <h2 class="title jota">Jânderson<span class="violet title">Dev</span></h2>
+            
                 <nav id="info">
                     <ul>
                         <li class="top" onclick="scrollToSection('sobre')" >Sobre mim</li>
@@ -28,7 +31,6 @@
                     <span class="line"></span>
                     <span class="line"></span>
                 </button>
-            
         </header>
         <div class="cabecalho">
             <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
@@ -149,7 +151,7 @@
             <!--Projetos-->
 
 
-        <div class="container-flex">
+        <div class="">
             <section id="projetos">
                 <h2 class="project subtlt">Meus <span class="violet subtlt">Projetos</span></h2>
                 <nav>
@@ -200,6 +202,52 @@
                                     </div>
                                 </div>                
                         </li>
+
+                        <li class="projects-list-item">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="back">
+                                        <div class="back-content">
+                                            <h3 class="subtlt">Focus Tourism</h3>
+                                                <p class="text">
+                                                    A página começa com um cabeçalho contendo um menu de navegação que 
+                                                    permite aos usuários acessarem as seções. O uso das linguagens permitiu a 
+                                                    criação de um site interativo e responsivo, fornecendo informações 
+                                                    relevantes aos usuários interessados ​​em viagens e turismo. 
+                                                </p>
+                                                <div class="img-skills">
+                                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                <div class="front">
+                                    
+                                    <div class="img">
+                                        <img src="./src/images/project/turismo.png" alt="">
+                                    </div>
+                                    <div class="front-content">
+                                    <small class="badge">Focus Tourism</small>
+                                        <div class="description">
+                                            <p class="card-footer">
+                                            code &nbsp; | &nbsp; project
+                                            </p>
+                                            <div class="btns">
+                                                <a class="github" href="https://github.com/jotaMch/turismo-jm">
+                                                    Visite no Guthub
+                                                </a>
+                                                <a href="https://turismo-jm.vercel.app/">
+                                                    Visite o projeto
+                                                </a>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>                
+                        </li>
+
                         <li class="projects-list-item">
                             <div class="card">
                                 <div class="content">
@@ -372,9 +420,21 @@
                         </nav>
                     </div>
                 </div>
-                <p class="text">"Existem soluções que funcionam e as melhores soluções"</p>
             </section>
         </div>
+        <footer class="ftr">
+            <h4 class="subtlt">"Existem soluções que funcionam e as melhores soluções"</h4>
+            <div>
+                <ul>
+                    <li >
+                        <a href="https://youtu.be/sxZqgtK0HTk">
+                            <p >saiba mais sobre mim</p>
+                            <img src="./src/images/youtube (1).svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <script src="main.js"></script>
 </body>
