@@ -7,15 +7,36 @@
 }
 
     .projects-list {
-        margin: 0 auto ;
-        
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        gap: 2%;
+        justify-content: center;
+
+        @media @breakpointDesktop {
+        }
+
+        @media @breakpointTablet {
+            grid-template-columns: repeat(2, 50%);
+            gap: 2%;
+        }
+
+        @media @breakpointMobile {
+            grid-template-columns: repeat(1, 100%);
+            gap: 1px;
+        }
 
         &-item {
             border: 2px solid #colors[corAzul];
             margin: 28px 0;
             border-radius: 8px;
             border: none;
-            padding: 6px;
+            padding: 6px 0;
+
+            @media @breakpointMobile {
+                margin: 12px 0;
+            }
+
+
             h3 {
                 text-align: center;
                 @media @breakpointMobile {
@@ -25,7 +46,6 @@
 
             .card {
                 overflow: visible;
-                width: 800px;
                 height: 254px;
                 margin: 0 auto;
 
@@ -33,6 +53,7 @@
                 @media @breakpointTablet {
                     width: 90%;
                 }
+
                 @media @breakpointMobile {
                     max-width: 280px;
                     height: 280px;
@@ -66,7 +87,7 @@
                 }
                 
                 .front, .back {
-                    background-color: #colors[corProject];
+                    background: linear-gradient(to bottom, #014869e1, #a0b9d0ee);
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -88,9 +109,9 @@
                         position: absolute;
                         width: 99%;
                         height: 99%;
-                        background-color: #colors[backgroundColor];
+                        background: linear-gradient(to bottom, #014869e1, #a0b9d0ee);
                         border-radius: 5px;
-                        color: #colors[textColor];
+                        color: #colors[backgroundColor];
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
@@ -116,19 +137,8 @@
                         }
                     }
                     
-                }
-                
-                .back::before {
-                    position: absolute;
-                    content: ' ';
-                    display: block;
-                    width: 800px; //card
-                    height: 160%;
-                    background: #colors[corAzul];
-                    animation: rotation_481 5000ms infinite linear;
-                }
-                
-                
+                }                   
+
                 .card:hover .content {
                     transform: rotateY(180deg);
                 }
@@ -247,26 +257,7 @@
                                 background-color: transparent;
                         }
                 }
-                }
-
-                .card-footer {
-                    color: #ffffff88;
-                    margin-top: 5px;
-                    font-size: 8px;
-                }
-                
-                #bottom {
-                    background-color: #ff8866;
-                    left: 50px;
-                    top: 0px;
-                    width: 150px;
-                    height: 150px;
-                    animation-delay: -800ms;
-                }
-                
-                
-            
-
+                }        
         }
     }
 
