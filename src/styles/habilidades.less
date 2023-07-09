@@ -1,20 +1,22 @@
 #skills {
     background-color: #colors[backgroundColor];
-    box-shadow: #colors[shadowHabilidades];     
 }
 
+
 .especialidades {
+    background-image: linear-gradient(to bottom, rgb(79, 142, 205),  hsl(212, 43%, 83%));
+    box-shadow: 4px 4px 72px 6px #116798e5;
     padding: 100px 0;
 
     @media @breakpointTablet {
         padding: 60px 0;
+        margin: 0;
     }
 
     @media @breakpointMobile {
-        margin: 0 auto;
-        width: 90%;
         text-align: center;
         padding: 50px 0;
+        box-shadow: 4px 4px 72px 6px #116798e5;
     }
     
     .informacao {
@@ -34,24 +36,31 @@
             max-width: 600px;
             color: #colors[corAzul];
 
+
+            p {
+                text-shadow: 2px 2px 4px rgba(130, 1, 89, 0.377);
+            }
+
             .cv {
                 @media @breakpointMobile {
                     margin-left: 10px;
                 }
                 li {
+                    box-shadow: 0px 6px 10px rgba(173, 3, 120, 0.337);
                     background-color: #colors[corProject];
                     border-radius: 6px;
-                    width: 60px;
+                    width: 44px;
 
                     a{
                     padding: 6px 4px;
                     text-decoration: none;
-                    color: #colors[textColorPrj];
+                    color: #colors[buttonColorGit];
+                    font-size: 14px;
                     display: flex;
                     align-items: center;
 
                     img {
-                        max-width: 20px;
+                        max-width: 16px;
                         padding-left: 2px;
                     }
                     @media @breakpointMobile {
@@ -88,7 +97,7 @@
             }            
 
             &-sobre {
-                color: #colors[textColor];
+                color: #colors[backgroundColor];
             }
         }
     
@@ -101,6 +110,7 @@
                 grid-column-gap: 28px; 
                 grid-row-gap: 18px; 
                 text-align: center;
+                
     
                 
                 @media @breakpointTablet {
@@ -115,15 +125,49 @@
                 }
 
                 li {
+
+                    .border {
+                        font-weight: lighter;
+                        color: #colors[backgroundColor];
+                        border-bottom: 1px solid #colors[corProject];
+                        width: 80px;
+                        margin: 0 auto;
+                        transition: all ease .4s;
+    
+                        &:hover {
+                            box-shadow:  inset 0 -40px rgba(254, 255, 255, 0.693);
+                            border-bottom: none;
+                            border-radius: 6px;
+                            color: #colors[textColor];
+                        }
+                    }
+
                     .processando {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        border-bottom: 1px solid #colors[corProject];
+                        width: 60px;
+                        margin: 0 auto;
+                        transition: all ease .4s;
+    
+                        &:hover {
+                            box-shadow:  inset 0 -40px rgba(254, 255, 255, 0.693);
+                            border-bottom: none;
+                            border-radius: 6px;
+                            color: #colors[textColor];
+                        }
 
                         p {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+                            font-weight: lighter;
+                            color: #colors[backgroundColor];
+
+                            &:hover {
+                                color: #colors[textColor];
+                            }
                         }
 
                         img {
@@ -144,7 +188,7 @@
                 }
             }
             .skill {
-                box-shadow: 2px 6px 14px 6px rgb(172, 167, 159);
+                box-shadow: 0px 6px 12px 6px rgba(141, 13, 77, 0.182);
                 border-radius: 10%;
                 transition: all ease .4s;
     
