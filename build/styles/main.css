@@ -185,6 +185,11 @@
     max-width: 80%;
   }
 }
+@media (max-width: 767px) {
+  .container .container-flex {
+    margin-bottom: 10px;
+  }
+}
 .container .container-flex .objetivo {
   max-width: 580px;
   text-align: center;
@@ -522,8 +527,8 @@
   background-color: #ebf3fb;
 }
 .especialidades {
-  background-image: linear-gradient(to top, hsl(214, 92%, 72%), #0d3e6f);
-  box-shadow: 4px 4px 72px 6px #116798e5;
+  background-color: rgba(1, 69, 137, 0.97);
+  box-shadow: 4px 4px 72px 10px #177cb6e5;
   padding: 100px 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -945,6 +950,16 @@ body {
   color: #025b7c;
   background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), #0d3e6f, hsl(215, 80%, 85%));
 }
+@media (max-width: 767px) {
+  body {
+    background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), #93b9e0, hsl(214, 98%, 84%));
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), #93b9e0, hsl(214, 74%, 82%));
+  }
+}
 li {
   list-style: none;
 }
@@ -962,8 +977,9 @@ li {
 @media (max-width: 767px) {
   #sobre {
     display: block;
-    padding-bottom: 40px;
-    padding-top: 50px;
+    margin: 20px 0;
+    padding: 4px 10px 22px;
+    width: 100%;
   }
 }
 #sobre .profile-bio {

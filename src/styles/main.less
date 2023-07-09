@@ -36,6 +36,15 @@ h2 {
 body {
     color: #colors[textColor];
     background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(13, 62, 111), hsl(215, 80%, 85%));
+
+    @media @breakpointMobile {
+        background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 98%, 84%));
+    }
+
+    @media @breakpointTablet {
+        background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 74%, 82%));
+
+    }
 }
 
 li {
@@ -48,15 +57,18 @@ li {
     display: flex;
     justify-content: space-between;
 
+
     @media @breakpointTablet {
         display: block;
         padding: 100px 0 0;
     }
 
     @media @breakpointMobile {
+    
         display: block;
-        padding-bottom: 40px;
-        padding-top: 50px;
+        margin: 20px 0;
+        padding: 4px 10px 22px;
+        width: 100%;
     }
 
     .profile-bio {
