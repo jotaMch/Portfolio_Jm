@@ -26,8 +26,19 @@ main {
     z-index: -1;
   }
 
+  main {
+    @media @breakpointTablet {
+    background-size: cover;
+    width: 100%;
+    height: 86.4vh;
+    }
+  }
+
 main {
   @media @breakpointMobile {
     background-image: url(../../src/images/inicio/céu.jpg);
+    background-size:contain;
+    width: 100%;
+    height: 100%;
   }
 }

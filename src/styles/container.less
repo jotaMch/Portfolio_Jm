@@ -63,15 +63,29 @@
             @media @breakpointTablet {
                 margin: 0 auto;
             }
+
+            @media @breakpointMobile {
+                margin: 0 auto;
+                text-align: start;
+            }
+            
             h2 {
                 font-weight: lighter;
-                font-size: 20px;
+                font-size: 26px;
                 text-align: center;
                 margin: 2px 0 14px;
                 border-bottom: 2px solid #colors[buttonColor];
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media @breakpointMobile {
+                    text-align: start;
+                    justify-content: flex-start;
+                    border-bottom: none;
+                    font-size: 24px;
+                } 
+
             img {
                 max-width: 24px;
             }
