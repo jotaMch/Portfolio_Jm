@@ -1,5 +1,5 @@
 #projetos {
-    background-image: linear-gradient(to top,hsl(214, 88%, 77%), rgb(32, 90, 149));
+//background-image: linear-gradient(to top,hsl(214, 88%, 77%), rgb(32, 90, 149));
     padding-bottom: 80px;
 }
 
@@ -20,12 +20,12 @@
         }
 
         @media @breakpointTablet {
-            grid-template-columns: repeat(2, 50%);
+            grid-template-columns: repeat(2, 48%);
             gap: 2%;
         }
 
         @media @breakpointMobile {
-            grid-template-columns: repeat(1, 100%);
+            grid-template-columns: repeat(1, 92%);
             gap: 1px;
         }
 
@@ -95,7 +95,7 @@
                 }
                 
                 .front, .back {
-                    background-color: #0108462b;
+                    background-color: transparent;
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -119,7 +119,7 @@
                         position: absolute;
                         width: 99%;
                         height: 99%;
-                        background-color: #10185f64;
+                        background-color: rgba(0,0,0,0.8);
                         border-radius: 5px;
                         color: #colors[textColor];
                         display: flex;
@@ -127,6 +127,10 @@
                         justify-content: center;
                         align-items: center;
                         gap: 30px;
+
+                        @media @breakpointTablet {
+                            background-color: transparent;
+                        }
 
                         .img-skills {
                             max-width: 250px;

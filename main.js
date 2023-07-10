@@ -21,6 +21,8 @@ function animar() {
     }
 }
 
+
+
 function imgPerfil() {
     const perfil2 = document.querySelector('.perfil2');
     
@@ -30,7 +32,6 @@ function imgPerfil() {
         perfil2.style.display = 'none';
     }
 }
-
 
 function showText() {
     const char = text.split("").reverse();

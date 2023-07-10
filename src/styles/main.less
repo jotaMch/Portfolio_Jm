@@ -9,6 +9,7 @@
 @import "hamburguer.less";
 @import "fonts.less";
 @import "footer.less";
+@import "corSection.less";
 
 @breakpointMobile: ~"(max-width: 767px)";
 @breakpointTablet: ~"(min-width: 768px) and (max-width: 1023px)";
@@ -29,20 +30,17 @@ html {
     height: 100vh;
 }
 
-h2 {
-    color: #7ce1f5be;
-}
 
 body {
-    color: #colors[textColor];
-    background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(13, 62, 111), hsl(215, 80%, 85%));
+    color: #colors[corProject];
 
     @media @breakpointMobile {
+        width: 100%;
         background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 98%, 84%));
     }
 
     @media @breakpointTablet {
-        background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 74%, 82%));
+        //background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 74%, 82%));
 
     }
 }
@@ -53,21 +51,24 @@ li {
 
 
 #sobre {
-    padding: 150px 0 0;
+    margin: 150px 0 0;
+    padding: 120px 4px;
     display: flex;
     justify-content: space-between;
 
 
     @media @breakpointTablet {
-        display: block;
-        padding: 100px 0 0;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        padding: 100px 0;
     }
 
     @media @breakpointMobile {
     
         display: block;
-        margin: 20px 0;
-        padding: 4px 10px 22px;
+        margin: 0 0;
+        padding: 32px 10px 22px;
         width: 100%;
     }
 
@@ -79,6 +80,7 @@ li {
         }
 
         h2 {
+            color: #colors[textColorPrj];
             border-bottom: 2px solid #colors[textColor];
             font-size: 20px;
             font-weight: lighter;
@@ -89,7 +91,11 @@ li {
             max-width: 98px;
             opacity: 70%;
             margin: 0 auto 24px;
+
+            
         }
+
+        
 
         &-description {
             max-width: 560px;
@@ -112,7 +118,8 @@ li {
         align-items: center;
 
         @media @breakpointTablet {
-            flex-direction: column;
+            margin: 0 auto;
+            justify-content: center;
             padding: 0 0 26px;
             max-width: 656px;
             text-align: center;

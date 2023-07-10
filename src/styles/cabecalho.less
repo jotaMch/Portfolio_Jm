@@ -2,7 +2,6 @@
 .cabecalho {
     height: 94vh;
     width: 100%;
-    text-align: center;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -14,8 +13,9 @@
     }
 
     @media @breakpointMobile {
-        height: 94vh;
-    }
+        height: 100%;
+        padding-top: 280px;
+        }
 
     
     .perfil2 {
@@ -49,18 +49,27 @@
     }
 
     .flex { //classe nova para teste
-        display: flex;
+        display:flex;
         justify-content: space-around;
         align-items: center;
         
         padding: 20px 0;
         box-shadow: #colors[shadowHabilidades]; 
-        background-image: linear-gradient(to right, rgba(0,0,0,0.2),  rgba(0, 0, 0, 0.982));
         margin: auto 0 0;
+
+        @media @breakpointTablet {
+            
+        }
 
         @media @breakpointMobile {
             padding: 0 0;
-            background-image: linear-gradient(to bottom, rgba(0,0,0,0.2),  rgba(0, 0, 0, 0.982));
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.8) 30%, rgba(0, 0, 0, 0.97) 66%,  rgba(0, 0, 0, 0.97) 80%);
+        }
+
+        img {
+            @media @breakpointMobile {
+                width: 100%;
+            }
         }
 
         div {
@@ -78,11 +87,13 @@
 
         p {
             width: 700px;
-            color: rgba(23, 211, 211, 0.763);
+            color: rgba(187, 255, 255, 0.763);
+            font-size: 18px;
 
             @media @breakpointTablet {
-                width: 90%;
-                margin: 0 auto;
+                max-width: 400px;
+                width: 100%;
+                font-size: 16px;
             }
             
             @media @breakpointMobile {
@@ -103,16 +114,20 @@
                     justify-content: center;
                 }
             }
-            img {
-                margin: 0 auto;
+        }
+
+        .profile {
+            @media @breakpointTablet {
+                max-width: 300px;
             }
         }
+
     }
 
     h1 {
         //font-style: italic;
         font-size: 42px;   
-        color: rgba(23, 211, 211, 0.763);
+        color:  rgba(180, 255, 255, 0.904);
         
         text-shadow: 2px 2px 4px rgba(1, 119, 130, 0.415);
 
@@ -125,7 +140,7 @@
         //font-style: italic;
         font-size: 22px;
         margin: 0 auto 0 0;
-        color: rgba(23, 211, 211, 0.763);
+        color: rgba(180, 255, 255, 0.904);
         
         text-shadow: 2px 2px 4px rgba(1, 130, 130, 0.568);
         
@@ -140,7 +155,7 @@
     }
 
     h2 {
-        color: rgba(22, 239, 239, 0.808);
+        color:  rgba(180, 255, 255, 0.904);
         font-size: 22px;
         margin: 0 auto 0 0;
     }
