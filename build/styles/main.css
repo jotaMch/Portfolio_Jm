@@ -988,6 +988,11 @@ header.light {
 #sobre.light {
   background-image: linear-gradient(to bottom, rgba(255, 220, 179, 0.952), rgba(255, 255, 255, 0.7));
 }
+@media (max-width: 767px) {
+  #sobre.light {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7) 30%, rgba(235, 213, 140, 0.97) 66%, rgba(248, 201, 148, 0.97) 80%);
+  }
+}
 #skills.light {
   background-image: linear-gradient(to top, rgba(248, 201, 148, 0.97), rgba(255, 255, 255, 0.7));
 }
@@ -1029,7 +1034,8 @@ input[type="checkbox"]:before {
   transition: 0.4s;
 }
 input:checked[type="checkbox"]:before {
-  left: 20px;
+  background-color: #b99a0e;
+  left: 18px;
   transition: 0.4s;
 }
 .marginBottom8 {

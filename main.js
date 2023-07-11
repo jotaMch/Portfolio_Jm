@@ -68,7 +68,7 @@ const elementsToToggle = document.querySelectorAll('header, .flex, #sobre, #skil
 
 checkbox.addEventListener('change', function() {
     // Verifica se o checkbox está marcado
-  if (checkbox.checked) { 
+if (checkbox.checked) { 
         elementsToToggle.forEach(function(element) {
         element.classList.add('light');
         });
@@ -82,7 +82,7 @@ checkbox.addEventListener('change', function() {
         });
 
         cards.forEach(function(card) {
-        card.style.backgroundColor = 'rgba(248, 201, 148, 0.97)';
+        card.style.backgroundColor = ' rgba(250, 196, 134, 0.637)';
         });
 
         menuItems.forEach(function(item) {
