@@ -8,7 +8,7 @@
 @media (max-width: 767px) {
   .cabecalho {
     height: 100%;
-    padding-top: 280px;
+    padding-top: 100px;
   }
 }
 .cabecalho .perfil2 {
@@ -131,7 +131,7 @@
   .cabecalho .subtitle {
     font-size: 18px;
     margin: 0 auto;
-    text-align: center;
+    text-align: start;
   }
 }
 .cabecalho h2 {
@@ -140,7 +140,7 @@
   margin: 0 auto 0 0;
 }
 .violet {
-  color: #f000e4;
+  color: #e402d8;
   font-weight: bold;
 }
 .container .sobre-imagem {
@@ -239,7 +239,7 @@
   padding: 6px 8px;
   border-radius: 50px;
   color: #24dfd5;
-  background: linear-gradient(to bottom, #014869e1, #a0b9d0ee);
+  background-color: #23ddd4dc;
   border: none;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -294,7 +294,7 @@
 }
 .projects-list-item h3 {
   text-align: center;
-  color: #7ce1f5be;
+  color: #e402d8;
 }
 @media (max-width: 767px) {
   .projects-list-item h3 {
@@ -333,7 +333,6 @@
 }
 @media (max-width: 767px) {
   .projects-list-item .content {
-    max-width: 230px;
     margin: 0 auto;
     width: 100%;
   }
@@ -571,7 +570,7 @@ main::before {
   .especialidades {
     text-align: center;
     padding: 50px 0;
-    box-shadow: 4px 4px 72px 6px #116798e5;
+    box-shadow: none;
   }
 }
 .especialidades .informacao {
@@ -610,7 +609,8 @@ main::before {
 .especialidades .informacao .introducao .cv li a {
   padding: 6px 4px;
   text-decoration: none;
-  color: #f1f4fe;
+  color: #048b92c2;
+  font-weight: bold;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -641,7 +641,7 @@ main::before {
 }
 @media (max-width: 767px) {
   .especialidades .informacao .introducao h3 {
-    padding-bottom: 18px;
+    padding-bottom: 4px;
   }
 }
 .especialidades .informacao .introducao p {
@@ -749,6 +749,9 @@ header nav ul li {
 }
 header nav ul li:hover {
   border-bottom: 2px solid #00343fbe;
+}
+header nav ul .toggle:hover {
+  border-bottom: none;
 }
 .menu {
   display: block;
@@ -927,8 +930,13 @@ header nav ul li:hover {
 header {
   background-color: rgba(0, 0, 0, 0.982);
 }
-.flex {
+div.flex {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.6) 26%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.97) 66%, rgba(0, 0, 0, 0.97) 80%);
+}
+@media (max-width: 767px) {
+  div.flex {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
 }
 #sobre {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.94), rgba(1, 60, 78, 0.63));
@@ -940,7 +948,8 @@ header {
 }
 @media (max-width: 767px) {
   #sobre {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.97), rgba(0, 38, 49, 0.87));
+    border-top: 1px solid rgba(3, 200, 255, 0.397);
+    background-image: linear-gradient(to bottom, #000000 70%, rgba(0, 29, 37, 0.979));
   }
 }
 #skills {
@@ -953,14 +962,75 @@ header {
 }
 @media (max-width: 767px) {
   #skills {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94), rgba(0, 38, 49, 0.87));
+    border-top: 1px solid rgba(3, 200, 255, 0.726);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94) 70%, rgba(0, 29, 37, 0.979));
   }
 }
 #projetos {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.982));
 }
 .ftr {
+  border-top: 1px solid rgba(3, 200, 255, 0.397);
   background-color: rgba(0, 0, 0, 0.982);
+}
+/*____________________________________________________________________-*/
+header.light {
+  background-color: rgba(248, 201, 148, 0.97);
+}
+.flex.light {
+  background-image: linear-gradient(to right, #ffffff 26%, #ffffff 30%, rgba(235, 213, 140, 0.97) 66%, rgba(248, 201, 148, 0.97) 80%);
+}
+@media (max-width: 767px) {
+  .flex.light {
+    background-image: linear-gradient(to bottom, #ffffff 26%, #ffffff 30%, rgba(235, 213, 140, 0.97) 66%, rgba(248, 201, 148, 0.97) 80%);
+  }
+}
+#sobre.light {
+  background-image: linear-gradient(to bottom, rgba(255, 220, 179, 0.952), rgba(255, 255, 255, 0.7));
+}
+#skills.light {
+  background-image: linear-gradient(to top, rgba(248, 201, 148, 0.97), rgba(255, 255, 255, 0.7));
+}
+#projetos.light {
+  background-image: linear-gradient(to top, rgba(255, 243, 227, 0.98), rgba(248, 201, 148, 0.97));
+}
+.ftr.light {
+  border-top: 1px solid rgba(3, 200, 255, 0.397);
+  background-color: rgba(255, 243, 227, 0.98);
+}
+.light {
+  color: #000;
+}
+input[type="checkbox"] {
+  width: 35px;
+  height: 16px;
+  appearance: none;
+  background-color: #ffff;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 6px 0px;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+input:checked[type="checkbox"] {
+  background-color: rgba(255, 220, 64, 0.829);
+}
+input[type="checkbox"]:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #1be9c7;
+  border-radius: 50px;
+  position: absolute;
+  box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.22);
+  transform: scale(1.1);
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+input:checked[type="checkbox"]:before {
+  left: 20px;
+  transition: 0.4s;
 }
 .marginBottom8 {
   margin-bottom: 8px;

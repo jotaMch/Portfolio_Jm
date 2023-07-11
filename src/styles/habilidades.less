@@ -14,7 +14,7 @@
     @media @breakpointMobile {
         text-align: center;
         padding: 50px 0;
-        box-shadow: 4px 4px 72px 6px #116798e5;
+        box-shadow: none;
     }
     
     .informacao {
@@ -37,6 +37,9 @@
 
             p {
                 text-shadow: 2px 2px 4px rgba(130, 1, 89, 0.377);
+
+                @media @breakpointMobile {
+                }
             }
 
             .cv {
@@ -52,7 +55,8 @@
                     a{
                     padding: 6px 4px;
                     text-decoration: none;
-                    color: #colors[textColorPrj];
+                    color: #colors[corMenu];
+                    font-weight: bold;
                     font-size: 14px;
                     display: flex;
                     align-items: center;
@@ -84,7 +88,7 @@
                 font-weight: bold;
 
                 @media @breakpointMobile {
-                    padding-bottom: 18px;
+                    padding-bottom: 4px;
                 }
             }
 
