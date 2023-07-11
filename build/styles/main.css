@@ -756,6 +756,9 @@ header nav ul .toggle:hover {
 .menu {
   display: block;
 }
+#contatos {
+  width: 100%;
+}
 #contatos p {
   text-align: center;
   margin: 0 0 10px;
@@ -877,7 +880,7 @@ header nav ul .toggle:hover {
   display: block;
   width: 20px;
   height: 3px;
-  background-color: #056e74;
+  background-color: #24dfd5;
   margin-block: 5px;
   position: relative;
   border-radius: 4px;
@@ -912,8 +915,7 @@ header nav ul .toggle:hover {
   padding-bottom: 12px;
 }
 .ftr h4 {
-  font-style: italic;
-  font-size: large;
+  font-weight: lighter;
   text-align: center;
 }
 .ftr p {
@@ -1035,7 +1037,7 @@ input[type="checkbox"]:before {
 }
 input:checked[type="checkbox"]:before {
   background-color: #b99a0e;
-  left: 18px;
+  left: 20px;
   transition: 0.4s;
 }
 .marginBottom8 {
