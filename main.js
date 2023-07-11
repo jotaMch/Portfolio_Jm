@@ -35,6 +35,13 @@ function animar() {
     }
 }
 
+function recolher() {
+    const info = document.querySelector('#info');
+    if (info.style.display === 'block') {
+        info.style.display = 'none';
+    }
+}
+
 
 
 function imgPerfil() {
