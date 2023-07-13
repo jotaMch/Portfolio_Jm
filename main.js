@@ -73,8 +73,7 @@ if (checkbox.checked) {
         element.classList.add('light');
         });
 
-        
-        fundo.classList.toggle('new-background');        
+               
 
         textSub.style.color = '#222';
         hello.style.color = '#222';

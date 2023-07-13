@@ -518,16 +518,10 @@
   background-color: transparent;
 }
 .main {
-  background-image: url(../../src/images/inicio/papel-de-parede-abstrato-de-fumaca-colorida-design-de-fundo-estetico.jpg);
+  background-image: url(../../src/images/inicio/vista-aerea-do-computador-portatil-no-conceito-de-espaco-de-trabalho-de-mesa-de-madeira.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-.main.new-background {
-  /* estilos da nova imagem de fundo */
-  background-image: url(../../src/images/inicio/amarelo\ bottom.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: left center;
   background-attachment: fixed;
 }
 .especialidades {
