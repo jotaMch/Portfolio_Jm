@@ -517,44 +517,18 @@
   color: #056e74;
   background-color: transparent;
 }
-main {
-  position: relative;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  main {
-    height: 44vh;
-  }
-}
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../src/images/inicio/not.jpg);
-  background-position: center center;
+.main {
+  background-image: url(../../src/images/inicio/papel-de-parede-abstrato-de-fumaca-colorida-design-de-fundo-estetico.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(1px);
-  z-index: -1;
+  background-attachment: fixed;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  main {
-    background-size: cover;
-    width: 100%;
-    height: 86.4vh;
-  }
-}
-@media (max-width: 767px) {
-  main {
-    background-image: url(../../src/images/inicio/céu.jpg);
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-  }
+.main.new-background {
+  /* estilos da nova imagem de fundo */
+  background-image: url(../../src/images/inicio/amarelo\ bottom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .especialidades {
   box-shadow: 4px 14px 72px 4px #0379bde5;
@@ -821,26 +795,26 @@ header nav ul .toggle:hover {
 #contatos .contatos-links .links .social-links li img:hover {
   transform: scale(1.3);
 }
-#inicio header {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 @media (max-width: 767px) {
-  #inicio header {
+  header {
     justify-content: space-between;
   }
 }
-#inicio header h2 {
+header h2 {
   display: none;
 }
 @media (max-width: 767px) {
-  #inicio header h2 {
+  header h2 {
     display: block;
   }
 }
 @media (max-width: 767px) {
-  #inicio header nav {
+  header nav {
     display: none;
     position: absolute;
     top: 22%;
@@ -849,7 +823,7 @@ header nav ul .toggle:hover {
     border-radius: 4px;
   }
 }
-#inicio header nav ul {
+header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -857,7 +831,7 @@ header nav ul .toggle:hover {
   margin: 0 auto;
 }
 @media (max-width: 767px) {
-  #inicio header nav ul {
+  header nav ul {
     flex-direction: column;
     width: 100%;
     height: 60vh;
@@ -865,14 +839,14 @@ header nav ul .toggle:hover {
     align-items: normal;
   }
 }
-#inicio header nav ul li {
+header nav ul li {
   font-family: 'Abel', sans-serif;
   text-transform: capitalize;
   font-size: 17.6px;
   color: #24dfd5;
 }
 @media (max-width: 767px) {
-  #inicio header nav ul li {
+  header nav ul li {
     color: #24dfd5;
     font-size: 20px;
     font-family: 'Abel', sans-serif;
@@ -883,7 +857,7 @@ header nav ul .toggle:hover {
 }
 @media (max-width: 767px) {
 }
-#inicio header .hamburguer {
+header .hamburguer {
   background-color: transparent;
   border: none;
   outline: none;
@@ -891,14 +865,14 @@ header nav ul .toggle:hover {
   display: none;
 }
 @media (max-width: 767px) {
-  #inicio header .hamburguer {
+  header .hamburguer {
     display: block;
     position: absolute;
     top: 18%;
     right: 2%;
   }
 }
-#inicio header .hamburguer .line {
+header .hamburguer .line {
   display: block;
   width: 20px;
   height: 3px;
@@ -909,13 +883,13 @@ header nav ul .toggle:hover {
   transition: transform 0.5s;
   opacity: 0.25s;
 }
-#inicio header .hamburguer.active .line:nth-child(1) {
+header .hamburguer.active .line:nth-child(1) {
   transform: translateY(8px) rotate(-45deg);
 }
-#inicio header .hamburguer.active .line:nth-child(2) {
+header .hamburguer.active .line:nth-child(2) {
   opacity: 0;
 }
-#inicio header .hamburguer.active .line:nth-child(3) {
+header .hamburguer.active .line:nth-child(3) {
   transform: translateY(-8px) rotate(45deg);
 }
 .title {
@@ -990,9 +964,6 @@ div.flex {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.94) 70%, rgba(0, 29, 37, 0.979));
   }
 }
-#projetos {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.982));
-}
 .ftr {
   border-top: 1px solid rgba(3, 200, 255, 0.397);
   background-color: rgba(0, 0, 0, 0.982);
@@ -1020,7 +991,7 @@ header.light {
 #skills.light {
   background-image: linear-gradient(to top, rgba(248, 201, 148, 0.97), rgba(255, 255, 255, 0.7));
 }
-#projetos.light {
+#projetoslight {
   background-image: linear-gradient(to top, rgba(255, 243, 227, 0.98), rgba(248, 201, 148, 0.97));
 }
 .ftr.light {
