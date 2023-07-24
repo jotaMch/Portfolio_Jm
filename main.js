@@ -48,8 +48,8 @@ function imgPerfil() {
 }
 
 
-function scrollToSection(sectionId) {
-    const section = document.getElementById(sectionId);
+function scrollToSection(Id) {
+    const section = document.getElementById(Id);
     section.scrollIntoView({ behavior: 'smooth' });
 }
 

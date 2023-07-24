@@ -239,7 +239,7 @@
   padding: 6px 8px;
   border-radius: 50px;
   color: #24dfd5;
-  background-color: #23ddd4dc;
+  background-color: rgba(0, 0, 0, 0.8);
   border: none;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -248,7 +248,7 @@
   }
 }
 .container button:hover {
-  background-color: #85027e;
+  background-color: #24dfd5;
   border: none;
 }
 .container button img {
@@ -375,11 +375,6 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .projects-list-item .back-content {
-    background-color: transparent;
-  }
 }
 .projects-list-item .back-content .img-skills {
   max-width: 250px;
@@ -518,11 +513,15 @@
   background-color: transparent;
 }
 .main {
-  background-image: url(../../src/images/inicio/vista-aerea-do-computador-portatil-no-conceito-de-espaco-de-trabalho-de-mesa-de-madeira.jpg);
+  background-image: linear-gradient(to bottom, #222, #ffffff00), url(https://img.freepik.com/fotos-gratis/espaco-de-trabalho-de-home-office_155003-37366.jpg?w=1060&t=st=1690235798~exp=1690236398~hmac=92062522a5f21cec347957e59ec1fcee050514b6084ec738ea7e5d083386a3ea);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left center;
   background-attachment: fixed;
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: rigth;
+  }
 }
 .especialidades {
   box-shadow: 4px 14px 72px 4px #0379bde5;

@@ -12,14 +12,14 @@
 </head>
 <body>
     <div class="main">
-            <header>
+            <header id="inicio">
                 
                 <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="">
                 <h2 class="title jota">Jânderson<span class="violet title">Dev</span></h2>
                 
                     <nav id="info">
                         <ul class="menu-list">
-                            <li class="top" onclick="scrollToSection('sobre')" >Sobre mim</li>
+                            <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
                             <li onclick="scrollToSection('skills')" >habilidades</li>
                             <li onclick="scrollToSection('projetos')">Projetos</li>
                             <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
@@ -36,28 +36,30 @@
                 </header>
                 <div class="cabecalho">
                 <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
-                <div class="flex">
-                    <div class="sobre-imagem">
-                        <h1 class="title hello">Olá, me chamo <span class="violet title">Jânderson</span></h1>
-                        <div>
-                            <h2 class="subtitle subtlt"></h2>
+                <section id="sobre-mim">
+                    <div class="flex">
+                        <div class="sobre-imagem">
+                            <h1 class="title hello">Olá, me chamo <span class="violet title">Jânderson</span></h1>
+                            <div>
+                                <h2 class="subtitle subtlt"></h2>
+                            </div>
+                            
+                            <!--<img src="./src/images/perfil-original.jpg" alt="">-->
+                            <p class="profile-bio-description text">
+                                    Sou um desenvolvedor júnior dedicado, tenho 23 anos, estou constantemente buscando novas 
+                                    habilidades e conhecimentos para aprimorar minha trajetória profissional. Resido no Rio de 
+                                    Janeiro, <span class="violet">tenho paixão pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
+                                    Estudo React e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
+                                    para os usuários. Minha mentalidade curiosa me impulsiona a buscar soluções 
+                                    e encontrar maneiras de aprimorar a experiência do cliente.
+                                    <br><br>
+                            </p>
                         </div>
-                        
-                        <!--<img src="./src/images/perfil-original.jpg" alt="">-->
-                        <p class="profile-bio-description text">
-                                Sou um desenvolvedor júnior dedicado, tenho 23 anos, estou constantemente buscando novas 
-                                habilidades e conhecimentos para aprimorar minha trajetória profissional. Resido no Rio de 
-                                Janeiro, <span class="violet">tenho paixão pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
-                                Estudo React e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
-                                para os usuários. Minha mentalidade curiosa me impulsiona a buscar soluções 
-                                e encontrar maneiras de aprimorar a experiência do cliente.
-                                <br><br>
-                        </p>
+                        <div>
+                            <img class="profile" src="src/images/inicio/code.png " />
+                        </div>
                     </div>
-                    <div>
-                        <img class="profile" src="src/images/inicio/code.png " />
-                    </div>
-                </div>
+                </section>
                 
                 </div>
             <div class="container">
@@ -342,7 +344,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <button type="button" onclick="scrollToSection('inicio')">
+                    <button type="button" onclick="scrollToSection('sobre-mim')">
                         <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
                     </button>
                 </section>
