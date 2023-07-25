@@ -1,0 +1,175 @@
+
+
+
+.especialidades {
+    //background-color: rgba(1, 69, 137, 0.97),;
+    box-shadow: 4px 14px 72px 4px #03b1bde5;
+    padding: 100px 0;
+
+    @media @breakpointTablet {
+        padding: 60px 0;
+        margin: 0;
+    }
+
+    @media @breakpointMobile {
+        text-align: center;
+        padding: 50px 0;
+        box-shadow: none;
+    }
+    
+    .informacao {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    
+        @media @breakpointMobile {
+            flex-direction: column;
+        }
+
+        @media @breakpointTablet {
+            flex-direction: column
+        }
+    
+        .introducao {
+            max-width: 600px;
+            color: #colors[corAzul];
+
+
+            p {
+                text-shadow: 2px 2px 4px rgba(130, 1, 89, 0.377);
+                font-weight: bold;
+                font-size: 15px;
+                
+
+                @media @breakpointMobile {
+                    text-align: start;
+                    width: 94%;
+                    margin: 0 auto;
+                    font-size: 14px;
+                }
+            }
+
+            .cv {
+                @media @breakpointMobile {
+                    margin-left: 10px;
+                }
+                li {
+                    box-shadow: 0px 2px 8px 0px #colors[textColorPrj];
+                    background-color: transparent;
+                    border-radius: 6px;
+                    width: 44px;
+
+                    a{
+                    padding: 6px 4px;
+                    text-decoration: none;
+                    color: #colors[corMenu];
+                    font-weight: bold;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        max-width: 16px;
+                        padding-left: 2px;
+                    }
+                    @media @breakpointMobile {
+                        margin: 18px 0;
+                        width: 30px;
+                    }
+                }
+            }
+            }
+
+            h2 {
+                padding-bottom: 40px;
+                font-size: 36px;
+
+                @media @breakpointMobile {
+                    padding-bottom: 16px;
+                }
+            }
+
+            h3 {
+                font-size: 16px;
+                padding-bottom: 10px;
+                font-weight: bold;
+
+                @media @breakpointMobile {
+                    padding-bottom: 4px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                @media @breakpointMobile {
+                    font-size: 14px;
+                }
+            }            
+
+            &-sobre {
+                color: #colors[corProject];
+            }
+        }
+    
+        .habilidades{
+            max-width: 700px;
+            width: 100%;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(5, 16.7%);
+                grid-column-gap: 28px; 
+                grid-row-gap: 18px; 
+                text-align: center;
+                
+    
+                
+                @media @breakpointTablet {
+                    padding-top: 30px;
+                    justify-content: center;
+                    grid-template-columns: repeat(4, 18%);
+                }
+
+                @media @breakpointMobile {
+                    justify-content: center;
+                    grid-template-columns: repeat(2, 28%);
+                }
+
+                li {
+
+                    .border {
+                        font-weight: lighter;
+                        color: #colors[backgroundColor];
+                        border-bottom: 1px solid #colors[corProject];
+                        width: 80px;
+                        margin: 0 auto;
+                        transition: all ease .4s;
+    
+                        &:hover {
+                            box-shadow:  inset 0 -40px rgba(254, 255, 255, 0.693);
+                            border-bottom: none;
+                            border-radius: 6px;
+                            color: #colors[btnHoverGit];
+                        }
+                    }
+
+                }
+            }
+            .skill {
+                border-radius: 10%;
+                transition: all ease .4s;
+    
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+    
+                @media @breakpointMobile {
+                    max-width: 126px;
+                }
+
+                @media @breakpointTablet {
+                    max-width: 226px;
+                }
+            }
+        }
+    }
+}

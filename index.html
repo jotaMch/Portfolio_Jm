@@ -12,55 +12,59 @@
 </head>
 <body>
     <div class="main">
-            <header id="inicio">
+                <div class="header-info">
+                    <header id="inicio">
                 
-                <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="">
-                <h2 class="title jota">Jânderson<span class="violet title">Dev</span></h2>
-                
-                    <nav id="info">
-                        <ul class="menu-list">
-                            <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
-                            <li onclick="scrollToSection('skills')" >habilidades</li>
-                            <li onclick="scrollToSection('projetos')">Projetos</li>
-                            <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
-                            <li class="toggle">
-                                <input type="checkbox">
-                            </li>
-                        </ul>
-                    </nav>
-                    <button type="button" onclick="animar()" class="hamburguer" id="btn">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </button>
-                </header>
-                <div class="cabecalho">
-                <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
-                <section id="sobre-mim">
-                    <div class="flex">
-                        <div class="sobre-imagem">
-                            <h1 class="title hello">Olá, me chamo <span class="violet title">Jânderson</span></h1>
-                            <div>
-                                <h2 class="subtitle subtlt"></h2>
+                        <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="">
+                        <h2 class="title jota">Jânderson<span class="violet title">Dev</span></h2>
+                    
+                        <nav id="info">
+                            <ul class="menu-list">
+                                <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
+                                <li onclick="scrollToSection('skills')" >habilidades</li>
+                                <li onclick="scrollToSection('projetos')">Projetos</li>
+                                <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
+                                <li class="toggle">
+                                    <input type="checkbox">
+                                </li>
+                            </ul>
+                        </nav>
+                        <button type="button" onclick="animar()" class="hamburguer" id="btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </header>
+                    
+                    
+                    <div class="cabecalho">
+                    <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
+                    <section id="sobre-mim">
+                        <div class="flex">
+                            <div class="sobre-imagem">
+                                <h1 class="title hello">Olá, me chamo <span class="violet title">Jânderson</span></h1>
+                                <div>
+                                    <h2 class="subtitle subtlt"></h2>
+                                </div>
+                                
+                                <!--<img src="./src/images/perfil-original.jpg" alt="">-->
+                                <p class="profile-bio-description text hidden">
+                                        Sou um desenvolvedor Júnior dedicado, tenho 23 anos, estou constantemente buscando novas 
+                                        habilidades e conhecimentos. Resido no Rio de Janeiro, <span class="violet">tenho paixão 
+                                        pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
+                                        Estudo React e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
+                                        para os usuários. Minha mentalidade curiosa me impulsiona a buscar soluções 
+                                        e encontrar maneiras de melhorar a experiência do cliente.
+                                        <br><br>
+                                </p>
                             </div>
-                            
-                            <!--<img src="./src/images/perfil-original.jpg" alt="">-->
-                            <p class="profile-bio-description text hidden">
-                                    Sou um desenvolvedor Júnior dedicado, tenho 23 anos, estou constantemente buscando novas 
-                                    habilidades e conhecimentos para aprimorar minha trajetória profissional. Resido no Rio de 
-                                    Janeiro, <span class="violet">tenho paixão pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
-                                    Estudo React e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
-                                    para os usuários. Minha mentalidade curiosa me impulsiona a buscar soluções 
-                                    e encontrar maneiras de melhorar a experiência do cliente.
-                                    <br><br>
-                            </p>
+                            <div>
+                                <img class="profile hidden" src="src/images/inicio/code.png " />
+                            </div>
                         </div>
-                        <div>
-                            <img class="profile hidden" src="src/images/inicio/code.png " />
-                        </div>
+                    </section>
+                    
                     </div>
-                </section>
-                
                 </div>
             <div class="container">
             <div class="container-flex">

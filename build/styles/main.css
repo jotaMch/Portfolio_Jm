@@ -47,7 +47,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
-  box-shadow: 4px 0px 28px 4px rgba(135, 210, 233, 0.959);
+  box-shadow: 4px 0px 18px 4px #00b0bd;
   margin: 250px 0 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -81,18 +81,19 @@
 .cabecalho .flex p {
   width: 700px;
   color: rgba(187, 255, 255, 0.763);
-  font-size: 18px;
+  font-size: 15px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .cabecalho .flex p {
     max-width: 400px;
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
   .cabecalho .flex p {
     width: 100%;
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -138,10 +139,6 @@
   color: rgba(180, 255, 255, 0.904);
   font-size: 22px;
   margin: 0 auto 0 0;
-}
-.violet {
-  color: #e402d8;
-  font-weight: bold;
 }
 .container .sobre-imagem {
   display: flex;
@@ -210,6 +207,7 @@
   .container .container-flex .objetivo {
     margin: 0 auto;
     text-align: start;
+    font-size: 14px;
   }
 }
 .container .container-flex .objetivo h2 {
@@ -512,19 +510,65 @@
   color: #056e74;
   background-color: transparent;
 }
-.main {
-  background-image: linear-gradient(to bottom, #62e0f793, #ffffff00), url(https://img.freepik.com/fotos-gratis/espaco-de-trabalho-de-home-office_155003-37366.jpg?w=1060&t=st=1690235798~exp=1690236398~hmac=92062522a5f21cec347957e59ec1fcee050514b6084ec738ea7e5d083386a3ea);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+#contatos {
+  width: 100%;
 }
-@media (max-width: 767px) {
-  .main {
-    background-position: rigth;
+#contatos p {
+  text-align: center;
+  margin: 0 0 10px;
+  font-style: italic;
+}
+#contatos .contatos-links {
+  max-width: 700px;
+  padding: 10px 0 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #contatos .contatos-links {
+    padding: 40px 0;
   }
 }
+@media (max-width: 767px) {
+  #contatos .contatos-links {
+    width: 80%;
+  }
+}
+#contatos .contatos-links h2 {
+  border-bottom: 2px solid #24dfd5;
+  padding: 6px 0;
+  width: 60%;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  #contatos .contatos-links h2 {
+    width: 100%;
+    margin: 0 0;
+  }
+}
+#contatos .contatos-links .links .social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin: 6px auto;
+}
+@media (max-width: 767px) {
+  #contatos .contatos-links .links .social-links {
+    width: 80%;
+  }
+}
+#contatos .contatos-links .links .social-links li img {
+  max-width: 24px;
+  transition: all ease 0.3s;
+}
+#contatos .contatos-links .links .social-links li img:hover {
+  transform: scale(1.3);
+}
 .especialidades {
-  box-shadow: 4px 14px 72px 4px #0379bde5;
+  box-shadow: 4px 14px 72px 4px #03b1bde5;
   padding: 100px 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -562,12 +606,14 @@
 .especialidades .informacao .introducao p {
   text-shadow: 2px 2px 4px rgba(130, 1, 89, 0.377);
   font-weight: bold;
+  font-size: 15px;
 }
 @media (max-width: 767px) {
   .especialidades .informacao .introducao p {
     text-align: start;
     width: 94%;
     margin: 0 auto;
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
@@ -685,11 +731,33 @@
     max-width: 226px;
   }
 }
+.violet {
+  color: #e402d8;
+  font-weight: bold;
+}
+.main {
+  background-image: url(https://img.freepik.com/vetores-gratis/onda-digital-abstrata-de-fundo-de-particulas_1409-1276.jpg?w=1380&t=st=1690309651~exp=1690310251~hmac=950223a0844023e33aeb719f99b1cb2b7f5b061aa06de4e6b854c43303d73ee8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: rigth;
+  }
+}
+.header-info {
+  border-radius: 20px;
+}
 header {
-  padding: 10px 0;
+  padding: 16px 0;
   position: fixed;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 1;
-  width: 100%;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 30px;
 }
 header .jota {
   text-align: center;
@@ -701,7 +769,7 @@ header .perfil {
   opacity: 80%;
   box-shadow: 2px 2px 16px 0px rgba(8, 191, 223, 0.397);
   position: absolute;
-  top: 6px;
+  top: 12px;
   left: 8px;
   cursor: pointer;
 }
@@ -730,63 +798,6 @@ header nav ul .toggle:hover {
 }
 .menu {
   display: block;
-}
-#contatos {
-  width: 100%;
-}
-#contatos p {
-  text-align: center;
-  margin: 0 0 10px;
-  font-style: italic;
-}
-#contatos .contatos-links {
-  max-width: 700px;
-  padding: 10px 0 0;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #contatos .contatos-links {
-    padding: 40px 0;
-  }
-}
-@media (max-width: 767px) {
-  #contatos .contatos-links {
-    width: 80%;
-  }
-}
-#contatos .contatos-links h2 {
-  border-bottom: 2px solid #24dfd5;
-  padding: 6px 0;
-  width: 60%;
-  margin: 0 auto;
-}
-@media (max-width: 767px) {
-  #contatos .contatos-links h2 {
-    width: 100%;
-    margin: 0 0;
-  }
-}
-#contatos .contatos-links .links .social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 300px;
-  margin: 6px auto;
-}
-@media (max-width: 767px) {
-  #contatos .contatos-links .links .social-links {
-    width: 80%;
-  }
-}
-#contatos .contatos-links .links .social-links li img {
-  max-width: 24px;
-  transition: all ease 0.3s;
-}
-#contatos .contatos-links .links .social-links li img:hover {
-  transform: scale(1.3);
 }
 header {
   display: flex;
@@ -861,7 +872,7 @@ header .hamburguer {
   header .hamburguer {
     display: block;
     position: absolute;
-    top: 18%;
+    top: 26%;
     right: 2%;
   }
 }
