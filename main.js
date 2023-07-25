@@ -81,7 +81,6 @@ const menuItems = document.querySelectorAll('.menu-list li');
 const paragrafos = document.querySelectorAll('p');
 const cards = document.querySelectorAll('.back-content');
 const elementsToToggle = document.querySelectorAll('header, .flex, #sobre, #skills, #projetos, .ftr, li');
-const fundo = document.querySelector('.main');
 
 checkbox.addEventListener('change', function() {
     // Verifica se o checkbox está marcado
@@ -94,6 +93,7 @@ if (checkbox.checked) {
         textSub.style.color = '#222';
         hello.style.color = '#222';
         menuList.style.backgroundColor = 'rgba(248, 201, 148, 0.97)';
+
 
         paragrafos.forEach(function(paragrafo) {
         paragrafo.style.color = '#000';
