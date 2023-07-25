@@ -1041,23 +1041,24 @@ input:checked[type="checkbox"]:before {
 .hiddenTwu {
   opacity: 0;
   filter: blur(15px);
-  transition: all 4s;
-  transform: translateX(-100%);
+  transition: all 1s;
+  transform: translate3d(100%);
+  /* Mudança aqui para o eixo Y ser positivo */
 }
 .showSegundo {
   opacity: 1;
   filter: blur(0);
-  transition: all 4s;
-  transform: translateX(0);
+  transition: all 1s;
+  transform: translate3d(0);
 }
 .projects-list :nth-child(2) {
   transition-delay: 400ms;
 }
 .projects-list :nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 480ms;
 }
 .projects-list :nth-child(4) {
-  transition-delay: 800ms;
+  transition-delay: 560ms;
 }
 .marginBottom8 {
   margin-bottom: 8px;
