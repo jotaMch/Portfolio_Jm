@@ -23,6 +23,7 @@ function animar() {
     const btnLine = document.querySelectorAll('.line');
     btn.classList.toggle('active');
 
+
     if (info.style.display === 'block') {
         info.style.display = 'none';
         btnLine.forEach(function(line) {
@@ -34,18 +35,34 @@ function animar() {
             line.style.backgroundColor = '#41c7f8';
         });
     }
+
+    
 }
+
 
 
 function imgPerfil() {
     const perfil2 = document.querySelector('.perfil2');
     
+    // ouvinte de evento de clique ao documento
+    document.addEventListener('click', function(event) {
+        const perfilImage = document.querySelector('.perfil');
+        const toggleCheckbox = document.querySelector('.toggle input');
+    
+        // Verificar se o clique não ocorreu na imagem, dentro do elemento .perfil2 ou dentro do elemento .toggle
+        if (event.target !== perfilImage && !perfil2.contains(event.target)) {
+            perfil2.style.display = 'none';
+        }
+    });
+
     if (perfil2.style.display === 'none') {
         perfil2.style.display = 'block';
     } else {
         perfil2.style.display = 'none';
     }
 }
+
+
 
 
 function scrollToSection(Id) {
@@ -73,7 +90,6 @@ if (checkbox.checked) {
         element.classList.add('light');
         });
 
-               
 
         textSub.style.color = '#222';
         hello.style.color = '#222';
@@ -115,4 +131,36 @@ if (checkbox.checked) {
     }
 });
 
+// animação do scroll 
 
+const myObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+})
+
+const elements = document.querySelectorAll('.hidden');
+
+elements.forEach((element) => myObserver.observe(element))
+
+
+//segundo elemento
+const mySegundo = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('showSegundo')
+        } else {
+            entry.target.classList.remove('showSegundo');
+        }
+    });
+})
+
+
+//------------------------
+const segundoElemento = document.querySelectorAll('.hiddenTwu');
+
+segundoElemento.forEach((element) => mySegundo.observe(element))

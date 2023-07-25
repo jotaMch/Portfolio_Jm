@@ -1026,6 +1026,39 @@ input:checked[type="checkbox"]:before {
   left: 20px;
   transition: 0.4s;
 }
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 2s;
+  transform: translateX(-100%);
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 2s;
+  transform: translateX(0);
+}
+.hiddenTwu {
+  opacity: 0;
+  filter: blur(15px);
+  transition: all 4s;
+  transform: translateX(-100%);
+}
+.showSegundo {
+  opacity: 1;
+  filter: blur(0);
+  transition: all 4s;
+  transform: translateX(0);
+}
+.projects-list :nth-child(2) {
+  transition-delay: 400ms;
+}
+.projects-list :nth-child(3) {
+  transition-delay: 600ms;
+}
+.projects-list :nth-child(4) {
+  transition-delay: 800ms;
+}
 .marginBottom8 {
   margin-bottom: 8px;
 }
