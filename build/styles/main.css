@@ -725,7 +725,7 @@
   font-weight: bold;
 }
 .main {
-  background-image: linear-gradient(45deg, blue, #b9ccee);
+  background-image: linear-gradient(45deg, #006eff, #e6b9ee);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1196,7 +1196,7 @@ li {
   max-width: 24px;
 }
 #sobre .cursos ul {
-  line-height: 2;
+  line-height: 1.4;
 }
 #sobre .cursos ul li {
   font-size: 14px;
