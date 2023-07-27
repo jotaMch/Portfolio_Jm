@@ -66,6 +66,7 @@ function imgPerfil() {
 
 
 function scrollToSection(Id) {
+    animar();
     const section = document.getElementById(Id);
     section.scrollIntoView({ behavior: 'smooth' });
 }

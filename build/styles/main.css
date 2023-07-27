@@ -196,7 +196,6 @@
 }
 .container .container-flex .objetivo p {
   font-size: 15px;
-  font-weight: bold;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .container .container-flex .objetivo {
@@ -568,7 +567,7 @@
   transform: scale(1.3);
 }
 .especialidades {
-  box-shadow: 4px 14px 72px 4px #03b1bde5;
+  box-shadow: 4px 0px 22px 4px #03b1bde5;
   padding: 100px 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -604,9 +603,7 @@
   color: linear-gradient(90deg, transparent, #00a5c2, #00a5c2, #00a5c2, #00a5c2, transparent);
 }
 .especialidades .informacao .introducao p {
-  text-shadow: 2px 2px 4px rgba(130, 1, 89, 0.377);
-  font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
 }
 @media (max-width: 767px) {
   .especialidades .informacao .introducao p {
@@ -663,14 +660,6 @@
 @media (max-width: 767px) {
   .especialidades .informacao .introducao h3 {
     padding-bottom: 4px;
-  }
-}
-.especialidades .informacao .introducao p {
-  font-size: 16px;
-}
-@media (max-width: 767px) {
-  .especialidades .informacao .introducao p {
-    font-size: 14px;
   }
 }
 .especialidades .informacao .introducao-sobre {
@@ -736,7 +725,7 @@
   font-weight: bold;
 }
 .main {
-  background-image: url(https://img.freepik.com/vetores-gratis/onda-digital-abstrata-de-fundo-de-particulas_1409-1276.jpg?w=1380&t=st=1690309651~exp=1690310251~hmac=950223a0844023e33aeb719f99b1cb2b7f5b061aa06de4e6b854c43303d73ee8);
+  background-image: url(../images/inicio/fundo.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -821,10 +810,14 @@ header h2 {
   header nav {
     display: none;
     position: absolute;
-    top: 22%;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.982);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
     border-radius: 4px;
+    background-image: linear-gradient(to right, aqua, #ff00d9);
+    transition: display 0.5s ease;
+    margin-top: 40px;
+    padding: 4px;
   }
 }
 header nav ul {
@@ -836,11 +829,13 @@ header nav ul {
 }
 @media (max-width: 767px) {
   header nav ul {
+    background-color: rgba(0, 0, 0, 0.982);
     flex-direction: column;
-    width: 100%;
-    height: 60vh;
-    padding: 24px 26px 30px 8px;
+    width: 98%;
+    height: 60%;
+    padding: 24px 80px 8px;
     align-items: normal;
+    border-radius: 10%;
   }
 }
 header nav ul li {
@@ -851,10 +846,14 @@ header nav ul li {
 }
 @media (max-width: 767px) {
   header nav ul li {
-    color: #24dfd5;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: bold;
     font-family: 'Abel', sans-serif;
     text-transform: capitalize;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, aqua, #ff00d9);
   }
 }
 @media (max-width: 767px) {
@@ -1200,7 +1199,6 @@ li {
 }
 #sobre .cursos ul li {
   font-size: 14px;
-  font-weight: bold;
 }
 #sobre .cursos ul li img {
   max-width: 14px;
