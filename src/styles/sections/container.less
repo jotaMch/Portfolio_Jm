@@ -52,11 +52,18 @@
 
         //objetivo 
         .objetivo {
-            max-width: 580px;
+            max-width: 500px;
             text-align: center;
+            box-shadow: 0px 0px 22px 4px #eb025496 ;
 
             p {
                 font-size: 15px;
+                padding: 4px 8px;
+
+                
+            @media @breakpointTablet {
+                text-align:start;
+            }
             }
 
             @media @breakpointTablet {
@@ -67,6 +74,7 @@
                 margin: 0 auto;
                 text-align: start;
                 font-size: 14px;
+                box-shadow: 0px 0px 10px 4px #eb025496 ;
             }
             
             h2 {
@@ -74,7 +82,7 @@
                 font-size: 26px;
                 text-align: center;
                 margin: 2px 0 14px;
-                border-bottom: 2px solid #colors[buttonColor];
+                border-bottom: 2px solid  #8a0433 ;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -84,6 +92,7 @@
                     justify-content: flex-start;
                     border-bottom: none;
                     font-size: 24px;
+                    padding: 4px 8px;
                 } 
 
             img {

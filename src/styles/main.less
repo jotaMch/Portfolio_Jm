@@ -56,9 +56,9 @@ li {
 
 #sobre {
     margin: 150px 0 0;
-    padding: 120px 4px;
+    padding: 120px 24px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
 
     @media @breakpointTablet {
@@ -102,7 +102,7 @@ li {
         
 
         &-description {
-            max-width: 560px;
+            max-width: 500px;
             margin: 0 auto;
             font-size: 16px;
             opacity: .9;
@@ -113,16 +113,20 @@ li {
             
         }
     }
-
     .cursos {
-        max-width: 570px;
+        max-width: 500px;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+    
+        box-shadow: 0px 0px 22px 4px #eb025496 ;
+    
+    
+    
 
         @media @breakpointTablet {
-            margin: 0 auto;
+            margin: 22px auto 60px;
             justify-content: center;
             padding: 0 0 26px;
             max-width: 656px;
@@ -132,9 +136,8 @@ li {
         @media @breakpointMobile {
             flex-direction: column;
             position: relative;
-            margin: 22px auto;
-            padding-top: 0;
-            
+            margin: 22px auto 60px;
+            box-shadow: 0px 0px 10px 4px #eb025496 ;
         }
 
         h2 {
@@ -142,7 +145,7 @@ li {
             font-size: 26px;
             margin-bottom: 14px;
             text-align: center;
-            border-bottom: 2px solid #colors[buttonColor];
+            border-bottom: 2px solid #8a0433 ;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -150,8 +153,10 @@ li {
             @media @breakpointMobile {
                 text-align: start;
                 justify-content: flex-start;
+                align-items: center;
                 border-bottom: none;
                 font-size: 24px;
+                padding: 4px 8px;
             } 
 
             img {
@@ -161,10 +166,14 @@ li {
 
         ul {
             line-height: 1.4;
+            padding: 4px 8px;
             
             li {
                 font-size: 14px;
                 
+            @media @breakpointTablet {
+                text-align:start;
+            }
 
                 img {
                     max-width: 14px;
@@ -178,7 +187,6 @@ li {
             font-weight: lighter;
             text-align: center;
             line-height: 2;
-            
         }
     }
 }
