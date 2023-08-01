@@ -29,12 +29,22 @@
     font-family: 'Overpass', sans-serif;
 }
 
-html {
-    height: 100vh;
+
+.container {
+    width: 100%;
 }
 
+.main {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 body {
+    background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #colors[corProject];
 
     @media @breakpointMobile {
@@ -55,10 +65,15 @@ li {
 
 
 #sobre {
-    margin: 150px 0 0;
+    max-width: 1260px;
+    width: 100%;
+    height: 800px;
+    margin: 0 auto;
     padding: 120px 24px;
     display: flex;
-    justify-content: space-around;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
 
 
     @media @breakpointTablet {
@@ -75,6 +90,7 @@ li {
         padding: 32px 10px 22px;
         width: 100%;
     }
+
 
     .profile-bio {
         text-align: center;
@@ -114,13 +130,12 @@ li {
         }
     }
     .cursos {
-        max-width: 500px;
+        max-width: 700px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        background-color: rgba(0,0,0,0.4);
     
-        box-shadow: 0px 0px 22px 4px #eb025496 ;
     
     
     
@@ -137,17 +152,14 @@ li {
             flex-direction: column;
             position: relative;
             margin: 22px auto 60px;
-            box-shadow: 0px 0px 10px 4px #eb025496 ;
         }
 
         h2 {
-            font-weight: lighter;
             font-size: 26px;
             margin-bottom: 14px;
-            text-align: center;
-            border-bottom: 2px solid #8a0433 ;
+            text-align:start;
+            border-bottom: 2px solid #colors[textColor];
             display: flex;
-            justify-content: center;
             align-items: center;
 
             @media @breakpointMobile {
@@ -189,6 +201,55 @@ li {
             line-height: 2;
         }
     }
+
+    //objetivo 
+    .objetivo {
+        max-width: 600px;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 10px;
+    
+
+        p {
+            font-size: 15px;
+            padding: 4px 8px;
+
+            
+        @media @breakpointTablet {
+            text-align:start;
+        }
+        }
+
+        @media @breakpointTablet {
+            margin: 0 auto;
+        }
+
+        @media @breakpointMobile {
+            margin: 0 auto;
+            text-align: start;
+            font-size: 14px;
+            box-shadow: 0px 0px 10px 4px #eb025496 ;
+        }
+        
+        h2 {
+            font-size: 26px;
+            margin: 2px 0 14px;
+            border-bottom: 2px solid #colors[textColor];
+            display: flex;
+            align-items: center;
+
+            @media @breakpointMobile {
+                text-align: start;
+                justify-content: flex-start;
+                border-bottom: none;
+                font-size: 24px;
+                padding: 4px 8px;
+            } 
+
+        img {
+            max-width: 24px;
+        }
+    }
+}
 }
 
 button {

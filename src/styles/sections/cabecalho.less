@@ -1,4 +1,8 @@
 //título e subtítulo
+
+#sobre-mim {
+}
+
 .cabecalho {
     width: 100%;
     margin: 0 auto;
@@ -46,20 +50,21 @@
         }
     }
 
-    .flex { //classe nova para teste
-        display:flex;
-        justify-content: space-around;
-        align-items: center;
-        
-        padding: 20px 0;
-        box-shadow: #colors[shadowHabilidades]; 
+    .flex { 
         margin: 250px 0 0;
+        width: 100%;
+        height: 80vh;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
 
         @media @breakpointTablet {
             padding: 100px 0;
+            height: 40vh;
         }
 
         @media @breakpointMobile {
+            height: 40vh;
             padding: 0 0;
             background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.8) 30%, rgba(0, 0, 0, 0.97) 66%,  rgba(0, 0, 0, 0.97) 80%);
         }
@@ -83,11 +88,16 @@
             padding:  0 0;
         }
 
-        p {
+        .resumo-paragrafo {
+            position: relative;
+            .title-paragrafo {
             width: 700px;
             color: rgba(187, 255, 255, 0.763);
             font-size: 15px;
-
+            position: absolute;
+            right: 10px;
+            bottom: 14%;
+            text-align: end;
 
             @media @breakpointTablet {
                 max-width: 400px;
@@ -99,9 +109,17 @@
                 width: 100%;
                 font-size: 14px;
             }
-        }
 
-        .sobre-imagem {
+            h2 {
+                border-bottom: 2px solid #colors[textColor];
+            }
+
+            p {
+                padding-top: 16px;
+            }
+        }
+    }
+
 
             div {
             @media @breakpointTablet {
@@ -114,22 +132,67 @@
                     justify-content: center;
                 }
             }
+
+            .cv {
+                li {
+                    background-color: transparent;
+                    border-radius: 2px;
+                    border: 1px dotted red;
+                    width: 60px;
+
+                    a{
+                    padding: 6px 4px;
+                    text-decoration: none;
+                    color: #colors[corMenu];
+                    font-weight: bold;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    img {
+                        max-width: 16px;
+                        padding-left: 2px;
+                    }
+                    @media @breakpointMobile {
+                        margin: 18px 0;
+                        width: 30px;
+                    }
+                }
+            }
+            }
         }
 
-        .profile {
+        .profile {            
+            position: absolute;
+            top: -116px;
+            left: 0;
+
+            .nome {
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, #984F13 100%,);
+                
+                //box-shadow: inset 0px 2px 66px 0px rgb(255, 187, 0);
+                border-radius: 90% 19% 14% 100% / 0% 100% 88% 0%;
+                transform: scaleY(1.08);
+            }
+
+            img {
+                
+            width: 300px;
             @media @breakpointTablet {
                 max-width: 300px;
             }
         }
+    }      
 
     }
 
     h1 {
         //font-style: italic;
-        font-size: 42px;   
-        color:  rgba(180, 255, 255, 0.904);
-        
-        text-shadow: 2px 2px 4px rgba(1, 119, 130, 0.415);
+        font-size: 36px;
+        padding-right: 110px;  
+        color:  #7E9A9D;
+
 
         @media @breakpointMobile {
             font-size: 32px;
@@ -139,10 +202,8 @@
     .subtitle {
         //font-style: italic;
         font-size: 22px;
-        margin: 0 auto 0 0;
-        color: rgba(180, 255, 255, 0.904);
+        color: #7E9A9D;
         
-        text-shadow: 2px 2px 4px rgba(1, 130, 130, 0.568);
         
         @media @breakpointMobile {
             font-size: 18px;
@@ -155,11 +216,10 @@
     }
 
     h2 {
-        color:  rgba(180, 255, 255, 0.904);
+        color: #7E9A9D;
         font-size: 22px;
-        margin: 0 auto 0 0;
         
     }
     
-}
+
 

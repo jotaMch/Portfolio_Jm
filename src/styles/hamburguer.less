@@ -1,18 +1,18 @@
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     @media @breakpointMobile {
         justify-content: space-between;
     }
 
-    h2 {
-        display: none;
-        @media @breakpointMobile {
-            display: block;
-        }
-    }
+
+     /*
+     h2 {
+         display: none;
+         @media @breakpointMobile {
+             display: block;
+         }
+     }    
+    */
 
     nav {
         @media @breakpointMobile {
@@ -44,10 +44,6 @@ header {
                 border-radius: 10%;
             }
             li {
-                font-family: 'Abel', sans-serif;
-                text-transform: capitalize;
-                font-size: 17.6px;
-                color: #colors[textColor];
 
                 @media @breakpointMobile {
                 font-size: 22px;

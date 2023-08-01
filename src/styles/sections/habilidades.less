@@ -2,118 +2,32 @@
 
 
 .especialidades {
-    //background-color: rgba(1, 69, 137, 0.97),;
-    box-shadow: 4px 0px 22px 4px #03b1bde5;
-    padding: 100px 0;
+    padding: 0 0 100px;
+    display: flex;
+    justify-content: flex-end;
 
     @media @breakpointTablet {
         padding: 60px 0;
         margin: 0;
+        flex-direction: column
     }
 
     @media @breakpointMobile {
         text-align: center;
         padding: 50px 0;
         box-shadow: none;
+        flex-direction: column;
     }
     
-    .informacao {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 0 auto;
-    
-        @media @breakpointMobile {
-            flex-direction: column;
-        }
-
-        @media @breakpointTablet {
-            flex-direction: column
-        }
-    
-        .introducao {
-            max-width: 600px;
-            color: #colors[corAzul];
-
-
-            p {
-                font-size: 14px;
-                
-                
-
-                @media @breakpointMobile {
-                    text-align: start;
-                    width: 94%;
-                    margin: 0 auto;
-                    font-size: 14px;
-                }
-            }
-
-            .cv {
-                @media @breakpointMobile {
-                    margin-left: 10px;
-                }
-                li {
-                    box-shadow: 0px 2px 4px 0px #colors[textColorPrj];
-                    background-color: transparent;
-                    border-radius: 6px;
-                    width: 44px;
-
-                    a{
-                    padding: 6px 4px;
-                    text-decoration: none;
-                    color: #colors[corMenu];
-                    font-weight: bold;
-                    font-size: 14px;
-                    display: flex;
-                    align-items: center;
-
-                    img {
-                        max-width: 16px;
-                        padding-left: 2px;
-                    }
-                    @media @breakpointMobile {
-                        margin: 18px 0;
-                        width: 30px;
-                    }
-                }
-            }
-            }
-
-            h2 {
-                padding-bottom: 40px;
-                font-size: 36px;
-
-                @media @breakpointMobile {
-                    padding-bottom: 16px;
-                }
-            }
-
-            h3 {
-                font-size: 16px;
-                padding-bottom: 10px;
-                font-weight: bold;
-
-                @media @breakpointMobile {
-                    padding-bottom: 4px;
-                }
-            }
-        
-
-            &-sobre {
-                color: #colors[corProject];
-            }
-        }
-    
-        .habilidades{
-            max-width: 420px;
-            ul {
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(4, 18%);
-                grid-column-gap: 28px; 
-                grid-row-gap: 18px; 
-                text-align: center;
+    .habilidades{
+        ul {
+            width: 480px;
+            margin-right: 10px;
+            display: grid;
+            grid-template-columns: repeat(5, 15.2%);
+            row-gap: 12px;
+            gap: 6%;
+            text-align: center;
                 
     
                 
@@ -129,13 +43,11 @@
                 }
 
                 li {
-
                     .border {
                         font-weight: lighter;
                         color: #colors[backgroundColor];
-                        border-bottom: 1px solid #colors[corProject];
-                        width: 80px;
-                        margin: 0 auto;
+                        width: 100%;
+                        text-align: center;
                         transition: all ease .4s;
     
                         &:hover {
@@ -152,12 +64,13 @@
                 }
             }
             .skill {
-                border-radius: 10%;
                 transition: all ease .4s;
+                filter: brightness(60%);
+
     
                     &:hover {
                         transform: scale(0.9);
-                        filter: drop-shadow(0px 4px 6px rgba(254, 255, 255, 0.555));
+                        filter: brightness(120%);
                     }
     
                 @media @breakpointMobile {
@@ -169,5 +82,72 @@
                 }
             }
         }
+    
+}
+
+#skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 160px;
+    
+
+    .notbook {
+        transform: scaleX(-1);
+        width: 340px;
+        height: 420px;
+        filter: brightness(120%);
+        filter: invert(1);
     }
+}
+
+.introducao {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+    text-align: end;
+    color: #colors[textColor];
+
+
+    
+    h3 {
+        font-size: 16px;
+        padding-bottom: 6px;
+        font-weight: bold;
+        border-bottom: 2px solid #colors[textColor];
+
+
+        @media @breakpointMobile {
+            padding-bottom: 4px;
+        }
+    }
+
+    p {
+        padding-top: 16px;
+        font-size: 14px;
+        font-weight: bold;
+        
+
+        @media @breakpointMobile {
+            text-align: start;
+            width: 94%;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+    }
+
+    
+
+    h2 {
+        padding-bottom: 40px;
+        font-size: 36px;
+
+        @media @breakpointMobile {
+            padding-bottom: 16px;
+        }
+    }
+
+
 }

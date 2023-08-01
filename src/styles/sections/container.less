@@ -5,11 +5,6 @@
     .sobre-imagem {
         display: flex;
         justify-content: center;
-/*
-        position: absolute;
-        top: 52%; 
-        left: 0;
-        width: 100%;*/
         
         @media @breakpointTablet {
             top: 30%;
@@ -26,77 +21,6 @@
 
             @media @breakpointMobile {
                 max-width: 100px;
-            }
-        }
-    }
-
-    .container-flex {
-        max-width: 1260px;
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 180px;
-        
-        @media @breakpointMobile {
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-        @media @breakpointTablet {
-            margin-bottom: 0;
-            width: 100%;
-            //background-color: ;
-        } 
-
-        //objetivo 
-        .objetivo {
-            max-width: 500px;
-            text-align: center;
-            box-shadow: 0px 0px 22px 4px #eb025496 ;
-
-            p {
-                font-size: 15px;
-                padding: 4px 8px;
-
-                
-            @media @breakpointTablet {
-                text-align:start;
-            }
-            }
-
-            @media @breakpointTablet {
-                margin: 0 auto;
-            }
-
-            @media @breakpointMobile {
-                margin: 0 auto;
-                text-align: start;
-                font-size: 14px;
-                box-shadow: 0px 0px 10px 4px #eb025496 ;
-            }
-            
-            h2 {
-                font-weight: lighter;
-                font-size: 26px;
-                text-align: center;
-                margin: 2px 0 14px;
-                border-bottom: 2px solid  #8a0433 ;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                @media @breakpointMobile {
-                    text-align: start;
-                    justify-content: flex-start;
-                    border-bottom: none;
-                    font-size: 24px;
-                    padding: 4px 8px;
-                } 
-
-            img {
-                max-width: 24px;
             }
         }
     }
@@ -126,4 +50,4 @@
             filter: invert(100%); 
         }
     }
-}
+

@@ -165,3 +165,8 @@ const mySegundo = new IntersectionObserver((entries) => {
 const segundoElemento = document.querySelectorAll('.hiddenTwu');
 
 segundoElemento.forEach((element) => mySegundo.observe(element))
+
+
+
+transform: scaleX(-1);
+

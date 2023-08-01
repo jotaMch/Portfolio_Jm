@@ -6,135 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Jânderson</title>
     <link rel="stylesheet" href="build/styles/main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=K2D&family=Mirza&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Klee+One&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
-                <div class="header-info">
-                    <header id="inicio">
-                
-                        <div class="capa">
-                            <img class="perfil" onclick="imgPerfil()" src="./src/images/perfil-original.jpg" alt="imagem perfil">
-                        </div>
-                        <h2 class="title jota">Jânderson<span class="violet title">Dev</span></h2>
-                    
-                        <nav id="info">
-                            <ul class="menu-list">
-                                <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
-                                <li onclick="scrollToSection('skills')" >habilidades</li>
-                                <li onclick="scrollToSection('projetos')">Projetos</li>
-                                <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
-                                <li class="toggle">
-                                    <input type="checkbox">
-                                </li>
-                            </ul>
-                        </nav>
-                        <button type="button" onclick="animar()" class="hamburguer" id="btn">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
-                        </button>
-                    </header>
-                    
-                    
-                    <div class="cabecalho">
-                    <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
-                    <section id="sobre-mim">
-                        <div class="flex">
-                            <div class="sobre-imagem">
-                                <h1 class="title hello">Olá, me chamo <span class="violet title">Jânderson</span></h1>
-                                <div>
-                                    <h2 class="subtitle subtlt"></h2>
+            <div class="header-info">\
+                <header id="inicio">
+                        
+                        <div class="sub-header">
+                            <h2 class="principal jota">Jânderson<span class="violet principal">Dev</span></h2>
+                            <nav id="info">
+                                <ul class="menu-list">
+                                    <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
+                                    <li onclick="scrollToSection('skills')" >Habilidades</li>
+                                    
+                                    <li onclick="scrollToSection('projetos')">Projetos</li>
+                                    <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
+                                    <li class="toggle">
+                                        <input type="checkbox">
+                                    </li>
+                                </ul>
+                            </nav>
+                            
+                            <div class="sub-img d-flex">
+                                <p id="phoneId" class="phone-text">
+                                    (21) 96506-3664
+                                </p>                                 
+                                <img class="phone sub-img" src="./src/images/icons/phone-call.svg" alt="phone">
+                                <div class="sub-img">
+                                    <img src="./src/images/icons/github-2.svg" alt="github">
                                 </div>
+                                <div class="sub-img">
+                                    <img src="./src/images/icons/linkedin-2.svg" alt="linkedin">                                    
+                                </div>
+                                <button type="button" onclick="animar()" class="hamburguer" id="btn">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    
+                </header>
+                
+                
+                <div class="cabecalho">
+                <img class="perfil2" src="./src/images/perfil-original.jpg" alt="">
+                <section id="sobre-mim">
+                    <div class="flex">
+                            
+                            <div class="resumo-paragrafo">
                                 
-                                <!--<img src="./src/images/perfil-original.jpg" alt="">-->
-                                <p class="profile-bio-description text hidden">
+                                <div class="title-paragrafo">
+                                    <h2 class="title">About me</h2>
+                                    <p class="text hidden">
                                         Sou um desenvolvedor dedicado, tenho 23 anos, estou constantemente buscando novas 
                                         habilidades e conhecimentos. Resido no Rio de Janeiro, <span class="violet">tenho paixão 
                                         pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
                                         Estudo React na EBAC e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
                                         para os usuários. Minha mentalidade curiosa me impulsiona a 
                                         encontrar maneiras de melhorar a experiência do cliente.
-                                        <br><br>
-                                </p>
+                                        
+                                    </p>
+                                </div>
+
                             </div>
-                            <div>
-                                <img class="profile hidden" src="src/images/inicio/code.png " />
-                            </div>
-                        </div>
-                    </section>
+                            
+                            <!--
+                                
+                                <ul class="cv">
+                                <li>
+                                    <a href="./src/CURRÍCULO-JM.zip">
+                                        CV
+                                        <img class="baixar" src="./src/images/icons/baixar.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        -->
                     
-                    </div>
-                </div>
-            <div class="container">
-            <div class="container-flex">
-                <section id="sobre">
-                    <div class="cursos">
-                        <div class="hiddenTwu">
-                            <h2 class="subtlt "><img src="./src/images/icons/book (1).svg" alt="book">Cursos</h2>
-                            <nav>
-                                <ul>
-                                    <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Fundamento da gestão de projetos - Completo / FM2S</li>
-                                    <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Nano Course User Experience - Completo / FIAP</li>
-                                    <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Introdução a programação - Completo / EBAC</li>
-                                    <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
-                                    <li class="text"><img src="./src/images/icons/loader.svg" alt="icone loaded">Estudo React do zero ao pro - Estudanto / EBAC</li>
-                                    <li class="text"><img src="./src/images/icons/book-open.svg" alt="book open">Estudo por fora da plataforma sempre bucando maior conhecimento desde 2022.</li>
-                                </ul>
-                            </nav> 
-                        </div>                   
-                    </div>
-                    <div class="objetivo hiddenTwu">
-                        <h2 class="subtlt"><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
-                            <p class="text">
-                                <span class="violet">Desejo contribuir com equipes criativas,</span>
-                                onde possa trabalhar em projetos 
-                                desafiadores que me permitam aprender e crescer profissionalmente. 
-                                Estou comprometido em seguir as melhores práticas de desenvolvimento.
-                                <br>
-                                <span class="violet">Acima de tudo,</span> meu objetivo é contribuir para a 
-                                criação de produtos digitais com melhor performace, 
-                                que atendam às necessidades dos usuários e proporcionem uma experiência agradável. 
-    
-                            </p>
+                        <div class="profile">
+                            <img  src="src/images/inicio/perfil-original-removebg.png " />
+                            <div class="nome">
+                                <h1 class="title hello"><span class="violet title">Jânderson Machado</span></h1>
+                                <h2 class="subtitle title"></h2>
+                            </div>                                                                          
+                        </div>
                     </div>
                 </section>
-            </div>
-    
+                
+                </div>
+                </div>
                 <section id="skills">
-                    <div class="especialidades">
-                        <div class="informacao">
-                            <div class="introducao hiddenTwu">
-                                <h2 class="subtlt ">Especia<span class="violet subtlt">lidades</span></h2>
-                                <h3 class="violet subtitle">Minhas habilidades criativas e experiências</h3>
-                                <div class="introducao-sobre"> 
-                                    <p class="text">
-                                        Tenho me dedicado a aprimorar minhas habilidades, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
-                                        até frameworks populares como Bootstrap e bibliotecas como jQuery.<br><br>
-    
-    
-                                        Faço o uso do pré-processador de CSS, como (SASS / LESS) organizando e dividindo arquivos,
-                                        automatização e minificação de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.<br><br>
-    
-    
-                                        Uma metodologia que adotei é o BEM (Block, Element, Modifier), que me ajuda a 
-                                        organizar e analisar meu código.
-                                        <br><br>
-                                    </p>
-                                    
-                                </div>
-                                <ul class="cv">
-                                    <li>
-                                        <a href="./src/CURRÍCULO-JM.zip">
-                                            CV
-                                            <img class="baixar" src="./src/images/icons/baixar.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    <img class="notbook" src="./src/images/inicio/code.png" alt="code">
+                    <div class="conhecimentos">
+                        <div class="especialidades">
                             <div class="habilidades">
+                                <h2 class="violet title">My skills</h2><br><br>
                                 <ul>
                                     <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""><p class="text border hiddenTwu">HTML</p></li>
                                     <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p class="text border hiddenTwu">CSS</p></li>
@@ -150,15 +121,66 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="introducao hiddenTwu">
+                            <h3 class="violet title">Minhas habilidades criativas e experiências</h3>
+                            <div class="introducao-sobre"> 
+                                <p class="text">
+                                    Tenho me dedicado a aprimorar minhas habilidades, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
+                                    até frameworks populares como Bootstrap e bibliotecas como jQuery.<br><br>
+    
+    
+                                    Faço o uso do pré-processador de CSS, como (SASS / LESS) organizando e dividindo arquivos,
+                                    automatização e minificação de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.<br><br>
+    
+    
+                                    Uma metodologia que adotei é o BEM (Block, Element, Modifier), que me ajuda a 
+                                    organizar e analisar meu código.
+                                </p>
+                                
+                            </div>
+                        </div>
                     </div>
                 </section>
+                
+            </div>
     
+            <section id="sobre">
+                <div class="cursos">
+                    <div class="hiddenTwu">
+                        <h2 class="title "><img src="./src/images/icons/book (1).svg" alt="book">Educação</h2>
+                        <nav>
+                            <ul>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Fundamento da gestão de projetos - Completo / FM2S</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Nano Course User Experience - Completo / FIAP</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Introdução a programação - Completo / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/loader.svg" alt="icone loaded">Estudo React do zero ao pro - Estudanto / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/book-open.svg" alt="book open">Estudo por fora da plataforma sempre bucando maior conhecimento desde 2022.</li>
+                            </ul>
+                        </nav> 
+                    </div>                   
+                </div>
+                <div class="objetivo hiddenTwu">
+                    <h2 class="title"><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
+                        <p class="text">
+                            <span class="violet">Desejo contribuir com equipes criativas,</span>
+                            onde possa trabalhar em projetos 
+                            desafiadores que me permitam aprender e crescer profissionalmente. 
+                            Estou comprometido em seguir as melhores práticas de desenvolvimento.
+                            <br>
+                            <span class="violet">Acima de tudo,</span> meu objetivo é contribuir para a 
+                            criação de produtos digitais com melhor performace, 
+                            que atendam às necessidades dos usuários e proporcionem uma experiência agradável. 
+
+                        </p>
+                </div>
+            </section>
                 <!--Projetos-->
     
     
             <div class="">
                 <section id="projetos">
-                    <h2 class="project subtlt violet">Meus Projetos</h2>
+                    <h2 class="project title violet">Meus Projetos</h2>
                     
     
                     <nav>
@@ -168,7 +190,7 @@
                                     <div class="content">
                                         <div class="back">
                                             <div class="back-content">
-                                                <h3 class="subtlt">Grif Shop</h3>
+                                                <h3 class="title">Grif Shop</h3>
                                                 <p class="text">
                                                     
                                                     Apresenta um menu interativo com o conteúdo da página onde mostra 
@@ -192,14 +214,12 @@
                                         <div class="front-content">
                                         <small class="badge">Grif Shop</small>
                                             <div class="description">
-                                                <p class="card-footer">
-                                                Code &nbsp; | &nbsp; Project
-                                                </p>
+                                                
                                                 <div class="btns">
-                                                    <a class="github subtlt" href="https://github.com/jotaMch/Grif-shop-jm">
+                                                    <a class="github" href="https://github.com/jotaMch/Grif-shop-jm">
                                                         Visite no Guthub
                                                     </a>
-                                                    <a class="subtlt" href="https://grif-shop-jm.vercel.app/">
+                                                    <a href="https://grif-shop-jm.vercel.app/">
                                                         Visite o projeto
                                                     </a>
                                                 </div>
@@ -209,13 +229,13 @@
                                         </div>
                                     </div>                
                             </li>
-    
+
                             <li class="projects-list-item hiddenTwu">
                                 <div class="card">
                                     <div class="content">
                                         <div class="back">
                                             <div class="back-content">
-                                                <h3 class="subtlt">Focus Tourism</h3>
+                                                <h3 class="title">Focus Tourism</h3>
                                                     <p class="text">
                                                         A página começa com um cabeçalho contendo um menu de navegação que 
                                                         permite aos usuários acessarem as seções. O uso das linguagens permitiu a 
@@ -237,9 +257,7 @@
                                         <div class="front-content">
                                         <small class="badge">Focus Tourism</small>
                                             <div class="description">
-                                                <p class="card-footer">
-                                                code &nbsp; | &nbsp; project
-                                                </p>
+                                                
                                                 <div class="btns">
                                                     <a class="github" href="https://github.com/jotaMch/turismo-jm">
                                                         Visite no Guthub
@@ -260,7 +278,7 @@
                                     <div class="content">
                                         <div class="back">
                                             <div class="back-content">
-                                                <h3 class="subtlt">Jota Motors</h3>
+                                                <h3 class="title">Jota Motors</h3>
                                                     <p class="text">
                     
                                                         Exibe uma possivel loja 
@@ -283,9 +301,7 @@
                                         <div class="front-content">
                                         <small class="badge">Jota Motors</small>
                                             <div class="description">
-                                                <p class="card-footer">
-                                                code &nbsp; | &nbsp; project
-                                                </p>
+                                                
                                                 <div class="btns">
                                                     <a class="github" href="https://github.com/jotaMch/loja_de_carros">
                                                         Visite no Guthub
@@ -301,12 +317,12 @@
                                     </div>                
                             </li>
     
-                            <li class="projects-list-item hiddenTwu">
+                            <!--<li class="projects-list-item hiddenTwu">
                                 <div class="card">
                                     <div class="content">
                                         <div class="back">
                                             <div class="back-content">
-                                                <h3 class="subtlt">Drink.Quality</h3>
+                                                <h3 class="title">Drink.Quality</h3>
                                                 <p class="text">
                                                     
                                                     Drink.Quality é um projeto que oferece um formulário com validações,
@@ -331,9 +347,7 @@
                                         <div class="front-content">
                                         <small class="badge">Drink.Quality</small>
                                             <div class="description">
-                                                <p class="card-footer">
-                                                Code &nbsp; | &nbsp; Project
-                                                </p>
+                                                
                                                 <div class="btns">
                                                     <a class="github" href="https://github.com/jotaMch/Page-bebidas-React">
                                                         Visite no Guthub
@@ -347,7 +361,7 @@
                                         </div>
                                         </div>
                                     </div>                
-                            </li>
+                            </li>-->
                         </ul>
                     </nav>
                     <button type="button" onclick="scrollToSection('sobre-mim')">
