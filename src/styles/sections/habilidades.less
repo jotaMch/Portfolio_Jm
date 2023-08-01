@@ -20,6 +20,10 @@
     }
     
     .habilidades{
+        h2 {
+            text-align: end;
+            border-bottom: 2px solid #colors[textColor];
+        }
         ul {
             width: 480px;
             margin-right: 10px;
@@ -32,9 +36,12 @@
     
                 
                 @media @breakpointTablet {
-                    padding-top: 30px;
                     justify-content: center;
-                    grid-template-columns: repeat(4, 18%);
+                    grid-template-columns: repeat(3, 24%);
+                    justify-content: flex-end;
+                    margin-right: 0;
+                    height: 580px;
+                    width: 380px;
                 }
 
                 @media @breakpointMobile {
@@ -90,14 +97,21 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 10px 0 160px;
-    
+    @media @breakpointTablet {
+        padding: 0 10px 0 16px;
+        
+    }
 
     .notbook {
         transform: scaleX(-1);
-        width: 340px;
+        width: 240px;
         height: 420px;
         filter: brightness(120%);
         filter: invert(1);
+    }
+
+    .conhecimentos {
+        //width: 400px;
     }
 }
 
@@ -110,6 +124,9 @@
     text-align: end;
     color: #colors[textColor];
 
+    @media @breakpointTablet {
+        width: 380px;
+    }
 
     
     h3 {
@@ -128,7 +145,7 @@
         padding-top: 16px;
         font-size: 14px;
         font-weight: bold;
-        
+        width: 100%;
 
         @media @breakpointMobile {
             text-align: start;
