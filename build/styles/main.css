@@ -59,7 +59,7 @@
 }
 @media (max-width: 767px) {
   .cabecalho .flex {
-    height: 40vh;
+    height: 70vh;
     padding: 0 0;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.97) 66%, rgba(0, 0, 0, 0.97) 80%);
   }
@@ -102,15 +102,26 @@
 }
 @media (max-width: 767px) {
   .cabecalho .flex .resumo-paragrafo .title-paragrafo {
-    width: 100%;
     font-size: 14px;
   }
 }
 .cabecalho .flex .resumo-paragrafo .title-paragrafo h2 {
   border-bottom: 2px solid #7E9A9D;
 }
+@media (max-width: 767px) {
+  .cabecalho .flex .resumo-paragrafo .title-paragrafo h2 {
+    width: 50%;
+    margin-left: auto;
+  }
+}
 .cabecalho .flex .resumo-paragrafo .title-paragrafo p {
   padding-top: 16px;
+}
+@media (max-width: 767px) {
+  .cabecalho .flex .resumo-paragrafo .title-paragrafo p {
+    width: 70%;
+    margin-left: auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .cabecalho .flex div {
@@ -589,6 +600,12 @@ h2.project {
   text-align: end;
   border-bottom: 2px solid #7E9A9D;
 }
+@media (max-width: 767px) {
+  .especialidades .habilidades h2 {
+    width: 70%;
+    margin-left: auto;
+  }
+}
 .especialidades .habilidades ul {
   width: 480px;
   margin-right: 10px;
@@ -610,8 +627,10 @@ h2.project {
 }
 @media (max-width: 767px) {
   .especialidades .habilidades ul {
-    justify-content: center;
-    grid-template-columns: repeat(2, 28%);
+    justify-content: flex-end;
+    grid-template-columns: repeat(4, 14%);
+    margin-right: 0;
+    height: 546px;
   }
 }
 .especialidades .habilidades ul li .border {
@@ -659,10 +678,16 @@ h2.project {
     padding: 0 10px 0 16px;
   }
 }
+@media (max-width: 767px) {
+  #skills {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
 #skills .notbook {
   transform: scaleX(-1);
   width: 240px;
-  height: 420px;
+  height: 320px;
   filter: brightness(120%);
   filter: invert(1);
 }
@@ -699,10 +724,7 @@ h2.project {
 }
 @media (max-width: 767px) {
   .introducao p {
-    text-align: start;
-    width: 94%;
-    margin: 0 auto;
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 .introducao h2 {
@@ -959,11 +981,16 @@ div.flex {
 @media (max-width: 767px) {
   #skills {
     border-top: 1px solid rgba(3, 200, 255, 0.726);
-    background-image: linear-gradient(to top, #111 30%, rgba(0, 29, 37, 0.979) 5%);
+    background-image: linear-gradient(to top, #111 30%, rgba(0, 29, 37, 0.979) 55%);
   }
 }
 #projetos {
   background-color: #111;
+}
+@media (max-width: 767px) {
+  #projetos {
+    background-image: linear-gradient(to top, #111 20%, rgba(0, 29, 37, 0.979));
+  }
 }
 .ftr {
   background-color: #111;
@@ -1208,10 +1235,11 @@ li {
 }
 @media (max-width: 767px) {
   #sobre .cursos h2 {
+    margin: 28px 0 0;
+    border-bottom: 2px solid #7E9A9D;
     text-align: start;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: none;
     font-size: 24px;
     padding: 4px 8px;
   }
@@ -1256,10 +1284,7 @@ li {
 }
 @media (max-width: 767px) {
   #sobre .objetivo {
-    margin: 0 auto;
     text-align: start;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 4px #eb025496;
   }
 }
 #sobre .objetivo h2 {
@@ -1271,9 +1296,10 @@ li {
 }
 @media (max-width: 767px) {
   #sobre .objetivo h2 {
+    margin: 60px 0 0;
+    border-bottom: 2px solid #7E9A9D;
     text-align: start;
     justify-content: flex-start;
-    border-bottom: none;
     font-size: 24px;
     padding: 4px 8px;
   }

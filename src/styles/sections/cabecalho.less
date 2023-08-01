@@ -11,8 +11,6 @@
     justify-content: center;
     //background-color: rgba(0,0,0,0.8);
 
-    @media @breakpointTablet {
-    }
 
     @media @breakpointMobile {
         height: 100%;
@@ -65,7 +63,7 @@
         }
 
         @media @breakpointMobile {
-            height: 40vh;
+            height: 70vh;
             padding: 0 0;
             background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.8) 30%, rgba(0, 0, 0, 0.97) 66%,  rgba(0, 0, 0, 0.97) 80%);
         }
@@ -91,6 +89,7 @@
 
         .resumo-paragrafo {
             position: relative;
+
             .title-paragrafo {
             width: 700px;
             color: rgba(187, 255, 255, 0.763);
@@ -107,16 +106,23 @@
             }
             
             @media @breakpointMobile {
-                width: 100%;
                 font-size: 14px;
             }
 
             h2 {
                 border-bottom: 2px solid #colors[textColor];
+                @media @breakpointMobile {
+                    width: 50%;
+                    margin-left: auto;
+                }
             }
 
             p {
                 padding-top: 16px;
+                @media @breakpointMobile {
+                    width: 70%;
+                    margin-left: auto;
+                }
             }
         }
     }

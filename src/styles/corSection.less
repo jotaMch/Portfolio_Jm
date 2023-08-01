@@ -35,13 +35,15 @@ div.flex {
 
     @media @breakpointMobile {
         border-top: 1px solid rgba(3, 200, 255, 0.726);
-        background-image: linear-gradient(to top, #111 30%, rgba(0, 29, 37, 0.979) 5%);
+        background-image: linear-gradient(to top, #111 30%, rgba(0, 29, 37, 0.979) 55%);
     }
 }
 
 #projetos {
     background-color:#111;
-    //background-image: linear-gradient(to bottom, rgba(0,0,0,0.94),  rgba(0, 0, 0, 0.982));
+    @media @breakpointMobile {
+        background-image: linear-gradient(to top, #111 20%,  rgba(0, 29, 37, 0.979));
+    }
 }
 
 .ftr {
