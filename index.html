@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Jânderson</title>
+    <link rel="stylesheet" href="build/styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Klee+One&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+            <div class="header-info">\
+                <header id="inicio">
+                        
+                    <div class="sub-header">
+                        <h2 class="principal jota">Jânderson<span class="violet principal">Dev</span></h2>
+                        
+                        <div class="sub-img d-flex">
+                            <p id="phoneId" class="phone-text">
+                                (21) 96506-3664
+                            </p>                                 
+                            <img class="phone sub-img" src="./src/images/icons/phone-call.svg" alt="phone">
+                            <div class="sub-img">
+                                <img src="./src/images/icons/github-2.svg" alt="github">
+                            </div>
+                            <div class="sub-img">
+                                <img src="./src/images/icons/linkedin-2.svg" alt="linkedin">                                    
+                            </div>
+                        </div>
+                        <button type="button" onclick="animar()" class="hamburguer" id="btn">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    </div>
+                    <nav id="info">
+                        <ul class="menu-list">
+                            <li class="top" onclick="scrollToSection('sobre-mim')" >Sobre mim</li>
+                            <li onclick="scrollToSection('skills')" >Habilidades</li>
+                            
+                            <li onclick="scrollToSection('projetos')">Projetos</li>
+                            <li class="bottom" onclick="scrollToSection('contatos')">Contato</li>
+                            <li class="toggle">
+                                <input type="checkbox">
+                            </li>
+                            <div class="d-flex">
+                                <img class="phone sub-img" src="./src/images/icons/phone-call.svg" alt="phone">
+                                <div class="sub-img">
+                                    <img src="./src/images/icons/github-2.svg" alt="github">
+                                </div>
+                                <div class="sub-img">
+                                    <img src="./src/images/icons/linkedin-2.svg" alt="linkedin">                                    
+                                </div>
+                            </div>
+                        </ul>
+                    </nav>
+                    
+                
+            </header>
+            
+            
+                
+                
+                <div class="cabecalho">
+                <section id="sobre-mim">
+                    <div class="flex">
+                            
+                            <div class="resumo-paragrafo">
+                                
+                                <div class="title-paragrafo">
+                                    <h2 class="title">About me</h2>
+                                    <p class="text hidden">
+                                        Sou um desenvolvedor dedicado, tenho 23 anos, estou constantemente buscando novas 
+                                        habilidades e conhecimentos. Resido no Rio de Janeiro, <span class="violet">tenho paixão 
+                                        pelo aprendizado contínuo</span> e estou motivado a enfrentar desafios.
+                                        Estudo React na EBAC e com isso busco aprimorar minha capacidade proporcionando ótima usabilidade 
+                                        para os usuários. Minha mentalidade curiosa me impulsiona a 
+                                        encontrar maneiras de melhorar a experiência do cliente.
+                                        
+                                    </p>
+                                </div>
+
+                            </div>
+                            
+                            <!--
+                                
+                                <ul class="cv">
+                                <li>
+                                    <a href="./src/CURRÍCULO-JM.zip">
+                                        CV
+                                        <img class="baixar" src="./src/images/icons/baixar.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        -->
+                    
+                        <div class="profile">
+                            <img  src="src/images/inicio/perfil-original-removebg.png " />
+                            <div class="nome">
+                                <h1 class="title hello"><span class="violet title">Jânderson Machado</span></h1>
+                                <h2 class="subtitle title"></h2>
+                            </div>                                                                          
+                        </div>
+                    </div>
+                </section>
+                
+                </div>
+                </div>
+                <section id="skills">
+                    <img class="notbook" src="./src/images/inicio/code.png" alt="code">
+                    <div class="conhecimentos">
+                        <div class="especialidades">
+                            <div class="habilidades">
+                                <h2 class="violet title">My skills</h2><br><br>
+                                <ul>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt=""><p class="text border hiddenTwu">HTML</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt=""><p class="text border hiddenTwu">CSS</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt=""><p class="text border hiddenTwu">JavaScrip</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt=""><p class="text border hiddenTwu">Bootstrap</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" /><p class="text border hiddenTwu">Jquery</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt=""><p class="text border hiddenTwu">SASS</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg" /><p class="text border hiddenTwu">LESS</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gulp/gulp-plain.svg" /><p class="text border hiddenTwu">Gulp</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg" /><p class="text border hiddenTwu">Grunt</p></li>
+                                    <li><img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /><p class="text border hiddenTwu">React</p></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="introducao hiddenTwu">
+                            <h3 class="violet title">Minhas habilidades criativas e experiências</h3>
+                            <div class="introducao-sobre"> 
+                                <p class="text">
+                                    Tenho me dedicado a aprimorar minhas habilidades, desde os fundamentos sólidos do HTML, CSS e JavaScript, 
+                                    até frameworks populares como Bootstrap e bibliotecas como jQuery.<br><br>
+    
+    
+                                    Faço o uso do pré-processador de CSS, como (SASS / LESS) organizando e dividindo arquivos,
+                                    automatização e minificação de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.<br><br>
+    
+    
+                                    Uma metodologia que adotei é o BEM (Block, Element, Modifier), que me ajuda a 
+                                    organizar e analisar meu código.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+    
+            <section id="sobre">
+                <div class="cursos">
+                    <div class="hiddenTwu">
+                        <h2 class="title "><img src="./src/images/icons/book (1).svg" alt="book">Educação</h2>
+                        <nav>
+                            <ul>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Fundamento da gestão de projetos - Completo / FM2S</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Nano Course User Experience - Completo / FIAP</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Introdução a programação - Completo / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/check-circle.svg" alt="icone v">Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/loader.svg" alt="icone loaded">Estudo React do zero ao pro - Estudanto / EBAC</li>
+                                <li class="text"><img src="./src/images/icons/book-open.svg" alt="book open">Estudo por fora da plataforma sempre bucando maior conhecimento desde 2022.</li>
+                            </ul>
+                        </nav> 
+                    </div>                   
+                </div>
+                <div class="objetivo hiddenTwu">
+                    <h2 class="title"><img src="./src/images/icons/alvo.svg" alt="">Objetivo</h2>
+                        <p class="text">
+                            <span class="violet">Desejo contribuir com equipes criativas,</span>
+                            onde possa trabalhar em projetos 
+                            desafiadores que me permitam aprender e crescer profissionalmente. 
+                            Estou comprometido em seguir as melhores práticas de desenvolvimento.
+                            <br>
+                            <span class="violet">Acima de tudo,</span> meu objetivo é contribuir para a 
+                            criação de produtos digitais com melhor performace, 
+                            que atendam às necessidades dos usuários e proporcionem uma experiência agradável. 
+
+                        </p>
+                </div>
+            </section>
+                <!--Projetos-->
+    
+    
+            <div class="">
+                <section id="projetos">
+                    <h2 class="project title violet">Meus Projetos</h2>
+                    
+    
+                    <nav>
+                        <ul class="projects-list ">
+                            <li class="projects-list-item hiddenTwu">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <h3 class="title">Grif Shop</h3>
+                                                <p class="text">
+                                                    
+                                                    Apresenta um menu interativo com o conteúdo da página onde mostra 
+                                                    imagens do local em um carrosel, após isso temos 4 seções com o conteudo da loja. 
+                                                    
+                                                </p>
+                                                <div class="img-skills">
+                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" >
+                                                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grunt/grunt-original.svg">
+                                                        </div>
+                                                </div>
+                                            </div>
+                                    <div class="front">
+                                        
+                                        <div class="img">
+                                            <img src="./src/images/project/sobre.jpg" alt="">
+                                        </div>
+                                        <div class="front-content">
+                                        <small class="badge">Grif Shop</small>
+                                            <div class="description">
+                                                
+                                                <div class="btns">
+                                                    <a class="github" href="https://github.com/jotaMch/Grif-shop-jm">
+                                                        Visite no Guthub
+                                                    </a>
+                                                    <a href="https://grif-shop-jm.vercel.app/">
+                                                        Visite o projeto
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>                
+                            </li>
+
+                            <li class="projects-list-item hiddenTwu">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <h3 class="title">Focus Tourism</h3>
+                                                    <p class="text">
+                                                        A página começa com um cabeçalho contendo um menu de navegaçãos. 
+                                                        O uso das linguagens permitiu a criação de um site interativo 
+                                                        e responsivo, fornecendo informações relevantes aos usuários interessados ​​em turismo. 
+                                                    </p>
+                                                    <div class="img-skills">
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    <div class="front">
+                                        
+                                        <div class="img">
+                                            <img src="./src/images/project/turismo.png" alt="">
+                                        </div>
+                                        <div class="front-content">
+                                        <small class="badge">Focus Tourism</small>
+                                            <div class="description">
+                                                
+                                                <div class="btns">
+                                                    <a class="github" href="https://github.com/jotaMch/turismo-jm">
+                                                        Visite no Guthub
+                                                    </a>
+                                                    <a href="https://turismo-jm.vercel.app/">
+                                                        Visite o projeto
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>                
+                            </li>
+    
+                            <li class="projects-list-item hiddenTwu">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <h3 class="title">Jota Motors</h3>
+                                                    <p class="text">
+                    
+                                                        Exibe uma possivel loja 
+                                                        com fotos dos carros no carrosel do site, seçoes sobre a loja destaques e promoções e ao final 
+                                                        contamos com um formulário com validações.
+                    
+                                                    </p>
+                                                    <div class="img-skills">
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    <div class="front">
+                                        
+                                        <div class="img">
+                                            <img src="./src/images/project/carro.png" alt="">
+                                        </div>
+                                        <div class="front-content">
+                                        <small class="badge">Jota Motors</small>
+                                            <div class="description">
+                                                
+                                                <div class="btns">
+                                                    <a class="github" href="https://github.com/jotaMch/loja_de_carros">
+                                                        Visite no Guthub
+                                                    </a>
+                                                    <a href="https://loja-jm.vercel.app/">
+                                                        Visite o projeto
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>                
+                            </li>
+    
+                            <li class="projects-list-item hiddenTwu">
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="back">
+                                            <div class="back-content">
+                                                <h3 class="title">Drink.Quality</h3>
+                                                <p class="text">
+                                                    
+                                                    Drink.Quality é um projeto que oferece um formulário com validações,
+                                                    informações sobre o estabelecimento, destaques,
+                                                    promoções, catálogo e endereços para contato. Uma página resposiva 
+                                                    para diversos aparelhos.
+    
+                                                </p>
+                                                <div class="img-skills">
+                                                    
+                                                    
+                                                    <img class="skill hidden" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    <div class="front">
+                                        
+                                        <div class="img">
+                                            <img src="./src/images/project/drink.png" alt="">
+                                        </div>
+                                        <div class="front-content">
+                                        <small class="badge">Drink.Quality</small>
+                                            <div class="description">
+                                                
+                                                <div class="btns">
+                                                    <a class="github" href="https://github.com/jotaMch/Page-bebidas-React">
+                                                        Visite no Guthub
+                                                    </a>
+                                                    <a href="https://page-bebidas-jm.vercel.app/">
+                                                        Visite o projeto
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>                
+                            </li>
+                        </ul>
+                    </nav>
+                    <button type="button" onclick="scrollToSection('sobre-mim')">
+                        <img class="up" src="./src/images/chevrons-up.svg" alt="logo up" >
+                    </button>
+                </section>
+            </div>
+            <footer class="ftr">
+                <section id="contatos">
+                    <div class="contatos-links">
+                        <h2 class="subtlt">informações <span class="violet subtlt">de contato</span></h2>
+                        <div class="links">
+                            <nav>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                            <img src="./src/images/linkedin.svg" alt="Logo do linkedin">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/jotaMch">
+                                            <img src="./src/images/github.svg" alt="Logo do github">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:jandersonmachado090@gmail.com">
+                                            <img src="./src/images/mail.svg" alt="Logo do Email">
+                                        </a>
+                                    </li>
+                                    <li>
+                                    <a href="https://wa.me/5521965063664">
+                                        <img src="./src/images/icons-whatsapp.svg" alt="Logo do whatsapp">
+                                    </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </section>
+                <h4 class="subtlt">Desenvolvido por Jânderson Machado - está em processo de mudança !<h4>
+                <!--
+                    <div>
+                    <ul>
+                        <li >
+                            <a href="https://youtu.be/sxZqgtK0HTk">
+                                <p >saiba mais sobre mim</p>
+                                <img src="./src/images/youtube (1).svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                -->
+            </footer>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

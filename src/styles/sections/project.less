@@ -1,0 +1,296 @@
+#projetos {
+    padding-bottom: 80px;
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2.project {
+    text-align: center;
+}
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        gap: 2%;
+        justify-content: center;
+
+
+        @media @breakpointDesktop {
+        }
+
+        @media @breakpointTablet {
+            grid-template-columns: repeat(2, 48%);
+            gap: 2%;
+        }
+
+        @media @breakpointMobile {
+            grid-template-columns: repeat(1, 92%);
+            gap: 1px;
+        }
+
+        &-item {
+            border: 2px solid #colors[corAzul];
+            margin: 28px 0;
+            border-radius: 8px;
+            border: none;
+            padding: 6px 0;
+
+            @media @breakpointMobile {
+                margin: 12px 0;
+            }
+
+
+            h3 {
+                text-align: center;
+                    color: #colors[textColor];
+                    font-weight: bold;
+                
+                @media @breakpointMobile {
+                    padding-top: 12px;
+                }
+            }
+
+            .card {
+                overflow: visible;
+                height: 254px;
+                margin: 0 auto;
+
+                
+                @media @breakpointTablet {
+                    width: 90%;
+                }
+
+                @media @breakpointMobile {
+                    max-width: 280px;
+                    height: 280px;
+                    width: 100%;
+                }
+            }
+
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    transform-style: preserve-3d;
+                    transition: transform 300ms;
+                    box-shadow: 0px 0px 10px 1px #colors[corProject];
+                    border-radius: 5px;
+                    @media @breakpointTablet {
+                        width: 100%;
+                    }
+                    @media @breakpointMobile {
+                        width: 100%;
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+
+                    
+                    
+                .front .img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                }
+                
+                .front, .back {
+                    background-color: transparent;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    
+                }
+                
+                .back {
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    
+
+                    &-content {
+                        position: absolute;
+                        width: 99%;
+                        height: 99%;
+                        background-color: #111;
+                        padding: 4px;
+                        border-radius: 5px;
+                        color: #colors[textColor];
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 30px;
+
+
+                        .img-skills {
+                            max-width: 250px;
+                            img {
+                                width: 30px;
+                                height: 30px;
+                                background-color: transparent;
+                                border-radius: 2px;
+                                margin: 0 6px;
+                            }
+                        }
+
+                        
+
+                        p {
+                            font-size: 14px;
+                            text-align: center;
+                            max-width: 400px;
+                            font-weight: bold;
+                            color: rgba(162, 203, 220, 0.969);
+
+                            @media @breakpointMobile {
+                                font-size: 12.8px;
+                            }
+                        }
+                    }
+                    
+                }                   
+
+                .card:hover .content {
+                    transform: rotateY(180deg);
+                }
+                
+                
+                .front {
+                    transform: rotateY(180deg);
+                    color: white;
+
+                    .img img {
+                        width: 100%;
+                        height: 100%;
+
+                        @media @breakpointMobile {
+                            height: 52.8%;
+                        }
+                    }
+                }
+                
+                .front .front-content {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+                
+                .front-content .badge {
+                    background-color:  rgba(0,0,0,0.8);
+                    padding: 2px 10px;
+                    border-radius: 10px;
+                    backdrop-filter: blur(2px);
+                    width: fit-content;
+                }
+                
+                .description {
+                    box-shadow: 0px 0px 10px 5px #222;
+                    width: 100%;
+                    height: 24%;
+                    padding: 4px;
+                    background-color: #00000099;
+                    backdrop-filter: blur(5px);
+                    border-radius: 5px;
+                    text-align: center;
+
+                    @media @breakpointTablet {
+                        height: 34%;
+                    }
+
+
+                    @media @breakpointMobile {
+                        height: 41%;
+                    }
+
+                    .title strong{
+                        text-align: center;
+                    }
+
+                    .btns {
+                        display: flex;
+                        justify-content: space-evenly;
+        
+                        @media @breakpointMobile {
+                            display: block;
+                            margin: 0 auto;
+                        }
+        
+                        .github {
+                            max-width: 352px;
+                            font-size: 14px;
+                            text-decoration: none;
+                            background-color: #colors[buttonColorGit];
+                            display: block;
+                            padding: 14px 10px;
+                            margin-bottom: 20px;
+                            text-align: center;
+                            color: #colors[textColorPrj];
+                            font-weight: bold;
+                            border-radius: 30px;
+                            border: 2px solid #colors[buttonColorGit];
+                            transition: all ease .5s;
+        
+                            @media @breakpointTablet {
+                                padding: 14px 36px;
+                            }
+        
+                            @media @breakpointMobile {
+                                padding: 12px 60px;
+                                margin: 0 auto;
+                            }
+        
+                            &:hover {
+                                color: #colors[buttonColorGit];
+                                background-color: transparent;
+                            }
+                        }
+                    }
+        
+                        a {
+                            max-width: 352px;
+                            font-size: 14px;
+                            text-decoration: none;
+                            background-color: #colors[buttonColor];
+                            display: block;
+                            padding: 14px 12px;
+                            margin-bottom: 20px;
+                            text-align: center;
+                            color: #colors[textColorPrj];
+                            font-weight: bold;
+                            border-radius: 30px;
+                            border: 2px solid #colors[buttonColor];
+                            transition: all ease .5s;
+        
+                            @media @breakpointTablet {
+                                padding: 14px 36px;
+                            }
+        
+                            @media @breakpointMobile {
+                                padding: 12px 60px;
+                                margin: 4px auto;
+                            }
+        
+                            &:hover {
+                                color: #colors[buttonColor];
+                                background-color: transparent;
+                        }
+                }
+                }        
+        }
+    }
+
+
+

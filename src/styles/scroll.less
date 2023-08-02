@@ -1,0 +1,86 @@
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);    
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
+}
+
+.hiddenTwu {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 100ms;
+    transform: translate3d(100%); /* Mudança aqui para o eixo Y ser positivo */
+}
+
+
+.showSegundo {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 600ms;
+    transform: translate3d(0);
+}
+
+.projects-list  :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+
+.projects-list  :nth-child(3) {
+    transition-delay: 480ms;
+}
+
+
+.projects-list  :nth-child(4) {
+    transition-delay: 560ms;
+}
+
+
+//--------------------------------------------------------------------------
+//-----------------------------------------scroll color
+
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #2A7375 #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+}
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+    border: 0px solid #FFFFFF;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #2da4a8;
+    border: 0px solid #c0f1e5;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #E0F1F1;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #1E3333;
+}
