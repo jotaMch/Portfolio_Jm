@@ -40,8 +40,12 @@
     margin: 0 auto;
 }
 
+@imagemPath: "../images/inicio/mountains-55067_1280.webp";
+
 body {
-    background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png);
+    
+    background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png),
+    linear-gradient(to bottom, rgb(255, 153, 0), rgb(207, 172, 120));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,11 +53,9 @@ body {
 
     @media @breakpointMobile {
         width: 100%;
-        background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 98%, 84%));
     }
 
     @media @breakpointTablet {
-        //background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), rgb(147, 185, 224), hsl(214, 74%, 82%));
 
     }
 }

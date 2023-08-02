@@ -59,7 +59,7 @@
 }
 @media (max-width: 767px) {
   .cabecalho .flex {
-    height: 50vh;
+    height: 64vh;
     padding: 0 0;
   }
 }
@@ -1149,7 +1149,7 @@ input:checked[type="checkbox"]:before {
   margin: 0 auto;
 }
 body {
-  background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png);
+  background-image: url(https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067_1280.png), linear-gradient(to bottom, #ff9900, #cfac78);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1158,10 +1158,7 @@ body {
 @media (max-width: 767px) {
   body {
     width: 100%;
-    background-image: linear-gradient(to bottom, hsl(215, 80%, 85%), #93b9e0, hsl(214, 98%, 84%));
   }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
 }
 li {
   list-style: none;
