@@ -39,6 +39,8 @@
             row-gap: 12px;
             gap: 6%;
             text-align: center;
+
+            
                 
                 @media @breakpointTablet {
                     justify-content: center;
@@ -51,16 +53,22 @@
 
                 @media @breakpointMobile {
                     justify-content: center;
-                    grid-template-columns: repeat(4, 14%);
+                    grid-template-columns: repeat(5, 14%);
                     margin-right: 0;
                     justify-content: flex-end;
-                    height: 280px;
+                    height: 200px;
                     row-gap: 12px;
                     gap: 6%;
                     width: 100%;
                 }
 
                 li {
+                    &.react-item {
+                       
+                        @media @breakpointTablet {
+                            grid-column-start: 3;
+                        }
+                    }
                     .border {
                         font-weight: lighter;
                         color: #colors[backgroundColor];
@@ -80,6 +88,7 @@
                             text-transform: uppercase;
                             font-size: 12px;
                         }
+
                     }
 
                 }

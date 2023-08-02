@@ -646,13 +646,18 @@ h2.project {
 @media (max-width: 767px) {
   .especialidades .habilidades ul {
     justify-content: center;
-    grid-template-columns: repeat(4, 14%);
+    grid-template-columns: repeat(5, 14%);
     margin-right: 0;
     justify-content: flex-end;
-    height: 280px;
+    height: 200px;
     row-gap: 12px;
     gap: 6%;
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .especialidades .habilidades ul li.react-item {
+    grid-column-start: 3;
   }
 }
 .especialidades .habilidades ul li .border {
@@ -850,12 +855,30 @@ header nav ul .toggle:hover {
     width: 100%;
   }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding-left: 8px;
+  }
+}
+header nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 767px) {
   header nav {
+    position: static;
+    transform: translate(0%, 0%);
     transition: display 0.5s ease;
     display: none;
     background-color: transparent;
-    height: 340px;
+    height: 380px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  header nav {
+    right: 8%;
   }
 }
 header nav ul {
@@ -875,9 +898,24 @@ header nav ul {
   }
 }
 header nav ul .d-flex {
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
+  display: none;
+}
+@media (max-width: 767px) {
+  header nav ul .d-flex {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+header nav .tell {
+  display: none;
+  padding: 20px 0;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  header nav .tell {
+    display: block;
+  }
 }
 header .hamburguer {
   background-color: transparent;
@@ -1158,6 +1196,11 @@ body {
 @media (max-width: 767px) {
   body {
     width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-size: contain;
   }
 }
 li {

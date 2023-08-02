@@ -6,15 +6,29 @@ header {
         padding-left: 8px;
         width: 100%;
     }
+    @media @breakpointTablet {
+        padding-left: 8px;
+    }
 
 
     nav {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         @media @breakpointMobile {
+            position: static;
+            transform: translate(0%, 0%);
             transition: display 0.5s ease; 
             display: none;
             background-color: transparent;
-            height: 340px;
+            height: 380px;
         }
+
+        @media @breakpointTablet {
+            right: 8%;
+        }
+
         ul {
             display: flex;
             justify-content: space-between;
@@ -33,11 +47,22 @@ header {
 
 
             .d-flex {
-                width: 300px;
+                display: none;
+                @media @breakpointMobile{
+                width: 150px;
                 display: flex;
                 justify-content: space-around;
             }
+        }
         }    
+        .tell {
+            display: none;
+            padding: 20px 0;
+            font-weight: bold;
+            @media @breakpointMobile {
+                display: block;
+            }
+        }
     }
     .hamburguer {
         background-color: transparent;
@@ -78,4 +103,3 @@ header {
         }
     }
 }
-
