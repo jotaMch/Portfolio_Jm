@@ -1,5 +1,5 @@
 const textSub = document.querySelector('.subtitle');
-const text = 'Desenvolvedor Front-end';
+const text = 'Front-end Developer';
 const interval = 80;
 
 function showText() {
