@@ -16,53 +16,28 @@ function showText() {
 
 showText();
 
-
 function animar() {
     const info = document.querySelector('#info');
     const btn = document.getElementById('btn');
     const btnLine = document.querySelectorAll('.line');
     btn.classList.toggle('active');
 
+    const isMobile = window.innerWidth <= 767; 
 
-    if (info.style.display === 'block') {
-        info.style.display = 'none';
-        btnLine.forEach(function(line) {
-            line.style.backgroundColor = '';
-        });
-    } else {
-        info.style.display = 'block';
-        btnLine.forEach(function(line) {
-            line.style.backgroundColor = '#41c7f8';
-        });
-    }
-
-    
-}
-
-
-
-function imgPerfil() {
-    const perfil2 = document.querySelector('.perfil2');
-    
-    // ouvinte de evento de clique ao documento
-    document.addEventListener('click', function(event) {
-        const perfilImage = document.querySelector('.perfil');
-        const toggleCheckbox = document.querySelector('.toggle input');
-    
-        // Verificar se o clique não ocorreu na imagem, dentro do elemento .perfil2 ou dentro do elemento .toggle
-        if (event.target !== perfilImage && !perfil2.contains(event.target)) {
-            perfil2.style.display = 'none';
+    if (isMobile) {
+        if (info.style.display === 'block') {
+            info.style.display = 'none';
+            btnLine.forEach(function(line) {
+                line.style.backgroundColor = '';
+            });
+        } else {
+            info.style.display = 'block';
+            btnLine.forEach(function(line) {
+                line.style.backgroundColor = '#41c7f8';
+            });
         }
-    });
-
-    if (perfil2.style.display === 'none') {
-        perfil2.style.display = 'block';
-    } else {
-        perfil2.style.display = 'none';
-    }
+    } 
 }
-
-
 
 
 function scrollToSection(Id) {
