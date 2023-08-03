@@ -140,26 +140,6 @@
   border: 1px dotted red;
   width: 60px;
 }
-.cabecalho .flex .cv li a {
-  padding: 6px 4px;
-  text-decoration: none;
-  color: #048b92c2;
-  font-weight: bold;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.cabecalho .flex .cv li a img {
-  max-width: 16px;
-  padding-left: 2px;
-}
-@media (max-width: 767px) {
-  .cabecalho .flex .cv li a {
-    margin: 18px 0;
-    width: 30px;
-  }
-}
 .cabecalho .profile {
   position: absolute;
   top: -116px;
@@ -175,11 +155,59 @@
   padding: 0 60px 0 12px;
   border-radius: 90% 19% 14% 100% / 0% 100% 88% 0%;
   transform: scaleY(1.08);
+  position: relative;
 }
 @media (max-width: 767px) {
   .cabecalho .profile .nome {
     padding: 0 0 0 6px;
     width: 300px;
+  }
+}
+.cabecalho .profile .icon-dev {
+  width: 60px;
+  height: 60px;
+  background-color: #111;
+  border: 1px solid rgba(1, 60, 78, 0.63);
+  position: absolute;
+  top: -10px;
+  right: -12px;
+  border-radius: 50%;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .profile .icon-dev {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .cabecalho .profile .icon-dev {
+    width: 40px;
+    height: 40px;
+  }
+}
+.cabecalho .profile .icon-dev a {
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .cabecalho .profile .icon-dev a {
+    width: 30px;
+  }
+}
+.cabecalho .profile .icon-dev a .baixar {
+  max-width: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cabecalho .profile .icon-dev a .baixar {
+    width: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .cabecalho .profile .icon-dev a .baixar {
+    width: 12px;
   }
 }
 .cabecalho .profile img {

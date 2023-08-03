@@ -147,25 +147,7 @@
                     border: 1px dotted red;
                     width: 60px;
 
-                    a{
-                    padding: 6px 4px;
-                    text-decoration: none;
-                    color: #colors[corMenu];
-                    font-weight: bold;
-                    font-size: 14px;
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-
-                    img {
-                        max-width: 16px;
-                        padding-left: 2px;
-                    }
-                    @media @breakpointMobile {
-                        margin: 18px 0;
-                        width: 30px;
-                    }
-                }
+                    
             }
             }
         }
@@ -183,12 +165,57 @@
                 padding: 0 60px 0 12px;
                 border-radius: 90% 19% 14% 100% / 0% 100% 88% 0%;
                 transform: scaleY(1.08);
+                position: relative;
 
 
                 @media @breakpointMobile {
                     padding: 0 0 0 6px;
                     width: 300px;
                 }
+            }
+
+            .icon-dev {
+                width: 60px;
+                height: 60px;
+                background-color:  #111;
+                border: 1px solid rgba(1, 60, 78, 0.63);
+                position: absolute;
+                top: -10px;
+                right: -12px;
+                border-radius: 50%;
+
+                @media @breakpointTablet {
+                    width: 50px;
+                    height: 50px;
+                }
+                    @media @breakpointMobile {
+                        width: 40px;
+                        height: 40px;
+                }
+
+                a{
+                    text-decoration: none;
+                    
+                    @media @breakpointMobile {
+                        width: 30px;
+                    }
+                    
+                    .baixar {
+                        max-width: 20px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        
+                        @media @breakpointTablet {
+                            width: 15px;
+                        }
+                            @media @breakpointMobile {
+                            width: 12px;
+                        }
+                    }
+                }
+
             }
 
             img {
@@ -199,6 +226,8 @@
                 @media @breakpointMobile {
                 width: 180px;
             }
+
+            
 
         }
     }      
@@ -238,5 +267,3 @@
         
     }
     
-
-
