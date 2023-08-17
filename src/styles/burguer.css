@@ -1,0 +1,84 @@
+
+header {
+    position: relative;
+}
+
+
+.hamburguer {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 0%;
+    top: 35%;
+    display: none;
+}
+
+
+.hamburguer .line {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: rgb(25, 25, 25);
+    margin-block: 5px;
+    position: relative;
+    border-radius: 4px;
+    transition: transform .5s, opacity .25s; /* Adicione a transição de opacidade aqui */
+}
+
+.line:nth-child(2) {
+    /* width: 14px; */
+    margin-left: auto;
+}
+
+.line:nth-child(3) {
+    /* width: 6px; */
+    margin-left: auto;
+}
+
+.hamburguer.active .line:nth-child(1) {
+    transform: translateY(8px) rotate(-45deg);
+}
+
+.hamburguer.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active .line:nth-child(3) {
+    transform: translateY(-8px) rotate(45deg);
+    width: 22px;
+} 
+
+
+
+ul.nav-list {
+    transition: max-height 0.5s ease-in-out, opacity 0.9s ease-in-out; /* Adicione uma transição suave */
+    overflow: hidden; /* Certifique-se de ocnavtar o conteúdo que extrapola a altura máxima */
+    list-style: none; /* Remova as marcações de lista padrão */
+    padding: 0; 
+}
+
+ul.nav-list.visible {
+    max-height: 500px; 
+    opacity: 1; 
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .telaG {
+        display: none;
+    }
+    
+    .hamburguer {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0%;
+        top: 8%;
+        display: block;
+    }
+
+    ul.nav-list li {
+        margin-right: 0px;
+    }
+}
