@@ -81,8 +81,8 @@ function Projects() {
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
-                                    <p class="name">Em desenvolvimento</p>
-                                    <p class="role">JoTTCakes</p>
+                                    {/* <p class="name">Em desenvolvimento</p> */}
+                                    <p class="role">Em desenvolvimento</p>
                                 </div>
                                 <div class="socialDiv">
                                     <a href="#linkdin"><BiLogoGithub /></a>
