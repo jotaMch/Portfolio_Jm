@@ -104,9 +104,11 @@ p.text-objetivo {
         height: 250px;
     }
 
+    
     .cursos {
-        padding-top: 62px;
+        padding-top: 0;
         width: 87%;
+        margin: 0 auto;
     }
 
     .cursos li {
@@ -115,8 +117,9 @@ p.text-objetivo {
 
     p.text-objetivo {
         width: 80%;
-
-        padding-top: 64px;
+        font-size: 11px;
+        margin: 0 auto;
+        padding-top: 0;
     }
 
     .educacao__card h4 {
