@@ -160,6 +160,12 @@ p.card-content {
         width: 90%;
     }
 
+    .project h3 {
+        color: #e82406;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
     .project-class {
         align-self: center;
         flex-direction: column;

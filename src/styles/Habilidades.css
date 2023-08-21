@@ -48,7 +48,7 @@
 
 .experiencia h3 {
     padding: 6px;
-    margin: 80px auto 10px;
+    margin: 80px auto 30px;
     text-align: center;
     color: #DA3015;
     background-color: transparent;
@@ -120,7 +120,7 @@
 
 article .flex{
     display: flex;
-    margin: 56px 0 200px;
+    margin: 36px 0 200px;
 }
 
 article .title-soft {
@@ -263,7 +263,7 @@ article .card {
     .experiencia h3 {
         font-size: 16px;
         width: 60%;
-        margin: 78px auto 25px;
+        margin: 78px auto 50px;
     }
 
     .experiencia .experiencia__text {

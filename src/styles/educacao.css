@@ -166,6 +166,13 @@ p.text-objetivo {
         padding-top: 0;
     }
 
+    
+    .educacao h3 {
+        color: #e82406;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
     .educacao__card h4 {
         width: 56px;
         height: 56px;
