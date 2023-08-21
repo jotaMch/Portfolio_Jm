@@ -1,6 +1,6 @@
 import React from 'react';
 import Code from '../assets/code-2.png';
-import CvDocx from "../assets/curriculo_janderson.docx"; 
+import CvDocx from "../assets/curriculo_Janderson.docx"; 
 
 function SectionInicio() {
     return (
