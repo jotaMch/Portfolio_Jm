@@ -16,11 +16,6 @@ h3 {
 
 body {
   background-color: #EFF1EA;
-  /* background-image: url(../assets/vert-color.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-   */
 }
 
 
@@ -76,20 +71,6 @@ header li {
 .name-text {
   position: relative;
 }
-/* 
-.name-text::before {
-  content: "";
-  position: absolute;
-  left: -700px;
-  top: -210px;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color:  #15A756;
-  transform: rotate(1deg);
-  filter: blur(100px);
-  z-index: -1; 
-} */
 
 .name-text h1 {
   font-size: 58px;
@@ -122,7 +103,7 @@ header li {
 /*   background-image: linear-gradient(45deg, #ff0000 20%, rgb(25, 25, 25) 40%); 
  */}
 
- .area__perfil {
+.area__perfil {
   /* background-color: rgb(155, 155, 155); */
   border-radius: 14px 0 0 14px;
   height: 100%;
@@ -130,7 +111,7 @@ header li {
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
 .img .perfil {
   background-color: rgb(25, 25, 25);
