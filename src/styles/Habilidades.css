@@ -37,8 +37,8 @@
 .experiencia__text svg {
     color: #DA3015;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     top: 0px;
     transform: rotate(90deg);
     left: 50%;
@@ -46,21 +46,10 @@
     transition: opacity ease-in-out .4s;
 }
 
-.border-skills {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    margin: 10px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    background-color: transparent
-}
-
 .experiencia h3 {
     padding: 6px;
-    margin: 0 auto;
+    margin: 80px auto 10px;
+    text-align: center;
     color: #DA3015;
     background-color: transparent;
 }
@@ -209,8 +198,8 @@ article .card {
     }
 
     .experiencia__text svg {
-        height: 80px;
-        top: -80px;
+        height: 60px;
+        top: -4px;
         left: 50%;
         translate: -50%;
         transform: rotate(90deg)
@@ -285,8 +274,8 @@ article .card {
     }
 
     .experiencia__text svg {
-        height: 80px;
-        top: 0;
+        height: 60px;
+        top: -2px;
         left: 50%;
         translate: -50%;
         transform: rotate(90deg)
