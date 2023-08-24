@@ -8,8 +8,6 @@ import { BiSolidCar } from "react-icons/bi";
 import { BiBriefcaseAlt } from "react-icons/bi";
 
 
-
-
 function Projects() {
     return(
         <div className="main__project" id='projects'>

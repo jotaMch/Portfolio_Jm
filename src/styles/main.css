@@ -368,6 +368,11 @@ header li:hover .front-text {
     text-align: center;
   }
 
+  
+  header li:hover .front-text {
+    background-image: none;
+  }
+
   .container {
     width: 100%;
   }
