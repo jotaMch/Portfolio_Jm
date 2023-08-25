@@ -89,12 +89,9 @@ p.text-objetivo {
         border: none;
     }
 
-    .educacao__card {
-        
-    }
 
     .educacao__card--color {
-        width: 45%;
+        width: 48.9%;
         margin: 0 auto;
         margin-top: 60px;
     }
@@ -112,11 +109,13 @@ p.text-objetivo {
 
     .cursos li {
         padding: 0 0 26px;
+        height: 30px;
+        font-size: 10px;
     }
 
     p.text-objetivo {
         width: 80%;
-        font-size: 11px;
+        font-size: 10px;
         margin: 0 auto;
         padding-top: 0;
     }

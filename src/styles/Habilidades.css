@@ -346,9 +346,9 @@ article .card {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
     .experiencia__skills {
-        margin: 0 auto;
-        width: 90%;
-        grid-template-columns: repeat(4, 23%);
+        margin: 4px auto;
+        width: 50%;
+        grid-template-columns: repeat(4, 20%);
         gap: 2.4%;
         padding: 0 0 100px;
     }
@@ -400,6 +400,75 @@ article .card {
         width: 100%;
         margin: 0;
     }
+
+    
+.experiencia__skills li:nth-child(3) .medida {
+    width: 10px;
+    height: 40px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(4) .medida {
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(5) .medida {
+    width: 20px;
+    height: 70px;
+    top: 4%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(6) .medida {
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(7) .medida {
+    width: 20px;
+    height: 100%;
+    top: 0;
+    right: -3px;
+    z-index: -1;
+}
+
+.experiencia__skills li:nth-child(8) .medida {
+    width: 44px;
+    height: 100%;
+    top: 0;
+    right: -3px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(9) .medida {
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -3px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(10) .medida {
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -3px;
+    z-index: -1;
+}
 }   
 
 @media screen and (max-width: 767px) {    
@@ -407,11 +476,81 @@ article .card {
     .experiencia__skills {
         margin: 0 auto;
         width: 80%;
-        grid-template-columns: repeat(5, 18%);
+        grid-template-columns: repeat(3, 30%);
         margin: 0 auto;
-        gap: 2.4%;
-        padding: 0 0 100px;
+        gap: 4.7%;
+        row-gap: 3px;
+        padding: 20px 0 100px;
     }
+
+    
+.experiencia__skills li:nth-child(3) .medida {
+    width: 10px;
+    height: 40px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(4) .medida {
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(5) .medida {
+    width: 20px;
+    height: 70px;
+    top: 4%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(6) .medida {
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -3px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(7) .medida {
+    width: 20px;
+    height: 100%;
+    top: 0;
+    right: -3px;
+    z-index: -1;
+}
+
+.experiencia__skills li:nth-child(8) .medida {
+    width: 44px;
+    height: 100%;
+    top: 0;
+    right: -3px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(9) .medida {
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -3px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(10) .medida {
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -3px;
+    z-index: -1;
+}
 
     .experiencia__skills li {
         width: 100%;
@@ -456,7 +595,7 @@ article .card {
     }
 
     .experiencia__text svg {
-        height: 60px;
+        height: 40px;
         top: -2px;
         left: 50%;
         translate: -50%;
