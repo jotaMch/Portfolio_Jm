@@ -14,16 +14,16 @@ function Habilidades() {
                     <div className='experiencia__cor'>
                         <ul className='experiencia__skills'>
                             
-                            <li><img  src={Skills.html} alt="" /><p>HTML</p></li>
-                            <li><img  src={Skills.css} alt="" /><p>CSS</p></li>
-                            <li><img  src={Skills.javascript} alt="" /><p>JavaScrip</p></li>
-                            <li><img  src={Skills.bootstrap} alt="" /><p>Bootstrap</p></li>
-                            <li><img  src={Skills.jquery} alt="" /><p>Jquery</p></li>
-                            <li><img  src={Skills.sass} alt="" /><p>SASS</p></li>
-                            <li><img  src={Skills.less} alt=""/><p>LESS</p></li>
-                            <li><img  src={Skills.gulp} alt=""/><p>Gulp</p></li>
-                            <li><img  src={Skills.grunt} alt="" /><p>Grunt</p></li>
-                            <li><img  src={Skills.react} alt="" /><p>React</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.html} alt="" /> */}<p>HTML<br/> 80%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.css} alt="" /> */}<p>CSS <br/> 86%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.javascript} alt="" /> */}<p>JavaScrip <br/> 72%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.bootstrap} alt="" /> */}<p>Bootstrap <br/> 70%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.jquery} alt="" /> */}<p>Jquery <br/> 60%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.sass} alt="" /> */}<p>SASS <br/> 70%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.less} alt=""/> */}<p>LESS <br/> 66%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.gulp} alt=""/> */}<p>Gulp <br/> 52%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.grunt} alt="" /> */}<p>Grunt <br/> 40%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.react} alt="" /> */}<p>React <br/> 40%</p></li>
                             
                         </ul>
                             <div className="experiencia__text">

@@ -93,8 +93,8 @@ function Projects() {
                     
                 </div>
 
-            
             </div>
+            
         </div>
     )
 } 

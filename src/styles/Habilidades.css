@@ -12,7 +12,7 @@
 }
 
 .experiencia .experiencia__text {
-    background-color: #EFF1EA;
+    background-color: rgb(25, 25, 25);
     border-radius: 48px  ;
     padding: 34px;
     height: 100%;
@@ -25,7 +25,8 @@
 }
 
 .experiencia__text--habilidades {
-    background-color: #EFF1EA;
+    background-color: rgb(25, 25, 25);
+    color: #EFF1EA;
     padding: 16px;
 }
 
@@ -60,8 +61,9 @@
 .experiencia__skills {
     display: grid;
     grid-template-columns: repeat(5, 20%);
-    gap: 2px;
+    gap: 4px;
     justify-content: flex-end;
+    margin-right: 18px;
     height: 100%;
     /* box-shadow: 0 0 10px 0px  #DEC6C0; */
     padding: 20px 0;
@@ -75,23 +77,126 @@
     justify-content: space-between;
     align-items: center;
     height: 340px;
-    background-color: #EFF1EA; 
-    box-shadow: inset 0px 0px 8px 4px #a0a0a0;
-    border: 5px solid #e0e0e0;
+    background-color: rgb(25, 25, 25); 
+    box-shadow: inset 0px 0px 8px 4px rgb(0, 0, 0);
+    border: 5px solid rgb(25, 25, 25);
     border-radius: 14px;
 }
 
 
 
     .experiencia__skills li {
+    position: relative;
     width: 80px;
-    height: 100px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #DA3015;
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
     filter: contrast(100%);
     transition: transform ease-in-out 0.5s;
+    z-index: 1;
+}
+
+.experiencia__skills li .medida {
+    position: absolute;
+}
+
+.experiencia__skills li:nth-child(1) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 20px;
+    height: 34px;
+    top: 0;
+    right: 0;
+    border-radius: 30%;
+}
+
+.experiencia__skills li:nth-child(2) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    border-radius: 30%;
+}
+
+
+.experiencia__skills li:nth-child(3) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 10px;
+    height: 40px;
+    top: 10%;
+    right: -2px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(4) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -2px;
+    border-radius: 20% 2% 0 0;
+}
+
+
+.experiencia__skills li:nth-child(5) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 20px;
+    height: 70px;
+    top: 4%;
+    right: -2px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(6) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 10px;
+    height: 44px;
+    top: 10%;
+    right: -2px;
+    border-radius: 20% 2% 0 0;
+}
+
+.experiencia__skills li:nth-child(7) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 20px;
+    height: 100%;
+    top: 0;
+    right: -2px;
+    z-index: -1;
+}
+
+.experiencia__skills li:nth-child(8) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 44px;
+    height: 100%;
+    top: 0;
+    right: -2px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(9) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -2px;
+    z-index: -1;
+}
+
+
+.experiencia__skills li:nth-child(10) .medida {
+    background-color: rgb(25, 25, 25);
+    width: 46px;
+    height: 110%;
+    top: -2px;
+    right: -2px;
+    z-index: -1;
 }
 
 .experiencia__skills li:hover img{
@@ -109,7 +214,7 @@
     .experiencia__skills p {
     margin: 0;
     text-align: center;
-    color: #00020b;
+    color: #EFF1EA;
     }
 
 /* -----------competencias----------------- */
@@ -142,8 +247,85 @@ article .card {
 }
 
 
+
+
+
+.card-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+  }
+  
+  
+  .card-txt {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+  
+  .card-txt .img-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(24, 24, 24);
+    box-shadow: inset 0px 0px 8px 4px rgb(0, 0, 0);
+    transition: scale 0.6s,filter 1s;
+  }
+  
+  .card-txt .img-content h4 {
+    height: 50px;
+    fill: #e8e8e8;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card-txt .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(50px);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+  
+.card-txt .content .heading {
+    font-size: 32px;
+    font-weight: 700;
+}
+  
+.card-txt:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-txt:hover .img-content {
+    scale: 2.5;
+    filter: blur(77px);
+    background-image: radial-gradient(circle, #DA3015 , rgb(24, 24, 24));
+}
+
+.card-txt:hover .img-content h4 {
+    fill: transparent;
+}
+
+
 .card p {
-    color: rgb(155, 155, 155);
+    color: #EFF1EA;
     font-weight: bold;
 }
 
@@ -152,7 +334,7 @@ article .card {
 }
 
 .card__title {
-    color: rgb(155, 155, 155);
+    color: #EFF1EA;
     text-align: center;
     display: flex;
     align-items: center;
@@ -296,79 +478,6 @@ article .card {
 }
 
 
-
-
-
-.card-container {
-    width: 300px;
-    height: 300px;
-    position: relative;
-  }
-  
-  
-  .card-txt {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    overflow: hidden;
-  }
-  
-  .card-txt .img-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(24, 24, 24);
-    transition: scale 0.6s,filter 1s;
-  }
-  
-  .card-txt .img-content h4 {
-    height: 50px;
-    fill: #e8e8e8;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card-txt .content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    color: #e8e8e8;
-    padding: 20px;
-    line-height: 1.5;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    transform: translateY(50px);
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-}
-  
-.card-txt .content .heading {
-    font-size: 32px;
-    font-weight: 700;
-}
-  
-.card-txt:hover .content {
-    opacity: 1;
-    transform: translateY(0);
-}
-  
-.card-txt:hover .img-content {
-    scale: 2.5;
-    filter: blur(77px);
-}
-  
-.card-txt:hover .img-content h4 {
-    fill: transparent;
-}
   
 
 
