@@ -28,15 +28,14 @@ function Habilidades() {
                         </ul>
                             <div className="experiencia__text">
                                 <BiChevronsRight/>
-                                <p className='experiencia__text--habilidades'>
-                                Tenho me dedicado a aprimorar minhas habilidades, 
-                                desde os fundamentos sólidos do HTML, CSS e JavaScript, 
-                                até frameworks populares como Bootstrap e bibliotecas como jQuery.
-                                Faço o uso do pré-processador de CSS, como (SASS / LESS) 
-                                organizando e dividindo arquivos, automatização e minificação 
-                                de tarefas com Grunt e Gulp, ganhando produtividade e eficiência.
-                                Uma metodologia que adotei é o BEM (Block, Element, Modifier), 
-                                que me ajuda a organizar e analisar meu código.
+                                <p className='experiencia__text--habilidades'>                                
+                                    Tenho focado em aprimorar habilidades desde o HTML, 
+                                    CSS e JavaScript até frameworks como Bootstrap e                                     
+                                    bibliotecas como jQuery. Utilizo pré-processadores 
+                                    de CSS (SASS/LESS) para organização, além de automatização 
+                                    e minificação de tarefas com Grunt/Gulp para eficiência. 
+                                    Adotei a metodologia BEM (Block, Element, Modifier) 
+                                    para melhorar a organização e análise do meu código.
                                 </p>
                             </div>                        
                     </div>

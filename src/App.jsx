@@ -8,15 +8,14 @@ import Habilidades from './components/Habilidades';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
 import Footer from './components/Footer';
+import Mensagem from './components/Mensagem';
 
 
 function App() {
 
   return (
     <>
-    <div className="app">
-
-          
+    <div className="app">          
       <main>
         <div className="container">
           <Header />
@@ -27,14 +26,13 @@ function App() {
         <section>
           <div className='position-class'>
             <About />
-            <Habilidades />
-            
+            <Habilidades />            
             <Educacao />
-
           </div>
         </section>
             <Projects />
       </div>
+          < Mensagem />
           <Footer />
     </div>
     </>

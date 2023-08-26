@@ -15,17 +15,13 @@ function About() {
                 </div>                          
                 <p  className='text-sobre onUp'>
 
-                    Sou um desenvolvedor dedicado, tenho 23 
-                    anos, estou constantemente buscando novas 
-                    habilidades e conhecimentos. Resido no Rio 
-                    de Janeiro, tenho paixão pelo aprendizado 
-                    contínuo e estou motivado a enfrentar 
-                    desafios. Estudo React na EBAC e com 
-                    isso busco aprimorar minha capacidade 
-                    proporcionando ótima usabilidade para 
-                    usuários. Minha mentalidade curiosa 
-                    me impulsiona a encontrar maneiras de 
-                    melhorar a experiência do cliente.
+                Olá! Sou um desenvolvedor front-end dedicado, focado em React 
+                pela EBAC. Minha busca constante por aprendizado e abordagem 
+                curiosa me impulsionam a enfrentar desafios e aprimorar a experiência 
+                do cliente. Solicito e comprometido em oferecer soluções criativas e 
+                interfaces intuitivas para seus projetos. Minha paixão pelo desenvolvimento e 
+                dedicação garantem resultados de alta qualidade. 
+                Vamos colaborar para o sucesso do seu projeto!
                 </p>
 
                 <div className="mini-footer">

@@ -6,11 +6,10 @@ import '../styles/educacao.css';
 function Educacao() {
     return (
         <div className="educacao">
-            <h3>Educação</h3>
             <div className="educacao__card">
-                <div className="educacao__card--color">
+                <div className="educacao__card--color">                    
+                    <h3>Educação</h3>
                     <div className="educacao__card--cont">
-                        <h4>Cursos</h4>
                         <ul className='cursos'>
                             <li><BiBadgeCheck/> Fundamento da gestão de projetos - Completo / FM2S</li>
                             <li><BiBadgeCheck/> Nano Course User Experience - Completo / FIAP</li>
@@ -22,9 +21,9 @@ function Educacao() {
                     </div>
                 </div> 
 
-                <div className="educacao__card--color">
+                <div className="educacao__card--color">                    
+                    <h3>Objetivo</h3>
                     <div className="educacao__card--cont">
-                        <h4>Objetivo</h4>
                         <div >
                             <p className="text-objetivo">
                             Desejo contribuir com equipes criativas, onde possa trabalhar em projetos 
