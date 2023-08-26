@@ -1,12 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
+import '../styles/mensagem.css';
 
 const StyledSubmitButton = styled.button`
-    background-color: #3498db;
+    background-color: #DA3015;
     color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border: none;
     border-radius: 5px;
+    margin: 26px 0;
     cursor: pointer;
 `;
 
@@ -44,6 +46,14 @@ class Mensagem extends React.Component {
                 value,
                 isError: false
             },
+            [email]: {
+                value,
+                isError: false
+            },
+            [mensagem]: {
+                value,
+                isError: false
+            },
         });
     };
     
@@ -55,6 +65,14 @@ class Mensagem extends React.Component {
         if (nome.value === "") {
             this.setState({
                 nome: {
+                    ...nome,
+                    isError: true
+                },
+                email: {
+                    ...nome,
+                    isError: true
+                },
+                mensagem: {
                     ...nome,
                     isError: true
                 }
@@ -76,18 +94,36 @@ class Mensagem extends React.Component {
     render() {
         return (
             <div className="main">
-                <form onSubmit={this.handleSubmit}>
-                    <h3>Dados</h3>
-                    <label>Nome:</label>
-                    <input type="text" value={this.state.nome.value} name="nome" onChange={this.handleChange}/>
+                <form style={{display: 'flex',
+                            flexDirection: 'column',
+                            width: '30%'}} onSubmit={this.handleSubmit}>
+                    <h3 style={{
+                        color: '#DA3015',
+                        fontWeight: "lighter",
+                        margin: '20px 0'
+                    }}>Entre em contato comigo</h3>
+                    
+                    <input placeholder="Seu nome" style={{
+                        marginBottom: 20,
+                        borderRadius: 4,
+                        border: 'none',
+                        padding: 2
+                    }} type="text" value={this.state.nome.value} name="nome" onChange={this.handleChange}/>
                     {this.state.nome.isError && <TextError>O nome é obrigatório</TextError>}
                     
-                    <label>E-mail:</label>
-                    <input type="email" value={this.state.email.value} name="email" onChange={this.handleChange}/>
+                    
+                    <input placeholder="Seu email" style={{
+                        marginBottom: 20,
+                        borderRadius: 4,
+                        border: 'none',
+                        padding: 2
+                    }} type="email" value={this.state.email.value} name="email" onChange={this.handleChange}/>
                     {this.state.email.isError && <TextError>O e-mail é obrigatório</TextError>}
 
-                    <label>Mensagem:</label>
-                    <textarea value={this.state.mensagem.value} name="mensagem" onChange={this.handleChange} />
+                    
+                    <textarea 
+                    placeholder="Sua mensagem"
+                    value={this.state.mensagem.value} name="mensagem" onChange={this.handleChange} />
                     {this.state.mensagem.isError && <TextError>A mensagem é obrigatória</TextError>}
 
                     <StyledSubmitButton type="submit">Enviar</StyledSubmitButton>
