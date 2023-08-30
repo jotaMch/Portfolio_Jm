@@ -9,18 +9,14 @@ import { BiLogoWhatsapp } from "react-icons/bi";
 function About() {
     return (
             <article className="img" id="about">
-
                 <div className="area__perfil">
                     <img className='perfil' src={Perfil} alt="imagem-perfil" />
                 </div>                          
                 <p  className='text-sobre onUp'>
-
-                Olá! Sou um desenvolvedor front-end dedicado, focado em React 
-                pela EBAC. Minha busca constante por aprendizado e abordagem 
-                curiosa me impulsionam a enfrentar desafios e aprimorar a experiência 
-                do cliente. Solicito e comprometido em oferecer soluções criativas e 
-                interfaces intuitivas para seus projetos. Minha paixão pelo desenvolvimento e 
-                dedicação garantem resultados de alta qualidade. 
+                Olá! Sou Jânderson Machado, um desenvolvedor front-end focado em React pela EBAC. 
+                Minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar desafios e 
+                aprimorar a experiência do cliente. Estou comprometido em fornecer soluções criativas e 
+                interfaces intuitivas para seus projetos.
                 Vamos colaborar para o sucesso do seu projeto!
                 </p>
 

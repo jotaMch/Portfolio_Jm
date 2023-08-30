@@ -81,3 +81,27 @@ footer > ul:nth-child(1) {
         margin: 8px auto;
     }
 }
+
+.borderInput {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #EFF1EA;
+    color: #EFF1EA;
+}
+
+.borderInput:focus {
+    outline: none;
+}
+
+textarea::-webkit-scrollbar {
+    width: 4px; /* Largura da scrollbar (WebKit) */
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: #DA3015; /* Cor da thumb (WebKit) */
+    border-radius: 4px; /* Borda arredondada da thumb (WebKit) */
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: rgb(24, 24, 24); /* Cor do track (WebKit) */
+}

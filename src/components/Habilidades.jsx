@@ -29,13 +29,14 @@ function Habilidades() {
                             <div className="experiencia__text">
                                 <BiChevronsRight/>
                                 <p className='experiencia__text--habilidades'>                                
-                                    Tenho focado em aprimorar habilidades desde o HTML, 
-                                    CSS e JavaScript até frameworks como Bootstrap e                                     
-                                    bibliotecas como jQuery. Utilizo pré-processadores 
-                                    de CSS (SASS/LESS) para organização, além de automatização 
-                                    e minificação de tarefas com Grunt/Gulp para eficiência. 
-                                    Adotei a metodologia BEM (Block, Element, Modifier) 
-                                    para melhorar a organização e análise do meu código.
+                                Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como Bootstrap e bibliotecas como jQuery. 
+                                Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
+
+
+
+
+
+
                                 </p>
                             </div>                        
                     </div>

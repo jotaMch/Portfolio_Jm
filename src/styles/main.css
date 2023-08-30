@@ -179,7 +179,7 @@ li .front-text {
   bottom: 0;
   left: 0;
   width: 0%;
-  height: 1px; /* Defina a altura do gradiente aqui */
+  height: 2px; /* Defina a altura do gradiente aqui */
   background-size: 0%;
   transition: all 0.5s;
 }
