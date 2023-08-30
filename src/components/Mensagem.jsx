@@ -39,7 +39,7 @@ class Mensagem extends React.Component {
                 value: "",
                 isError: false
             },
-            mensagem: {
+            message: {
                 value: "",
                 isError: false
             },
@@ -62,7 +62,7 @@ class Mensagem extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault();
     
-        const { nome, email, mensagem } = this.state;
+        const { nome, email, message } = this.state;
 
         if (nome.value === "") {
             this.setState({
@@ -74,7 +74,7 @@ class Mensagem extends React.Component {
                     ...nome,
                     isError: true
                 },
-                mensagem: {
+                message: {
                     ...nome,
                     isError: true
                 }
@@ -87,22 +87,28 @@ class Mensagem extends React.Component {
             formularioEnviado: true,
             nome: { value: "", isError: false }, 
             email: { value: "", isError: false }, 
-            mensagem: { value: "", isError: false } 
+            message: { value: "", isError: false } 
         });
     };
     
     render() {
         return (
             <div className="main">
-                <form style={{display: 'flex',
+                <form action="https://api.staticforms.xyz/submit" method="POST" 
+                style={{display: 'flex',
                             flexDirection: 'column',
-                            width: '30%'}} onSubmit={this.handleSubmit}>
+                            width: '30%', paddingBottom: 80}} 
+                            onSubmit={this.handleSubmit}
+                >
                     <h3 style={{
                         color: '#EFF1EA',
                         fontWeight: "800",
                         margin: '20px 0',
                         fontSize: 20
                     }}>Entre em contato comigo !</h3>
+
+                    <input type="hidden" name="accessKey" value="25e42515-9d42-4bfa-8d3f-2690e6434a99" />
+                    <input type="hidden" name="redirectTo" value="https://releases.jquery.com/" />
                     
                     <div style={{
                             marginBottom: 20,}}>
@@ -129,24 +135,20 @@ class Mensagem extends React.Component {
                         className="borderInput"
                         style={{width: '100%', height: 58, overflowY: "none"}}
                         placeholder="Sua mensagem"
-                        value={this.state.mensagem.value} name="mensagem" onChange={this.handleChange} />
-                        {this.state.mensagem.isError && <TextError>A mensagem é obrigatória</TextError>}
+                        value={this.state.message.value} name="message" onChange={this.handleChange} />
+                        {this.state.message.isError && <TextError>A mensagem é obrigatória</TextError>}
                     </div>
 
                     <StyledSubmitButton type="submit">Enviar</StyledSubmitButton>
 
-                    <div  style={{color: '#DA3015', fontSize: 14, display: 'flex',
-                            height:40, justifyContent: 'center', alignItems: 'center', gap: 4}}>
 
+                    {this.state.formularioEnviado && 
+                    <div style={{color: '#DA3015', fontSize: 14, display: 'flex',
+                            height:40, justifyContent: 'center', alignItems: 'center', gap: 4}}>
                         <p style={{ fontSize: 14}}>Sua mensagem foi enviada</p>
                         < BiSolidMessageAltCheck />
-                    </div>
-                </form>
-                
-                {this.state.loadingVisible && <div className="loading"></div>}
-                
-                {/* {this.state.formularioEnviado && } */}
-                
+                    </div>}
+                </form>                
             </div>
         );
     }

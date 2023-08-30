@@ -31,7 +31,7 @@ function App() {
           </div>
         </section>
             <Projects />
-          < Mensagem /> 
+          {/* < Mensagem />  */}
       </div>
           <Footer />
     </div>
