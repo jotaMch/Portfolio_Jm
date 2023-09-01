@@ -8,7 +8,7 @@ import Habilidades from './components/Habilidades';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
 import Footer from './components/Footer';
-import Mensagem from './components/Mensagem';
+import Mensagem from './components/Mensagem'; 
 
 
 function App() {
@@ -30,8 +30,8 @@ function App() {
             <Educacao />
           </div>
         </section>
-            <Projects />
-          {/* < Mensagem />  */}
+            <Projects />            
+          < Mensagem />           
       </div>
           <Footer />
     </div>

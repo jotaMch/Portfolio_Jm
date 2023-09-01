@@ -36,9 +36,9 @@
 }
 
 .experiencia__text svg {
-    color: #DA3015;
+    color:  #626261;
     position: absolute;
-    width: 60px;
+    width: 50px;
     height: 60px;
     top: 0px;
     transform: rotate(90deg);
@@ -62,12 +62,10 @@
     display: grid;
     grid-template-columns: repeat(5, 20%);
     gap: 4px;
+    row-gap: 18px;
     justify-content: flex-end;
-    margin-right: 18px;
-    height: 100%;
-    /* box-shadow: 0 0 10px 0px  #DEC6C0; */
+    margin-right: 18px;  
     padding: 20px 0;
-    /* background-color: rgb(155, 155, 155); */
 }
 
 .experiencia__cor {
@@ -84,13 +82,13 @@
 }
 
 
-
     .experiencia__skills li {
     position: relative;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid #DA3015;
+    border: 4px double #EFF1EA;
+    box-shadow: inset 0 0 6px #EFF1EA;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -104,100 +102,6 @@
     position: absolute;
 }
 
-.experiencia__skills li:nth-child(1) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 20px;
-    height: 34px;
-    top: 0;
-    right: 0;
-    border-radius: 30%;
-}
-
-.experiencia__skills li:nth-child(2) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 20px;
-    height: 20px;
-    top: 0;
-    right: 0;
-    border-radius: 30%;
-}
-
-
-.experiencia__skills li:nth-child(3) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 10px;
-    height: 40px;
-    top: 10%;
-    right: -2px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(4) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -2px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(5) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 20px;
-    height: 70px;
-    top: 4%;
-    right: -2px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(6) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -2px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(7) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 20px;
-    height: 100%;
-    top: 0;
-    right: -2px;
-    z-index: -1;
-}
-
-.experiencia__skills li:nth-child(8) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 44px;
-    height: 100%;
-    top: 0;
-    right: -2px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(9) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -2px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(10) .medida {
-    background-color: rgb(25, 25, 25);
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -2px;
-    z-index: -1;
-}
 
 .experiencia__skills li:hover img{
     transform: scale(0.8);
@@ -350,7 +254,7 @@ article .card {
         width: 50%;
         grid-template-columns: repeat(4, 20%);
         gap: 2.4%;
-        padding: 0 0 100px;
+        padding: 20px;
     }
 
     .experiencia__skills li {
@@ -401,74 +305,6 @@ article .card {
         margin: 0;
     }
 
-    
-.experiencia__skills li:nth-child(3) .medida {
-    width: 10px;
-    height: 40px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(4) .medida {
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(5) .medida {
-    width: 20px;
-    height: 70px;
-    top: 4%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(6) .medida {
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(7) .medida {
-    width: 20px;
-    height: 100%;
-    top: 0;
-    right: -3px;
-    z-index: -1;
-}
-
-.experiencia__skills li:nth-child(8) .medida {
-    width: 44px;
-    height: 100%;
-    top: 0;
-    right: -3px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(9) .medida {
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -3px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(10) .medida {
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -3px;
-    z-index: -1;
-}
 }   
 
 @media screen and (max-width: 767px) {    
@@ -478,82 +314,14 @@ article .card {
         width: 80%;
         grid-template-columns: repeat(3, 30%);
         margin: 0 auto;
-        gap: 4.7%;
-        row-gap: 3px;
+        gap: 8px;
+        row-gap: 8px;
         padding: 20px 0 100px;
     }
 
-    
-.experiencia__skills li:nth-child(3) .medida {
-    width: 10px;
-    height: 40px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(4) .medida {
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-
-.experiencia__skills li:nth-child(5) .medida {
-    width: 20px;
-    height: 70px;
-    top: 4%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(6) .medida {
-    width: 10px;
-    height: 44px;
-    top: 10%;
-    right: -3px;
-    border-radius: 20% 2% 0 0;
-}
-
-.experiencia__skills li:nth-child(7) .medida {
-    width: 20px;
-    height: 100%;
-    top: 0;
-    right: -3px;
-    z-index: -1;
-}
-
-.experiencia__skills li:nth-child(8) .medida {
-    width: 44px;
-    height: 100%;
-    top: 0;
-    right: -3px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(9) .medida {
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -3px;
-    z-index: -1;
-}
-
-
-.experiencia__skills li:nth-child(10) .medida {
-    width: 46px;
-    height: 110%;
-    top: -2px;
-    right: -3px;
-    z-index: -1;
-}
-
     .experiencia__skills li {
-        width: 100%;
+        width: 80px;
+        height: 80px;
     }
 
     .experiencia__skills img {

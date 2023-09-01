@@ -71,7 +71,7 @@ function Footer(){
                         </a>
                     </li> 
                 </ul> 
-                <span className="number-tell">< BiSolidPhoneIncoming /> (21) 96506 - 3664 | (21) 96432-4139</span>
+                <span className="number-tell">< BiSolidPhoneIncoming /> (21) 99470-7188 | (21) 996432-4139</span>
             </footer>
         </div>
     )

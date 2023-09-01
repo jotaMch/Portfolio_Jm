@@ -187,7 +187,7 @@ li .front-text {
 header li:hover .front-text {
   background-size: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, rgb(250, 52, 3), #3d81a5);
+  background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(250, 52, 3));
 }
 
 /* ------------button cv abaixo------------ */
@@ -216,7 +216,7 @@ header li:hover .front-text {
   width: 100%;
   height: 100%;
   left: 0;
-  color: #ff3700;
+  color: #EFF1EA;
 }
 
 .text {

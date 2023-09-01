@@ -16,7 +16,7 @@ function Educacao() {
                             <li><BiBadgeCheck/> Introdução a programação - Completo / EBAC</li>
                             <li><BiBadgeCheck/> Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
                             <li><BiBookOpen /> React do zero ao pro - Estudanto / EBAC</li>
-                            <li><BiBookOpen /> Estudo por fora da plataforma sempre bucando maior conhecimento desde 2022.</li>
+                            <li><BiBookOpen /> Desenvolvimento web - Estudando / Rockseat</li>
                         </ul>
                     </div>
                 </div> 
@@ -29,9 +29,8 @@ function Educacao() {
                             Desejo contribuir com equipes criativas, onde possa trabalhar em projetos 
                             desafiadores que me permitam aprender e crescer profissionalmente. Estou 
                             comprometido em seguir as melhores práticas de desenvolvimento. Acima de tudo, 
-                            meu objetivo é contribuir para a criação de produtos digitais com melhor 
-                            performace, que atendam às necessidades dos usuários e proporcionem uma 
-                            experiência agradável.
+                            criar produtos digitais com melhor performace, que atendam às necessidades dos 
+                            usuários e proporcionem uma experiência agradável.
                             </p> 
                         </div>
                     </div>
@@ -42,3 +41,15 @@ function Educacao() {
 }
 
 export default Educacao;
+/* 
+Boa tarde!
+
+Espero que esteja tudo bem com você. 
+Hoje, reservei um tempo para aprimorar meu portfólio 
+e gostaria de compartilhá-lo com a comunidade aqui. No meu portfólio,  reuni alguns dos projetos que desenvolvi.
+
+Para cria-lo utilizei uma variedade de tecnologias, 
+incluindo ReactJS e Vite.js para garantir um desempenho otimizado e uma 
+experiência de usuário agradável. Além disso, explorei a criação de estilos
+com a biblioteca Styled-components e React icons, proporcionando um design 
+atraente e coeso em toda a aplicação.  */

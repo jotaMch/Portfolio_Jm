@@ -235,6 +235,11 @@ p.card-content {
     font-size: 16px;
     }
 
+    .profileDiv svg {
+        width: 20px;
+        height: 20px;
+    }
+
     .cardContainer:hover .profileDiv {
     transform: translateX(-8%) translateY(-8%);
     transition-duration: .5s;

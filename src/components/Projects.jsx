@@ -1,12 +1,22 @@
 import React from 'react';
 import '../styles/projects.css';
-import { BiCake } from "react-icons/bi";
+import { BiLoaderCircle } from "react-icons/bi";
 import { BiLogoGithub } from "react-icons/bi";
 import { BiLayout } from "react-icons/bi";
 import { BiCloset } from "react-icons/bi";
 import { BiSolidCar } from "react-icons/bi";
 import { BiBriefcaseAlt } from "react-icons/bi";
+import { BiLogoJavascript } from "react-icons/bi";
 
+import { BiLogoJquery } from "react-icons/bi";
+import { FaGrunt } from "react-icons/fa";
+import { FaGulp } from "react-icons/fa";
+import { FaLess } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+//grunt,less,jquery
 
 function Projects() {
     return(
@@ -19,6 +29,7 @@ function Projects() {
                             <div class="profileDiv">
                                     <BiCloset />
                                     Clothing Store
+                                    <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
@@ -38,6 +49,7 @@ function Projects() {
                             <div class="profileDiv">
                                     <BiSolidCar />
                                     Motors shop
+                                    <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
@@ -57,6 +69,7 @@ function Projects() {
                             <div class="profileDiv">
                                     <BiBriefcaseAlt />
                                     Focus Tourism
+                                    <div><FaHtml5/> <FaCss3Alt/> <BiLogoJavascript/></div>
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
@@ -74,8 +87,8 @@ function Projects() {
 
                         <div class="cardContainer">
                             <div class="profileDiv">
-                                    <BiCake />
-                                    Confeitaria
+                                    <BiLoaderCircle />
+                                    Freelancer Kakau Makeup
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
@@ -100,3 +113,5 @@ function Projects() {
 } 
 
 export default Projects;
+
+

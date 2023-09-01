@@ -16,8 +16,8 @@ function Habilidades() {
                             
                             <li> <div className="medida"></div> {/* <img  src={Skills.html} alt="" /> */}<p>HTML<br/> 80%</p></li>
                             <li> <div className="medida"></div> {/* <img  src={Skills.css} alt="" /> */}<p>CSS <br/> 86%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.javascript} alt="" /> */}<p>JavaScrip <br/> 72%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.bootstrap} alt="" /> */}<p>Bootstrap <br/> 70%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.javascript} alt="" /> */}<p>JavaScrip <br/> 68%</p></li>
+                            <li> <div className="medida"></div> {/* <img  src={Skills.bootstrap} alt="" /> */}<p>Bootstrap <br/> 68%</p></li>
                             <li> <div className="medida"></div> {/* <img  src={Skills.jquery} alt="" /> */}<p>Jquery <br/> 60%</p></li>
                             <li> <div className="medida"></div> {/* <img  src={Skills.sass} alt="" /> */}<p>SASS <br/> 70%</p></li>
                             <li> <div className="medida"></div> {/* <img  src={Skills.less} alt=""/> */}<p>LESS <br/> 66%</p></li>
@@ -31,12 +31,6 @@ function Habilidades() {
                                 <p className='experiencia__text--habilidades'>                                
                                 Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como Bootstrap e bibliotecas como jQuery. 
                                 Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
-
-
-
-
-
-
                                 </p>
                             </div>                        
                     </div>
@@ -75,8 +69,7 @@ function Habilidades() {
                                     <BiBadgeCheck  />
                                     <p>
                                     Tenho uma abordagem estruturada e disciplinada na gestão de projetos,
-                                priorizando tarefas e promovendo a eficácia do trabalho desenvolvido.
-                            
+                                    priorizando tarefas e promovendo a eficácia do trabalho desenvolvido.                            
                                     </p>
                                 </div>
                             </div>

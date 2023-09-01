@@ -23,7 +23,7 @@ footer ul {
 footer svg {
     height: 24px;
     width: 24px;
-    color:  rgb(155, 155, 155);
+    color:  #EFF1EA;
     transition: transform ease 0.5s;
 }
 
@@ -32,13 +32,13 @@ footer svg:hover {
 }
 
 footer p {
-    color:  rgb(155, 155, 155);
+    color:  #EFF1EA;
     margin: 40px 0 10px;
 }
 
 footer .actual-text {
-    color: rgb(24, 24, 24);
-    box-shadow: 0 0 8px #a0a0a0;
+    color: #DA3015;
+    box-shadow: 0 0 8px rgb(9, 9, 9);
     border-radius: 30px;
     padding: 2px 6px 4px;
 } 
@@ -49,16 +49,16 @@ footer .actual-text:hover {
 }
 
 footer > ul:nth-child(1) {
-    background-color: #EFF1EA;
+    background-color: rgb(24, 24, 24);
     padding: 8px;
     height: 40px;
     align-items: center;
     border-radius: 30px;
-    box-shadow: inset 0 0 6px 2px #a0a0a0;
+    box-shadow: inset 0 0 6px 2px rgb(2, 2, 2);
 }
 
 .number-tell {
-    color: #a0a0a0;
+    color: #EFF1EA;
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -80,6 +80,20 @@ footer > ul:nth-child(1) {
         width: 88%;
         margin: 8px auto;
     }
+
+    .contato-comigo {
+        margin: 0 auto;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+form {
+    width: 360px;
+    margin: 0 auto;
 }
 
 .borderInput {
