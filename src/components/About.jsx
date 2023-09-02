@@ -14,7 +14,7 @@ function About() {
                 </div>                          
                     <div className="espaco">
                         <p  className='text-sobre onUp'>
-                        Olá! Sou Jânderson Machado<br/> 
+                        Olá! Sou Jânderson Machado 
                         Estudo Analise e Desenvolvimento de sistemas na Estácio, no
                         momento estou focado em React minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar desafios e 
                         aprimorar a experiência do cliente. Estou comprometido em fornecer soluções criativas e 
