@@ -19,6 +19,7 @@ function Footer(){
     };
     return(
         <div>
+            <div className="border_footer"></div>
             <footer id="contact">
 
                 <ul>

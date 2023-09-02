@@ -15,7 +15,7 @@ import { FaReact } from "react-icons/fa";
 
 export default  function Techskill() {
     return (
-        <DivGlobal >
+        <DivGlobal id="skills" >
             <nav className="nav__style" >
                 <ul >                                        
                     <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon> < FaHtml5 /></StyledIcon> </li>
@@ -65,6 +65,15 @@ const StyledText = styled.div`
             width: 100%;
         }
     }
+
+    
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        
+        padding-left: 38px;
+        p {
+            width: 90%;
+        }
+    }
 `
 
 const StyledIcon = styled.div`
@@ -84,9 +93,17 @@ const StyledIcon = styled.div`
         width: 100%;
         height: 80%;
     }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 100%;
+        height: 80%;
+    }
 }
 
     @media (max-width: 768px) {
+        width: 70px;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         width: 70px;
         margin: 0 auto;
     }
@@ -122,6 +139,7 @@ const DivGlobal = styled.div`
         }
     }
 
+
     ul {
     list-style: none;
     display: flex;
@@ -135,6 +153,12 @@ const DivGlobal = styled.div`
     padding: 14px 36px 14px 0;
 
     @media (max-width: 768px) {
+        padding: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         padding: 0;
         margin-left: 0;
         width: 100%;

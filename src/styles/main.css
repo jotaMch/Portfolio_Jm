@@ -358,20 +358,9 @@ header li:hover .front-text {
   }
 
 
-  .img .img__flex {
-    width: 100%;
-    justify-content: center;
-    padding-left: 8px;
-  }
-
-
-  .borda-bola .borda-solida {
-    height: 98px;
-  }
 
 /* ///////////////////////////////////////////////////////////////// */
 .img {
-    flex-direction: column-reverse;
     width: 90%;
     height: 560px;
     box-shadow: none;
@@ -379,7 +368,7 @@ header li:hover .front-text {
 
   .area__perfil {
     align-items: end;
-    padding-bottom: 68px;
+    padding-bottom: 0;
   }
 
   p.text-sobre {

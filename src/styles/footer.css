@@ -1,16 +1,21 @@
 
+.border_footer {
+    height: 4px;
+    width: 180px;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
-    background-color: rgb(24, 24, 24);
     height: 250px;
     margin-bottom: 32px;
-    box-shadow: inset 0px 0px 12px 8px rgb(3, 3, 3);
 }
-
 
 footer ul {
     list-style: none;
@@ -37,7 +42,7 @@ footer p {
 }
 
 footer .actual-text {
-    color: #DA3015;
+    color: aquamarine;
     box-shadow: 0 0 8px rgb(9, 9, 9);
     border-radius: 30px;
     padding: 2px 6px 4px;
@@ -49,12 +54,10 @@ footer .actual-text:hover {
 }
 
 footer > ul:nth-child(1) {
-    background-color: rgb(24, 24, 24);
     padding: 8px;
     height: 40px;
     align-items: center;
     border-radius: 30px;
-    box-shadow: inset 0 0 6px 2px rgb(2, 2, 2);
 }
 
 .number-tell {
@@ -112,7 +115,7 @@ textarea::-webkit-scrollbar {
 }
 
 textarea::-webkit-scrollbar-thumb {
-    background-color: #DA3015; /* Cor da thumb (WebKit) */
+    background-color: aquamarine; /* Cor da thumb (WebKit) */
     border-radius: 4px; /* Borda arredondada da thumb (WebKit) */
 }
 

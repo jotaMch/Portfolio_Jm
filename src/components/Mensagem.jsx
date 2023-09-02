@@ -108,8 +108,9 @@ export default function Mensagem() {
 
 
 const StyledSubmitButton = styled.button`
-    background-color: #DA3015;
-    color: white;
+    background-color: aquamarine;
+    color: #000;
+    font-weight: bold;
     padding: 8px 20px;
     border: none;
     border-radius: 5px;
@@ -119,14 +120,14 @@ const StyledSubmitButton = styled.button`
 
     &:hover {
         background-color: transparent;
-        border: 2px solid #DA3015;
-        color: #f16049;
+        border: 2px solid aquamarine;
+        color: aquamarine;
     }
 `;
 
 
 const TextError = styled.p `
-    color: #DA3015;
+    color: aquamarine;
     font-size: 12px;
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import CvDocx from "../assets/curriculo_Janderson.docx";
 import { BiChevronDown } from "react-icons/bi";
-import { AiOutlineAlert } from "react-icons/ai";
+/* import { AiOutlineAlert } from "react-icons/ai"; */
 
 function SectionInicio() {
     return (
@@ -18,7 +18,7 @@ function SectionInicio() {
                         e interativas para transformar ideias 
                         em realidade.
                     </p>
-                    <p style={{color: 'red', fontSize: 16}}> Portfólio está sendo atualizado < AiOutlineAlert /> </p>   
+                    {/* <p style={{color: 'red', fontSize: 16}}> Portfólio está sendo atualizado < AiOutlineAlert /> </p>    */}
                     <div class="button">
                         <a href={CvDocx} >
                             <div class="text">About me</div>
