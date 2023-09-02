@@ -45,6 +45,12 @@ const EducacaoText = styled.p `
     align-items: center;
     color: #fff;
     padding-top: 180px;
+
+    nav {
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    }
     
     @media (max-width: 768px) {
         flex-direction: column;
