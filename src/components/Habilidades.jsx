@@ -5,25 +5,40 @@ import { BiBadgeCheck } from "react-icons/bi";
 import { BiChevronsRight } from "react-icons/bi";
 import { BiSolidMouseAlt } from "react-icons/bi";
 
+import { BiLogoJavascript } from "react-icons/bi";
+
+import { BiLogoJquery } from "react-icons/bi";
+import { FaGrunt } from "react-icons/fa";
+import { FaGulp } from "react-icons/fa";
+import { FaLess } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+
+
 function Habilidades() {
     return (
         <div className='experiencia'>
+            
             <div className="border-skills" id='skills'>
                 <h3>Skills</h3>
                 </div>
+                
                     <div className='experiencia__cor'>
                         <ul className='experiencia__skills'>
                             
-                            <li> <div className="medida"></div> {/* <img  src={Skills.html} alt="" /> */}<p>HTML<br/> 80%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.css} alt="" /> */}<p>CSS <br/> 86%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.javascript} alt="" /> */}<p>JavaScrip <br/> 68%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.bootstrap} alt="" /> */}<p>Bootstrap <br/> 68%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.jquery} alt="" /> */}<p>Jquery <br/> 60%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.sass} alt="" /> */}<p>SASS <br/> 70%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.less} alt=""/> */}<p>LESS <br/> 66%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.gulp} alt=""/> */}<p>Gulp <br/> 52%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.grunt} alt="" /> */}<p>Grunt <br/> 40%</p></li>
-                            <li> <div className="medida"></div> {/* <img  src={Skills.react} alt="" /> */}<p>React <br/> 40%</p></li>
+                            <li> < FaHtml5 /> </li>
+                            <li> < FaCss3Alt /> </li>
+                            <li> < BiLogoJavascript /> </li>
+                            <li> < FaBootstrap /> </li>
+                            <li> < BiLogoJquery /></li>                            
+                            <li> < FaSass /></li>
+                            <li> < FaLess /> </li>
+                            <li> < FaGulp /> </li>
+                            <li> < FaGrunt /> </li>
+                            <li> < FaReact /> </li>
                             
                         </ul>
                             <div className="experiencia__text">
@@ -53,6 +68,7 @@ function Habilidades() {
                                     em que participo, buscando criar ideias melhores.
                                 
                                     </p>
+                                    
                                 </div>
                             </div>
                         </div>

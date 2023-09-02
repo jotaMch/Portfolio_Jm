@@ -8,15 +8,15 @@ function Educacao() {
         <div className="educacao">
             <div className="educacao__card">
                 <div className="educacao__card--color">                    
-                    <h3>Educação</h3>
+                    <h3>Cursos</h3>
                     <div className="educacao__card--cont">
                         <ul className='cursos'>
+                            <li><BiBookOpen /> React do zero ao pro - Estudanto / EBAC</li>
+                            <li><BiBookOpen /> Desenvolvimento web - Estudando / Rockseat</li>
                             <li><BiBadgeCheck/> Fundamento da gestão de projetos - Completo / FM2S</li>
                             <li><BiBadgeCheck/> Nano Course User Experience - Completo / FIAP</li>
                             <li><BiBadgeCheck/> Introdução a programação - Completo / EBAC</li>
                             <li><BiBadgeCheck/> Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
-                            <li><BiBookOpen /> React do zero ao pro - Estudanto / EBAC</li>
-                            <li><BiBookOpen /> Desenvolvimento web - Estudando / Rockseat</li>
                         </ul>
                     </div>
                 </div> 

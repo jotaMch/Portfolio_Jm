@@ -12,13 +12,16 @@ function About() {
                 <div className="area__perfil">
                     <img className='perfil' src={Perfil} alt="imagem-perfil" />
                 </div>                          
-                <p  className='text-sobre onUp'>
-                Olá! Sou Jânderson Machado, um desenvolvedor front-end focado em React pela EBAC. 
-                Minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar desafios e 
-                aprimorar a experiência do cliente. Estou comprometido em fornecer soluções criativas e 
-                interfaces intuitivas para seus projetos.
-                Vamos colaborar para o sucesso do seu projeto!
-                </p>
+                    <div className="espaco">
+                        <p  className='text-sobre onUp'>
+                        Olá! Sou Jânderson Machado<br/> 
+                        Estudo Analise e Desenvolvimento de sistemas na Estácio, no
+                        momento estou focado em React minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar desafios e 
+                        aprimorar a experiência do cliente. Estou comprometido em fornecer soluções criativas e 
+                        interfaces intuitivas para seus projetos.
+                        Vamos colaborar para o sucesso do seu projeto!
+                        </p>
+                    </div>
 
                 <div className="mini-footer">
                 <ul>

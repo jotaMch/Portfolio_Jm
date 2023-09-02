@@ -87,17 +87,16 @@ header li {
 
 
 .position-class .img {
-  background-color: #EFF1EA; 
+  background-color: rgb(24, 24, 24); 
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 88%;
-  height: 260px;
-  margin: 0 auto;
+  height: 360px;
+  margin: 100px auto 200px;
   position: relative;
-  box-shadow: inset 0px 0px 8px 4px #a0a0a0;
 
-  border: 5px solid #e0e0e0;
+  border: 3px solid rgb(63, 63, 63);
   border-radius: 14px;
 /*   background-image: linear-gradient(45deg, #ff0000 20%, rgb(25, 25, 25) 40%); 
  */}
@@ -117,24 +116,24 @@ header li {
   width: 140px;
   filter:sepia(20%);
   border-radius: 50%;
-  border: 2px solid #6e6e6e;
+  border: 2px solid rgb(63, 63, 63);
   box-shadow: inset 0 0 8px 8px rgba(0, 0, 0, 1); /* Valores negativos para criar a borda interna */
 
 }
-
 
 p.text-sobre {
   color: #EFF1EA;
   width: 60%;
   display: flex;
   background-color: rgb(25, 25, 25);
+  box-shadow: 0 0 4px rgb(63, 63, 63);
   padding: 0 18px;
-  border-radius: 0 12px 0 44px;
-  height: 84%;
+  border-radius: 40px 4px 4px 40px ;
+  height: 60%;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20%;
+  right: 8px;
 } 
 
 .img .mini-footer {
@@ -158,7 +157,7 @@ p.text-sobre {
 .mini-footer svg {
   height: 24px;
   width: 24px;
-  color: rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
   transition: transform ease 0.5s;
 }
 
@@ -436,10 +435,12 @@ header li:hover .front-text {
   }
 
   p.text-sobre {
-    border-radius: 14px 14px 44px 44px;
-    width: 100%;
+    border-radius: 10px 10px 44px 44px;
+    width: 80%;
     height: 54%;
-    left: 0;
+    top: 2%;
+    left: 50%;
+    translate: -50%;
   }
 
   .mini-footer ul {
