@@ -19,13 +19,12 @@ function SectionInicio() {
                         em realidade.
                     </p>
                     {/* <p style={{color: 'red', fontSize: 16}}> Portfólio está sendo atualizado < AiOutlineAlert /> </p>    */}
-                    <div class="button">
-                        <a href={CvDocx} >
-                            <div class="text">About me</div>
-                            <span class="icon">
-                                <BiChevronDown />
-                            </span>
-                        </a>
+                    <div>
+                        
+                        <span class="icon">
+                            <BiChevronDown />
+                        </span>
+                        
                     </div>
             </div>
 

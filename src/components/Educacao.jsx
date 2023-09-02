@@ -25,7 +25,7 @@ function Educacao() {
                 <h3>Meu objetivo</h3>
                 <div className="border-aqua"></div>
                 <p>
-                Desejo contribuir com equipes criativas, onde possa trabalhar em projetos 
+                Desejo contribuir com equipes criativas, onde irei trabalhar em projetos 
                 desafiadores que me permitam aprender e crescer profissionalmente. Estou 
                 comprometido em seguir as melhores práticas de desenvolvimento. Acima de tudo, 
                 criar produtos digitais com melhor performace, que atendam às necessidades dos 
@@ -41,7 +41,7 @@ export default Educacao;
 
 const EducacaoText = styled.p `
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: #fff;
     padding-top: 180px;
