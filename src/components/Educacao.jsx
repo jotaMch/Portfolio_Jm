@@ -88,15 +88,10 @@ const EducacaoText = styled.p `
 
 
 
-/* 
-Boa tarde!
+/* Boa noite!
 
-Espero que esteja tudo bem com você. 
-Hoje, reservei um tempo para aprimorar meu portfólio 
-e gostaria de compartilhá-lo com a comunidade aqui. No meu portfólio,  reuni alguns dos projetos que desenvolvi.
+Espero que esteja tudo bem com vocês. Hoje, reservei um tempo para aprimorar meu portfólio e gostaria de compartilhá-lo com a comunidade aqui. No meu portfólio,  reuni alguns dos projetos que desenvolvi durante estudos.
 
-Para cria-lo utilizei uma variedade de tecnologias, 
-incluindo ReactJS e Vite.js para garantir um desempenho otimizado e uma 
-experiência de usuário agradável. Além disso, explorei a criação de estilos
-com a biblioteca Styled-components e React icons, proporcionando um design 
-atraente e coeso em toda a aplicação.  */
+
+
+Para cria-lo utilizei as tecnologias ReactJS e Vite.js para garantir um desempenho otimizado e uma experiência de usuário agradável. Além disso, explorei a criação de estilos com a biblioteca Styled-components e React icons, proporcionando mais produtividade no meu código. */
