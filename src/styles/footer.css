@@ -1,20 +1,21 @@
 
 .border_footer {
     height: 4px;
-    width: 180px;
+    width: 70%;
     border-radius: 30px;
     margin: 0 auto;
     background-color: aquamarine;
 }
 
 footer {
+    background-color: rgb(0,0,0,0.8);  
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
     height: 250px;
-    margin-bottom: 32px;
 }
 
 footer ul {

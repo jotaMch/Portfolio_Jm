@@ -14,11 +14,11 @@ h3 {
 }
 
 body {
-  background-color: rgb(12, 12, 12);
- /*  background-repeat: no-repeat;
-  background-size: cover;
-  height: 80vh;
-  background-image: url(https://cdn.pixabay.com/photo/2018/01/17/20/22/analytics-3088958_1280.jpg); */
+  background-color: #05070A;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-image: url(https://cdn.pixabay.com/photo/2020/11/20/05/45/artificial-intelligence-5760546_1280.jpg); 
 }
 
 
@@ -29,7 +29,7 @@ main {
 }
 
 .container {
-  background-color: rgb(12, 12, 12);   
+  background-color: rgb(0,0,0,0.8);   
   width: 1100px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(24, 24, 24);;
+  background-color: rgb(0,0,0,0.8);
   margin: 0 auto ;
   padding: 10px 14px;
   position: relative;
@@ -59,7 +59,8 @@ header li {
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: rgb(24, 24, 24)
+  background-image: linear-gradient(to top,  rgba(0,0,0,0.1), rgba(0,0,0,0.0),);
+  background-repeat: no-repeat;
 }
 
 
@@ -93,7 +94,7 @@ header li {
   justify-content: space-between;
   height: 560px;
   margin: 0 auto 200px;
-  background-color: rgb(24, 24, 24);
+  background-color: rgba(0,0,0,0.1);
   border-radius: 0 0 10px 40%;
 }
 
@@ -104,7 +105,7 @@ header li {
   margin: 0 auto;
   width: 84%;
   padding: 2px;
-  background-image: linear-gradient(40deg, aquamarine 14%, rgb(24, 24, 24)10%, rgb(24, 24, 24));
+  background-image: linear-gradient(40deg, aquamarine 14%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
 }
 
 
@@ -112,7 +113,7 @@ header li {
   display: flex;
   align-items: end;
   justify-content: space-between;
-  background-color: rgb(24, 24, 24);
+  background-color: rgba(0,0,0,0.1);
   margin: 0;
   width: 100%;
   height: 100%;
@@ -265,7 +266,8 @@ li .front-text {
 header li:hover .front-text {
   background-size: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, rgb(24, 24, 24), rgb(250, 52, 3));
+  background-image: linear-gradient(to right, rgb(0,0,0,0.1), aquamarine);
+  border-radius: 30px;
 }
 
 /* ------------button cv abaixo------------ */
@@ -400,10 +402,11 @@ header li:hover .front-text {
   header img {
     position: absolute;
     left: 0;
+    top: 10px;
   }
 
   header nav {
-    padding-bottom: 10px;
+    padding-bottom: 0;
     width: 100%;
   }
 

@@ -34,8 +34,8 @@ function App() {
           <Educacao />
             <Projects />            
           < Mensagem />  
-          </div>
           <Footer />
+          </div>
     </div>
     </>
   )

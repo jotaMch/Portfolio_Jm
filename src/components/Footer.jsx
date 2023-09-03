@@ -19,8 +19,8 @@ function Footer(){
     };
     return(
         <div>
-            <div className="border_footer"></div>
             <footer id="contact">
+            <div className="border_footer"></div>
 
                 <ul>
                     <li data-text="Home" onClick={() => scrollToSection('home')}>

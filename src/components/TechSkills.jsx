@@ -33,6 +33,7 @@ export default  function Techskill() {
                 </ul>
             </nav>
             <StyledText >
+                <div className="style">
                 <h3>Especialização</h3>
                 <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <p >                                
@@ -41,6 +42,7 @@ export default  function Techskill() {
                         Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
                         Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
                     </p>
+                </div>
             </StyledText>   
         </DivGlobal>
     )
@@ -50,6 +52,18 @@ const StyledText = styled.div`
     width: 50%;
     color: #fff;
     padding-left: 90px;
+
+    .style {
+        width: 450px;
+        background-color: rgb(0,0,0,0.9);
+        padding: 24px;
+        border-radius: 4px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            padding: 0;
+        }
+    }
 
     p {
         width: 400px;
@@ -119,6 +133,7 @@ const Placeholder = styled.div`
 const DivGlobal = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 150px;
 
     nav {
             margin-left: none;
@@ -144,8 +159,8 @@ const DivGlobal = styled.div`
     list-style: none;
     display: flex;
     justify-content: space-between;
-    height: 500px;
-    width: 50%;
+    min-height: 380px;
+    width: 60%;
     flex-wrap: wrap;
     gap: 2px;
     align-items: center;
@@ -158,10 +173,11 @@ const DivGlobal = styled.div`
         width: 100%;
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        padding: 0;
-        margin-left: 0;
-        width: 100%;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        
+        margin-left: auto;
+        width: 90%;
+        gap: 0;
     }
 }
 
