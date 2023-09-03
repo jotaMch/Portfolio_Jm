@@ -25,6 +25,15 @@ footer ul {
     margin: 8px auto;
 }
 
+footer .contact {
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 8px auto;
+}
+
 footer svg {
     height: 24px;
     width: 24px;

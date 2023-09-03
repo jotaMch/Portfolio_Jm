@@ -50,7 +50,7 @@ function Footer(){
                     Desenvolvido por Jânderson Machado
                 </p>
                 
-                <ul>
+                <ul className="contact">
                     <li>
                         <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
                             <BiLogoLinkedin />
