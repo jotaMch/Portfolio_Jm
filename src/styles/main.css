@@ -6,7 +6,7 @@
 }
 
 p, li {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 h3 {
@@ -94,7 +94,7 @@ header li {
   height: 560px;
   margin: 0 auto 200px;
   background-color: rgb(24, 24, 24);
-  border-radius: 0% 35% 46% / 0% 0% 22% 74%;
+  border-radius: 0 0 10px 40%;
 }
 
 .img__content {
@@ -110,7 +110,7 @@ header li {
 
 .area__perfil {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
   background-color: rgb(24, 24, 24);
   margin: 0;

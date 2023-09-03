@@ -7,11 +7,8 @@ function SectionInicio() {
     return (
         <div id='home' className='flex-inicio'>
             <div className='name-text'>
-                <h1 style={{ fontFamily: 'Sarabun, sem serifa',
-                        fontWeight: 200,
-                        }}><span style={{ fontFamily: 'Sarabun, sem serifa'}} 
-                        className='destaque-color'>
-                    Front-end</span> Developer
+                <h1 style={{ fontFamily: 'Sarabun, sem serifa',fontWeight: 200,}}>
+                    Desenvolvedor <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'>Front-end</span> 
                 </h1>
                     <p>
                         Desenvolvendo experiências digitais 

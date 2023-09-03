@@ -33,7 +33,7 @@ export default  function Techskill() {
                 </ul>
             </nav>
             <StyledText >
-                <h3>Espertise</h3>
+                <h3>Especialização</h3>
                 <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <p >                                
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
@@ -86,7 +86,7 @@ const StyledIcon = styled.div`
 
     svg {
         color:rgb(24, 24, 24);
-        filter: drop-shadow(0 0 2px aquamarine);
+        filter: drop-shadow(0 0 1px aquamarine);
         width: 90%;
         height: 90%;
     @media (max-width: 768px) {

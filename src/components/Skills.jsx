@@ -10,7 +10,7 @@ function Habilidades() {
     return (
         <div className='experiencia'>
                 <article>
-                    <h3 className='title-soft'>Soft Skills</h3>
+                    <h3 className='title-soft'>Habilidades Interpessoais</h3>
                     <div className="flex">
                         
                         <div class="card">

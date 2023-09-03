@@ -15,12 +15,12 @@ function About() {
                     <div className="area__perfil">
                         <img className='perfil' src={Perfil} alt="imagem-perfil" />                                                                     
                         <div className="espaco">
-                            <h2>About me</h2>
+                            <h2>Sobre mim</h2>
                             <div className="border_bottom"></div>
                                 <p  className='text-sobre onUp'>
                                 Olá! Sou Jânderson Machado, estudo Analise e Desenvolvimento de sistemas na Estácio. 
                                 No momento estou focado em ReactJS, minha busca contínua por aprendizado e abordagem curiosa 
-                                me motivam a enfrentar desafios e interfaces intuitivas para seus projetos.
+                                me motivam a enfrentar desafios e criar interfaces intuitivas para seus projetos.
                                 Vamos colaborar para o sucesso do seu projeto!
                                 </p>
                                 <div className="buttons-informacao">
