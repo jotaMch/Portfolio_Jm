@@ -14,8 +14,9 @@ import { FaGulp } from "react-icons/fa";
 import { FaLess } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
+import { SiStyledcomponents } from "react-icons/si";
 //grunt,less,jquery
 
 function Projects() {
@@ -28,7 +29,7 @@ function Projects() {
                         <div class="cardContainer">
                             <div class="profileDiv">
                                     <BiCloset />
-                                    Clothing Store
+                                    Loja de Roupas
                                     <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
                             </div>
                             <div class="infoDiv">
@@ -48,7 +49,7 @@ function Projects() {
                         <div class="cardContainer">
                             <div class="profileDiv">
                                     <BiSolidCar />
-                                    Motors shop
+                                    Loja de carros
                                     <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
                             </div>
                             <div class="infoDiv">
@@ -68,18 +69,29 @@ function Projects() {
                         <div class="cardContainer">
                             <div class="profileDiv">
                                     <BiBriefcaseAlt />
-                                    Focus Tourism
-                                    <div><FaHtml5/> <FaCss3Alt/> <BiLogoJavascript/></div>
+                                    Formulário
+                                    <div> < FaReact/> <SiStyledcomponents/></div>
                             </div>
-                            <div class="infoDiv">
+                            {/* <div class="infoDiv">
                                 <div class="nameDiv">
-                                    {/* <p class="name">Chris Stark</p> */}
                                     <p class="role">Focus Tourism</p>
                                 </div>
                                 <div class="socialDiv">
                                     <a href="https://github.com/jotaMch/turismo-jm"><BiLogoGithub /></a>
 
                                     <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>
+                                
+                                </div>
+                            </div> */}
+                            <div class="infoDiv">
+                                <div class="nameDiv">
+                                    {/* <p class="name">Chris Stark</p> */}
+                                    <p class="role">Registro Fácil </p>
+                                </div>
+                                <div class="socialDiv">
+                                    <a href="https://github.com/jotaMch/React_form_keys"><BiLogoGithub /></a>
+
+                                    <a href="https://react-form-keys-jm.vercel.app/">< BiLayout /></a>
                                 
                                 </div>
                             </div>
