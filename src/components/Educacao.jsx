@@ -13,7 +13,7 @@ function Educacao() {
             <div className="border-aqua"></div>
                 <ul className='cursos'>
                     <li><BiBookOpen /> React do zero ao pro - Estudanto / EBAC</li>
-                    <li><BiBookOpen /> Desenvolvimento web - Estudando / Rockseat</li>
+                    <li><BiBadgeCheck /> Desenvolvimento web - Completo / Rockseat</li>
                     <li><BiBadgeCheck/> Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
                     <li><BiBadgeCheck/> Introdução a programação - Completo / EBAC</li>
                     <li><BiBadgeCheck/> Nano Course User Experience - Completo / FIAP</li>
