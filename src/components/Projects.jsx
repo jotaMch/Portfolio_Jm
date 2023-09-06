@@ -78,9 +78,7 @@ function Projects() {
                                 </div>
                                 <div class="socialDiv">
                                     <a href="https://github.com/jotaMch/turismo-jm"><BiLogoGithub /></a>
-
-                                    <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>
-                                
+                                    <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>                                
                                 </div>
                             </div> */}
                             <div class="infoDiv">

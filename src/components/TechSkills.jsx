@@ -99,7 +99,7 @@ const StyledIcon = styled.div`
     justify-content: center;
 
     svg {
-        color:rgb(24, 24, 24);
+        color: aquamarine;
         filter: drop-shadow(0 0 1px aquamarine);
         width: 90%;
         height: 90%;
