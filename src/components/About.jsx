@@ -25,7 +25,9 @@ function About() {
                                 </p>
                                 <div className="buttons-informacao">
                                     <button className="button__about">
-                                        contate-me
+                                            <a style={{textDecoration: 'none', color: 'aquamarine'}} href="https://wa.me/552194707188">
+                                            contate-me
+                                            </a>                                    
                                     </button>
                                     <button class="button__curriculo">
                                         <a href={CvDocx} >

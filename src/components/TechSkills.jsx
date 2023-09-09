@@ -2,7 +2,7 @@ import React from "react";
 import styled from 'styled-components';
 
 import { BiLogoJavascript } from "react-icons/bi";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { SiStyledcomponents } from "react-icons/si";
 import { BiLogoJquery } from "react-icons/bi";
 import { FaGrunt } from "react-icons/fa";
 import { FaGulp } from "react-icons/fa";
@@ -28,7 +28,7 @@ export default  function Techskill() {
                     <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGulp />  </StyledIcon>  </li>
                     <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGrunt />  </StyledIcon>  </li>
                     <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaReact />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoTailwindCss />  </StyledIcon>  </li>    
+                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < SiStyledcomponents />  </StyledIcon>  </li>    
                     <li><Placeholder /></li> 
                 </ul>
             </nav>
@@ -39,7 +39,7 @@ export default  function Techskill() {
                     <p >                                
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
-                        Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
+                        Recentemente, tenho me concentrado em Vite, Styled-components e API REST.
                         Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
                     </p>
                 </div>

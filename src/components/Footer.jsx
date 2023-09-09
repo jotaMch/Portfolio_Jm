@@ -67,7 +67,7 @@ function Footer(){
                         </a>
                     </li>
                     <li>
-                        <a href="https://wa.me/5521965063664">
+                        <a href="https://wa.me/552194707188">
                             <BiLogoWhatsapp />
                         </a>
                     </li> 
