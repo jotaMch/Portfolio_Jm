@@ -39,7 +39,7 @@ export default  function Techskill() {
                     <p >                                
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
-                        Recentemente, tenho me concentrado em Vite, Styled-components e API REST.
+                        Recentemente, tenho me concentrado em PHP e API REST.
                         Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
                     </p>
                 </div>
