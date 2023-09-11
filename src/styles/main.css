@@ -74,7 +74,8 @@ header li {
 }
 
 .name-text h1 {
-  font-size: 58px;
+  font-size: 62px;
+  font-weight: bold;
   color: #EFF1EA;
 }
 

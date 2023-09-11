@@ -1,11 +1,12 @@
 import React from 'react';
+import '../styles/educacao.css';
+import styled from 'styled-components';
 import { BiBadgeCheck } from "react-icons/bi";
 import { BiBookOpen } from "react-icons/bi";
 
-import styled from 'styled-components';
-import '../styles/educacao.css';
 
 function Educacao() {
+
     return (
         <EducacaoText>                
             <nav >
@@ -32,6 +33,7 @@ function Educacao() {
                 usuários e proporcionem uma experiência agradável.
                 </p> 
             </div>
+            
         </EducacaoText>
     )
 }
@@ -86,12 +88,3 @@ const EducacaoText = styled.p `
 `;
 
 
-
-
-/* Boa noite!
-
-Espero que esteja tudo bem com vocês. Hoje, reservei um tempo para aprimorar meu portfólio e gostaria de compartilhá-lo com a comunidade aqui. No meu portfólio,  reuni alguns dos projetos que desenvolvi durante estudos.
-
-
-
-Para cria-lo utilizei as tecnologias ReactJS e Vite.js para garantir um desempenho otimizado e uma experiência de usuário agradável. Além disso, explorei a criação de estilos com a biblioteca Styled-components e React icons, proporcionando mais produtividade no meu código. */

@@ -10,10 +10,11 @@ import Educacao from './components/Educacao';
 import Footer from './components/Footer';
 import Mensagem from './components/Mensagem'; 
 import Techskill from './components/TechSkills';
+/* import Carousel from './components/premios'; */
+
 
 
 function App() {
-
   return (
     <>
     <div className="app">          
@@ -32,6 +33,7 @@ function App() {
 
           <div className="container">
           <Educacao />
+          {/* < Carousel/> */}
             <Projects />            
           < Mensagem />  
           <Footer />

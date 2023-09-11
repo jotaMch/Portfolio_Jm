@@ -1,9 +1,7 @@
 import React from 'react';
 import '../styles/Habilidades.css';
 import { BiBadgeCheck } from "react-icons/bi";
-
 import { BiSolidMouseAlt } from "react-icons/bi";
-
 
 
 function Habilidades() {
