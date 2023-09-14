@@ -99,7 +99,7 @@ function Projects() {
                         <div class="cardContainer">
                             <div class="profileDiv">
                                     <BiLoaderCircle />
-                                    Freelancer Kakau Makeup
+                                    E-commerce 
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
