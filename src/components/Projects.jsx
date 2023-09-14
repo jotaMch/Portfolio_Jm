@@ -81,6 +81,7 @@ function Projects() {
                                     <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>                                
                                 </div>
                             </div> */}
+                            
                             <div class="infoDiv">
                                 <div class="nameDiv">
                                     {/* <p class="name">Chris Stark</p> */}
@@ -102,18 +103,17 @@ function Projects() {
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
-                                    {/* <p class="name">Em desenvolvimento</p> */}
-                                    <p class="role">Em desenvolvimento</p>
+                                    <p class="role">Project E-commerce</p>
                                 </div>
                                 <div class="socialDiv">
-                                    <a href="#linkdin"><BiLogoGithub /></a>
+                                    <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
 
-                                    <a href="#insta">< BiLayout /></a>
+                                    <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
                                 
                                 </div>
                             </div>
                         </div>                                      
-                    
+                
                 </div>
 
             </div>
