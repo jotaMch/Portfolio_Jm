@@ -68,6 +68,24 @@ function Projects() {
 
                         <div class="cardContainer">
                             <div class="profileDiv">
+                                    <BiCloset />
+                                    E-commerce 
+                            </div>
+                            <div class="infoDiv">
+                                <div class="nameDiv">
+                                    <p class="role">Project E-commerce</p>
+                                </div>
+                                <div class="socialDiv">
+                                    <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
+
+                                    <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
+                                
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="cardContainer">
+                            <div class="profileDiv">
                                     <BiBriefcaseAlt />
                                     Formulário
                                     <div> < FaReact/> <SiStyledcomponents/></div>
@@ -84,7 +102,6 @@ function Projects() {
                             
                             <div class="infoDiv">
                                 <div class="nameDiv">
-                                    {/* <p class="name">Chris Stark</p> */}
                                     <p class="role">Registro Fácil </p>
                                 </div>
                                 <div class="socialDiv">
@@ -94,25 +111,7 @@ function Projects() {
                                 
                                 </div>
                             </div>
-                        </div>  
-
-                        <div class="cardContainer">
-                            <div class="profileDiv">
-                                    <BiLoaderCircle />
-                                    E-commerce 
-                            </div>
-                            <div class="infoDiv">
-                                <div class="nameDiv">
-                                    <p class="role">Project E-commerce</p>
-                                </div>
-                                <div class="socialDiv">
-                                    <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
-
-                                    <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
-                                
-                                </div>
-                            </div>
-                        </div>                                      
+                        </div>                                       
                 
                 </div>
 
