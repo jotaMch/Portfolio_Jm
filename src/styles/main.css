@@ -13,13 +13,25 @@ h3 {
   letter-spacing: 2px; /* Ajuste o valor conforme necessário */
 }
 
-body {
-  background-color: #05070A;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  background-image: url(https://cdn.pixabay.com/photo/2020/11/20/05/45/artificial-intelligence-5760546_1280.jpg); 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: brightness(80%);
+  z-index: -1; /* Garante que esteja atrás do conteúdo da página */
 }
+
+body {
+  background-color: transparent; /* Defina a cor de fundo como transparente para a imagem de fundo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(https://cdn.pixabay.com/photo/2022/12/03/23/00/cyber-brain-7633488_1280.jpg);
+}
+
 
 
 main {
@@ -337,7 +349,9 @@ header li:hover .front-text {
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {    
-  
+  .app {
+    margin: 0 auto;
+  }
   header img {
     position: absolute;
     left: 0;
@@ -356,17 +370,19 @@ header li:hover .front-text {
   }
 
   .name-text p {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   main {
-    width: 90%;
+    width: 100%;
     border: none;
   }
 
+    
+  .img__content {
+    background-image: linear-gradient(38deg, aquamarine 17%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
+  }
 
-
-/* ///////////////////////////////////////////////////////////////// */
 .img {
     width: 90%;
     height: 560px;
@@ -439,14 +455,19 @@ header li:hover .front-text {
   }
 
   .name-text p {
-    font-size: 11px;
+    font-size: 14px;
   }
 
   main {
     width: 100%;
     border: none;
   }
-/* ///////////////////////////////////////////////////////////////// */
+
+  
+.img__content {
+  background-image: linear-gradient(38deg, aquamarine 17%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
+}
+
 
 .img {
   

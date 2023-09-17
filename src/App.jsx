@@ -17,7 +17,7 @@ import Techskill from './components/TechSkills';
 function App() {
   return (
     <>
-    <div className="app">          
+    <div >          
       <main>
         <div className="container">
           <Header />

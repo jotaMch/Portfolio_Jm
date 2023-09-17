@@ -82,8 +82,9 @@ const StyledText = styled.div`
 
     
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        
         padding-left: 38px;
+
+        margin-left: auto;
         p {
             width: 90%;
         }
@@ -152,6 +153,15 @@ const DivGlobal = styled.div`
             margin-top: 30px;
             width: 100%;
         }
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        flex-direction: column;
+        width: 100%;
+        .nav__style {
+            margin-right: auto;
+        }
+
     }
 
 

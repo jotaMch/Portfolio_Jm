@@ -7,10 +7,11 @@ import { BiCloset } from "react-icons/bi";
 import { BiSolidCar } from "react-icons/bi";
 import { BiBriefcaseAlt } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
+import { BiLogoTailwindCss } from "react-icons/bi";
 
 import { BiLogoJquery } from "react-icons/bi";
 import { FaGrunt } from "react-icons/fa";
-import { FaGulp } from "react-icons/fa";
+import { SiVite } from "react-icons/si";
 import { FaLess } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
@@ -70,6 +71,7 @@ function Projects() {
                             <div class="profileDiv">
                                     <BiCloset />
                                     E-commerce 
+                                    <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
                             </div>
                             <div class="infoDiv">
                                 <div class="nameDiv">
