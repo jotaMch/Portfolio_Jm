@@ -10,7 +10,7 @@ header {
 
 .hamburguer .line {
     display: block;
-    width: 22px;
+    width: 32px;
     height: 3px;
     background-color: #EFF1EA;
     margin-block: 5px;
@@ -39,7 +39,6 @@ header {
 
 .hamburguer.active .line:nth-child(3) {
     transform: translateY(-8px) rotate(45deg);
-    width: 22px;
 } 
 
 
@@ -67,8 +66,8 @@ ul.nav-list.visible {
         background-color: transparent;
         border: none;
         position: absolute;
-        right: 10px;
-        top: 18px;
+        right: 12px;
+        top: 28px;
         display: block;
     }
 
