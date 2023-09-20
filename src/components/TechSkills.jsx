@@ -52,9 +52,10 @@ const StyledText = styled.div`
     width: 50%;
     color: #fff;
     padding-left: 90px;
+    margin-left: auto;
 
     .style {
-        width: 450px;
+        width: 100%;
         background-color: rgb(0,0,0,0.9);
         padding: 24px;
         border-radius: 4px;

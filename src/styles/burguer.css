@@ -1,8 +1,4 @@
 
-header {
-    position: relative;
-}
-
 .hamburguer {
     display: none;
 }
@@ -12,7 +8,7 @@ header {
     display: block;
     width: 32px;
     height: 3px;
-    background-color: #EFF1EA;
+    background-color: #000000;
     margin-block: 5px;
     position: relative;
     border-radius: 4px;
