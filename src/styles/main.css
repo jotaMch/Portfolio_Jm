@@ -50,14 +50,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #eff1ea;
+  background-color: #eff1eaeb;
   backdrop-filter: blur(80%); /* Aplicando o blur no fundo */
   margin: 0 auto ;
   padding: 10px 14px;
   position: fixed;
-  top: 10px;
+  top: 2%;
+  left: 50%;
+  translate: -50%;
   border-radius: 30px;
-  width: 1100px;
+  width: 94%;
   z-index: 80;
 }
 
