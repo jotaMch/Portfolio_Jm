@@ -65,6 +65,8 @@ header {
 
 header img {
   padding: 10px;
+  background-color: #000000;
+  border-radius: 100%;
 }
 
 header li {
