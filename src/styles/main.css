@@ -22,6 +22,7 @@ body::before {
   height: 100%;
   filter: brightness(80%);
   z-index: -1; /* Garante que esteja atrás do conteúdo da página */
+  background-color: rgb(0,0,0,0.8);
 }
 
 body {
@@ -59,7 +60,8 @@ header {
   left: 50%;
   translate: -50%;
   border-radius: 30px;
-  width: 94%;
+  max-width: 1100px;
+  width: 100%;
   z-index: 80;
 }
 
@@ -107,7 +109,7 @@ header li:hover .front-text {
 
 
 .name-text {
-  width: 80%;
+  width: 50%;
   text-align: center;
 }
 
@@ -465,7 +467,7 @@ header li:hover .front-text {
   }
 
   .name-text {
-    width: 100%;
+    width: 80%;
   }
 
   .name-text h1 {
