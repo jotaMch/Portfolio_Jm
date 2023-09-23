@@ -28,13 +28,15 @@ const handleMenuItemClick = () => {
 return (
 <div>
 <header>
-        <img src={Logo} alt="logo jm" />
+        <div className="whitee">
+            <img src={Logo} alt="logo jm" />
+        </div>
         <BurguerCode toggleNav={toggleNav} isActive={isVisible} />
         
         < nav>
             <ul 
             className={`nav-list ${isVisible ? 'visible' : ''}`}
-            style={{ maxHeight: isVisible ? '500px' : '0', opacity: isVisible ? 1 : 0 }}
+            style={{ maxHeight: isVisible ? '500px' : '0', opacity: isVisible ? 1 : 0, backgroundColor: "#EFF1EA", borderRadius: 30 }}
             >
                 <li data-text="Home" onClick={() => {handleMenuItemClick(); scrollToSection('home')}}>
                     <span className="actual-text">Home</span>
