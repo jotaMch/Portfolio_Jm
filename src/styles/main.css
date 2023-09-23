@@ -54,7 +54,8 @@ header {
   background-color: #eff1eaeb;
   backdrop-filter: blur(80%); /* Aplicando o blur no fundo */
   margin: 0 auto ;
-  padding: 0px 14px 0 0;
+  padding: 22px 14px 2px px;
+  border: 1px solid #eff1eabf;
   position: fixed;
   top: 2%;
   left: 50%;
@@ -70,7 +71,8 @@ header {
 .whitee {
   background-color: #EFF1EA;
   width: 50%;
-  height: 100%;
+  height: 92%;
+  margin-left: 2px;
   border-radius: 30px;
   display: flex;
   align-items: center;
@@ -86,10 +88,12 @@ header img {
 ul.telaG {
   background-color: #000000;
   height: 100%;
+  margin-right: 8px;
 } 
 
 ul.telaG li {
   color: #EFF1EA;
+  border-radius: 30px;
 }
 
 header li {
@@ -393,6 +397,17 @@ header li:hover .front-text {
     left: 0;
   }
 
+  
+  .whitee {
+    background-color: #EFF1EA;
+    width: 26%;
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+  }
+
   .container {
     width: 100%;
   }
@@ -465,6 +480,7 @@ header li:hover .front-text {
     border-radius: 30px;
     display: flex;
     align-items: center;
+    margin-left: 0px;
   }
 
   header img {
