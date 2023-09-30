@@ -9,7 +9,7 @@ function Educacao() {
 
     return (
         <EducacaoText>                
-            <nav >
+            <nav className='obj' >
             <h3>Certificações e estudos</h3>
             <div className="border-aqua"></div>
                 <ul className='cursos'>
@@ -43,7 +43,7 @@ export default Educacao;
 
 const EducacaoText = styled.p `
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
     padding-top: 180px;
@@ -70,15 +70,28 @@ const EducacaoText = styled.p `
             background-color: aquamarine;
         }
 
+    @keyframes obj {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 -14px 20px -20px rgba(255, 255, 255, 0.35), 0 14px 20px -20px rgba(255, 255, 255, 0.314);
+    }
+    }
+
     .obj {
-        width: 400px;
+        animation: obj 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        padding: 22px;
+        width: 46%;
+        min-height: 243px;
         @media (max-width: 768px) {
             width: 90%;
             margin-top: 28px;
         }
         
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        width: 44%;
+        width: 46%;
+        min-height: 280px;
     }
     }
 

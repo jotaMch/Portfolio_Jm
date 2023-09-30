@@ -17,27 +17,26 @@ import Techskill from './components/TechSkills';
 function App() {
   return (
     <>
-    <div >          
+    <div>         
       <main>
+            <SectionInicio />
+            <About />
         <div className="container">
           <Header />
-          <SectionInicio />
+          <div className='flex-inicio'>
+          </div>
         </div>
       </main>
       <div className="container">
-            <About />
+            <Educacao />
             <Habilidades />  
           </div>
-          
             < Techskill />     
-
           <div className="container">
-          <Educacao />
-          {/* < Carousel/> */}
             <Projects />            
           < Mensagem />  
-          <Footer />
           </div>
+          <Footer />
     </div>
     </>
   )

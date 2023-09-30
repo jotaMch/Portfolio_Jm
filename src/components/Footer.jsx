@@ -23,10 +23,10 @@ function Footer(){
             <div className="border_footer"></div>
 
                 <ul>
-                    <li data-text="Home" onClick={() => scrollToSection('home')}>
+                    {/* <li data-text="Home" onClick={() => scrollToSection('home')}>
                         <span className="actual-text">Home</span>
                         <span className="front-text"></span>
-                    </li>
+                    </li> */}
                     <li data-text="About" onClick={() => scrollToSection('about')}>
                         <span className="actual-text">About</span>
                         <span className="front-text"></span>

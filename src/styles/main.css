@@ -13,36 +13,19 @@ h3 {
   letter-spacing: 2px; /* Ajuste o valor conforme necessário */
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  filter: brightness(80%);
-  z-index: -1; /* Garante que esteja atrás do conteúdo da página */
-  background-color: rgb(0,0,0,0.8);
-}
 
 body {
-  background-color: transparent; /* Defina a cor de fundo como transparente para a imagem de fundo */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-image: url(../assets/fundoTech.jpg);
+  background-color: #0d0d0d;
 }
-
-
 
 main {
   border-top: none;
   margin: 0 auto;
-  width: 1100px;
+  /* width: 1100px; */
 }
 
 .container {
-  background-color: rgb(0,0,0,0.8);   
+  background-color: transparent /* rgb(0,0,0,0.8) */;   
   width: 1100px;
   margin: 0 auto;
 }
@@ -122,20 +105,16 @@ header li:hover .front-text {
   border-radius: 30px;
 }
 
-
 .flex-inicio {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 80vh;
-  background-image: linear-gradient(to top,  rgba(0,0,0,0.1), rgba(0,0,0,0.0),);
-  background-repeat: no-repeat;
+  /* height: 100%; */
+  width: 100%;
 }
 
 
 .name-text {
-  width: 50%;
-  text-align: center;
+  width: 100%;
 }
 
 .name-text {
@@ -143,7 +122,7 @@ header li:hover .front-text {
 }
 
 .name-text h1 {
-  font-size: 62px;
+  font-size: 70px;
   font-weight: bold;
   color: #EFF1EA;
 }
@@ -151,19 +130,17 @@ header li:hover .front-text {
 
 .name-text p {
   color: #EFF1EA;
-  margin: 30px 0 10px;
+  margin: 0 0 50px;
 }
 
 /*^^^^^ header e inicio ^^^^^^^*/
-
-
 
 .img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 560px;
-  margin: 0 auto 200px;
+  /* height: 560px; */
+  /* margin: 0 auto 200px; */
   background-color: rgba(0,0,0,0.1);
   border-radius: 0 0 10px 40%;
 }
@@ -171,31 +148,56 @@ header li:hover .front-text {
 .img__content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
-  width: 84%;
+  width: 100%;
   padding: 2px;
-  background-image: linear-gradient(40deg, aquamarine 14%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
 }
 
+.found::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.found {
+  position: relative; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../assets/fundoTech.jpg);
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
 
 .area__perfil {
   display: flex;
+  flex-direction: row-reverse;
   align-items: end;
   justify-content: space-between;
-  background-color: rgba(0,0,0,0.1);
   margin: 0;
-  width: 100%;
+  width: 1100px;
   height: 100%;
 }
 
 .img .perfil {
-  width: 140px;
+  width: 300px;
+  height: 420px;
+  /* border-radius: 0 0 100px 100px; */
+  /* transform: rotate(16deg); */
+  transform: scaleX(-1);
+  filter: drop-shadow(0 0 4px rgba(211, 215, 214, 0.151));
 }
 
 .espaco {
   color: #EFF1EA;
-  width: 450px;
+  width: 68%;
 }
 
 .buttons-informacao {
@@ -285,34 +287,8 @@ header li:hover .front-text {
   width: 80px;
   margin: 8px 0 22px;
 }
-
-
-.img .mini-footer {
-  display: flex;
-  position: absolute;
-  border-radius: 0 0 14px 14px;
-  width: 100%;
-  bottom: 0;
-  height: 40px;
-}
-
-.mini-footer ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  width: 30%;
-  margin: 8px auto;
-}
-
-.mini-footer svg {
-  height: 24px;
-  width: 24px;
-  color: rgb(255, 255, 255);
-  transition: transform ease 0.5s;
-}
-
-.mini-footer svg:hover {
-  transform: scale(1.6);
+.text-sobre {
+  width: 70%;
 }
 
 /* ---------- card informações acima------------ animação li do header abaixo --------------- */
@@ -429,14 +405,8 @@ header li:hover .front-text {
     border: none;
   }
 
-    
-  .img__content {
-    background-image: linear-gradient(38deg, aquamarine 17%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
-  }
-
 .img {
     width: 90%;
-    height: 560px;
     box-shadow: none;
   } 
 
@@ -515,42 +485,54 @@ header li:hover .front-text {
   .container {
     width: 100%;
   }
-
-  .name-text {
-    width: 80%;
-  }
-
-  .name-text h1 {
-    font-size: 46px;
-  }
-
-  .name-text p {
-    font-size: 14px;
-  }
-
+  
   main {
     width: 100%;
     border: none;
   }
-
   
-.img__content {
-  background-image: linear-gradient(38deg, aquamarine 17%, rgba(0,0,0,0.1)10%, rgba(0,0,0,0.1));
+  
+  .img {
+    
+    border-radius: 0 0 0px 120px;
+  }
+  
+  
+  .found {
+    height: 100%;
+  }
+  
+  .area__perfil {
+    flex-direction: column-reverse;
+    align-items: start;
+    width: 80%;
+  }
+  
+.name-text {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-.img {
-  
-  border-radius: 0 0 0px 120px;
+.name-text h1 {
+  font-size: 46px;
 }
-.area__perfil {
-  flex-direction: column-reverse;
-  align-items: start;
+
+.name-text p {
+  margin: 0;
+  font-size: 14px;
 }
 
 .espaco {
   width: 100%;
 
+}
+
+
+p.text-sobre {
+  width: 100%;
 }
 
 /*  about acima ^^^^^^^^^^^^^^^^^^^^^  */

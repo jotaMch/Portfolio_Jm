@@ -62,7 +62,7 @@ const StyledText = styled.div`
 
         @media (max-width: 768px) {
             width: 100%;
-            padding: 0;
+            background-color: #0d0d0d;
         }
     }
 
@@ -74,7 +74,7 @@ const StyledText = styled.div`
 
     
     @media (max-width: 768px) {
-        width: 90%;
+        width: 100%;
         padding-left: 0;
         p {
             width: 100%;
@@ -84,7 +84,6 @@ const StyledText = styled.div`
     
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         padding-left: 38px;
-
         margin-left: auto;
         p {
             width: 90%;
@@ -101,7 +100,7 @@ const StyledIcon = styled.div`
     justify-content: center;
 
     svg {
-        color: aquamarine;
+        color: #0d0d0d;
         filter: drop-shadow(0 0 1px aquamarine);
         width: 90%;
         height: 90%;
@@ -139,10 +138,11 @@ const DivGlobal = styled.div`
 
     nav {
             margin-left: none;
-            background-color: #000;
+            background-color: #0d0d0d;
+            background-image: linear-gradient(to right, aquamarine -500%, #0d0d0d);
             margin-top: 30px;
             width: 50%;
-            border-radius: 0 100px 100px 0;
+            border-radius: 0 50px 50px 0;
     }
     
     @media (max-width: 768px) {
@@ -150,14 +150,17 @@ const DivGlobal = styled.div`
 
         nav {
             margin-left: none;
-            background-color: #000;
-            margin-top: 30px;
+            background-color: #0d0d0d;
+            background-image: none;
+
+            margin-top: 0;
             width: 100%;
+            border-radius: 0 0 0 0;
         }
     }
     
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        flex-direction: column;
+        
         width: 100%;
         .nav__style {
             margin-right: auto;
@@ -180,8 +183,8 @@ const DivGlobal = styled.div`
 
     @media (max-width: 768px) {
         padding: 0;
-        margin-left: 0;
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1200px) {

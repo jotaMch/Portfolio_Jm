@@ -28,17 +28,21 @@ function Projects() {
                 <div className="project-class">
 
                         <div class="cardContainer">
-                            <div class="profileDiv">
+                            <div className="sobre-project"></div>
+                            <div className="profileDiv">
                                     <BiCloset />
                                     Loja de Roupas
                                     <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
                             </div>
-                            <div class="infoDiv">
-                                <div class="nameDiv">
-                                    {/* <p class="name">Chris Stark</p> */}
-                                    <p class="role">Grif Shopp</p>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    {/* <p className="name">Chris Stark</p> */}
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Grif Shopp</p>
+                                    <p style={{padding: 8}} className="role">
+                                        Um projeto de loja de roupas obtendo carossel, menu interativo, imagens, produtos e um formulario com validações em JQuery 
+                                    </p>
                                 </div>
-                                <div class="socialDiv">
+                                <div className="socialDiv">
                                     <a href="https://github.com/jotaMch/Grif-shop-jm"><BiLogoGithub /></a>
 
                                     <a href="https://grif-shop-jm.vercel.app/">< BiLayout /></a>
@@ -47,18 +51,22 @@ function Projects() {
                             </div>
                         </div>
 
-                        <div class="cardContainer">
-                            <div class="profileDiv">
+                        <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv">
                                     <BiSolidCar />
                                     Loja de carros
                                     <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
                             </div>
-                            <div class="infoDiv">
-                                <div class="nameDiv">
-                                    {/* <p class="name">Chris Stark</p> */}
-                                    <p class="role">Jota Motors</p>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    {/* <p className="name">Chris Stark</p> */}
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Jota Motors</p>
+                                    <p style={{padding: 8}} className="role">
+                                        Um projeto para venda de carros com um menu interativo e carrossel. Também com seções sobre o epaço, com cards de carros interativo com o formulário. 
+                                    </p>
                                 </div>
-                                <div class="socialDiv">
+                                <div className="socialDiv">
                                     <a href="https://github.com/jotaMch/loja_de_carros"><BiLogoGithub /></a>
 
                                     <a href="https://loja-jm.vercel.app/">< BiLayout /></a>
@@ -67,17 +75,22 @@ function Projects() {
                             </div>
                         </div>
 
-                        <div class="cardContainer">
-                            <div class="profileDiv">
+                        <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv">
                                     <BiCloset />
                                     E-commerce 
                                     <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
                             </div>
-                            <div class="infoDiv">
-                                <div class="nameDiv">
-                                    <p class="role">Project E-commerce</p>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Project E-commerce</p>
+                                    <p style={{padding: 8}} className="role">
+                                        Projeto para E-commerce, usei JavaScript puro fazendo a integração dos produtos e cards.
+                                        Fiz o uso de Tailwind para estilização, assim obtendo mais organização .
+                                    </p>
                                 </div>
-                                <div class="socialDiv">
+                                <div className="socialDiv">
                                     <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
 
                                     <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
@@ -86,27 +99,31 @@ function Projects() {
                             </div>
                         </div> 
 
-                        <div class="cardContainer">
-                            <div class="profileDiv">
+                        <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv">
                                     <BiBriefcaseAlt />
                                     Formulário
                                     <div> < FaReact/> <SiStyledcomponents/></div>
                             </div>
-                            {/* <div class="infoDiv">
-                                <div class="nameDiv">
-                                    <p class="role">Focus Tourism</p>
+                            {/* <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Focus Tourism</p>
                                 </div>
-                                <div class="socialDiv">
+                                <div className="socialDiv">
                                     <a href="https://github.com/jotaMch/turismo-jm"><BiLogoGithub /></a>
                                     <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>                                
                                 </div>
                             </div> */}
                             
-                            <div class="infoDiv">
-                                <div class="nameDiv">
-                                    <p class="role">Registro Fácil </p>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Registro Fácil </p>
+                                    <p style={{padding: 8}} className="role">
+                                        Formulário de registro de dados com as resposta mostradas em uma lista com opções de ver os detalhes em um poup-up ou resetar.
+                                    </p>
                                 </div>
-                                <div class="socialDiv">
+                                <div className="socialDiv">
                                     <a href="https://github.com/jotaMch/React_form_keys"><BiLogoGithub /></a>
 
                                     <a href="https://react-form-keys-jm.vercel.app/">< BiLayout /></a>
