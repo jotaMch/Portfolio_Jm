@@ -168,8 +168,9 @@ header li:hover .front-text {
   position: relative; 
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../assets/fundoTech.jpg);
-  height: 60vh;
+  background-position: 50% calc(50% + 14%);
+  background-image: url(../assets/fundo_Tech.webp);
+  height: 70vh;
   width: 100%;
   display: flex;
   justify-content: center;
