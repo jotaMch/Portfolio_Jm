@@ -15,7 +15,9 @@ function About() {
                 <article className="img" id="about">
                     <div className="img__content">
                         <div className="area__perfil">
-                            <img className='perfil' src={Perfil} alt="imagem-perfil" />                                                                     
+                            <div className="relativ-img">
+                                <img className='perfil' src={Perfil} alt="imagem-perfil" />  
+                            </div>                                                                   
                             <div className="espaco">
                                 <div className='name-text'>
                                     <h1 style={{ fontFamily: 'Sarabun, sem serifa',fontWeight: 200,}}>
@@ -35,7 +37,8 @@ function About() {
                                     de escrita de código e uma boa comunicação com equipes em que trabalho.
                                     Minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar 
                                     desafios e criar projetos intuitivos.
-                                    Vamos colaborar para o sucesso do seu projeto!
+                                    Vamos colaborar para o sucesso do seu projeto!                                                               
+
                                     </p>
                                     <div className="buttons-informacao onUp">
                                         <button className="button__about">

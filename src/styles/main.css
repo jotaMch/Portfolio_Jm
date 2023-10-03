@@ -170,11 +170,11 @@ header li:hover .front-text {
   background-size: cover;
   background-position: 50% calc(50% + 14%);
   background-image: url(../assets/fundo_Tech.webp);
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
 }
 
 .area__perfil {
@@ -187,14 +187,23 @@ header li:hover .front-text {
   height: 100%;
 }
 
-.img .perfil {
-  width: 300px;
-  height: 420px;
-  /* border-radius: 0 0 100px 100px; */
-  /* transform: rotate(16deg); */
-  transform: scaleX(-1);
-  filter: drop-shadow(0 0 4px rgba(211, 215, 214, 0.151));
+.relativ-img {
+  position: relative;
+  height: 220px;
+  width: 220px;
+  background-image: linear-gradient(to top, aqua, aquamarine 70%);
+  border-radius: 50% 50%  20% 20%;
 }
+
+.relativ-img .perfil {
+  width: 220px;
+  height: 280px;
+  position: absolute; 
+  bottom: 0;
+  transform: scaleX(-1);
+  filter: drop-shadow(0 0 4px rgba(211, 215, 214, 0.352));
+}
+
 
 .espaco {
   color: #EFF1EA;
@@ -498,6 +507,11 @@ header li:hover .front-text {
     border-radius: 0 0 0px 120px;
   }
   
+
+.relativ-img {
+  margin: 80px auto 0;
+}
+
   
   .found {
     height: 100%;
@@ -508,37 +522,33 @@ header li:hover .front-text {
     align-items: start;
     width: 80%;
   }
-  
-.name-text {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
+    
+  .name-text {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.name-text h1 {
-  font-size: 46px;
-}
+  .name-text h1 {
+    font-size: 46px;
+  }
 
-.name-text p {
-  margin: 0;
-  font-size: 14px;
-}
+  .name-text p {
+    margin: 0;
+    font-size: 14px;
+  }
 
-.espaco {
-  width: 100%;
+  .espaco {
+    width: 100%;
 
-}
-
-
-p.text-sobre {
-  width: 100%;
-}
-
-/*  about acima ^^^^^^^^^^^^^^^^^^^^^  */
+  }
 
 
+  p.text-sobre {
+    width: 100%;
+  }
 
 }
 

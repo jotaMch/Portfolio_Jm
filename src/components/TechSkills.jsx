@@ -18,17 +18,17 @@ export default  function Techskill() {
         <DivGlobal id="skills" >
             <nav className="nav__style" >
                 <ul >                                        
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon> < FaHtml5 /></StyledIcon> </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaBootstrap />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon>  </li>                            
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaSass /> </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaLess />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGulp />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGrunt />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaReact />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < SiStyledcomponents />  </StyledIcon>  </li>    
+                    <li title="HTML" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon> < FaHtml5 /></StyledIcon> </li>
+                    <li title="css" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon>  </li>
+                    <li title="javaScript" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon>  </li>
+                    <li title="Bootstrap" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaBootstrap />  </StyledIcon>  </li>
+                    <li title="JQuery" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon>  </li>                            
+                    <li title="SASS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaSass /> </StyledIcon>  </li>
+                    <li title="LESS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaLess />  </StyledIcon>  </li>
+                    <li title="Gulp" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGulp />  </StyledIcon>  </li>
+                    <li title="Grunt" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGrunt />  </StyledIcon>  </li>
+                    <li title="ReactJS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaReact />  </StyledIcon>  </li>
+                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon>  </li>    
                     <li><Placeholder /></li> 
                 </ul>
             </nav>
