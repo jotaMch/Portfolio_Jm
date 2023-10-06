@@ -189,19 +189,23 @@ header li:hover .front-text {
 
 .relativ-img {
   position: relative;
-  height: 220px;
-  width: 220px;
+  height: 198px;
+  width: 198px;
   background-image: linear-gradient(to top, aqua, aquamarine 70%);
-  border-radius: 50% 50%  20% 20%;
+  border-radius: 50%;
+  border: 3px solid #fff;
 }
 
 .relativ-img .perfil {
-  width: 220px;
-  height: 280px;
+  width: 200px;
+  height: 230px;
   position: absolute; 
   bottom: 0;
+  right: 0;
   transform: scaleX(-1);
   filter: drop-shadow(0 0 4px rgba(211, 215, 214, 0.352));
+  border-radius: 0% 0%  50% 44%;
+
 }
 
 

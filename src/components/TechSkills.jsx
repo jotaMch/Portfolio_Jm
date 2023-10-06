@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-
 import { BiLogoJavascript } from "react-icons/bi";
 import { SiStyledcomponents } from "react-icons/si";
 import { BiLogoJquery } from "react-icons/bi";
@@ -13,36 +12,51 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa"; 
 
-export default  function Techskill() {
+export default  function Techskill(props) {
     return (
         <DivGlobal id="skills" >
             <nav className="nav__style" >
                 <ul >                                        
-                    <li title="HTML" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon> < FaHtml5 /></StyledIcon> </li>
-                    <li title="css" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon>  </li>
-                    <li title="javaScript" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon>  </li>
-                    <li title="Bootstrap" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaBootstrap />  </StyledIcon>  </li>
-                    <li title="JQuery" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon>  </li>                            
-                    <li title="SASS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaSass /> </StyledIcon>  </li>
-                    <li title="LESS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaLess />  </StyledIcon>  </li>
-                    <li title="Gulp" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGulp />  </StyledIcon>  </li>
-                    <li title="Grunt" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaGrunt />  </StyledIcon>  </li>
-                    <li title="ReactJS" style={{width: 100, height:100, color: '#fff'}} > <StyledIcon>  < FaReact />  </StyledIcon>  </li>
-                    <li style={{width: 100, height:100, color: '#fff'}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon>  </li>    
+                    <li title="HTML" style={{width: 100, height:100}} > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
+                    <li title="css" style={{width: 100, height:100}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon> CSS</li>
+                    <li title="javaScript" style={{width: 100, height:100}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon> JavaScript </li>
+                    <li title="Bootstrap" style={{width: 100, height:100}} > <StyledIcon>  < FaBootstrap />  </StyledIcon> Bootstrap </li>
+                    <li title="JQuery" style={{width: 100, height:100}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon> JQuery </li>                            
+                    <li title="SASS" style={{width: 100, height:100}} > <StyledIcon>  < FaSass /> </StyledIcon> SASS </li>
+                    <li title="LESS" style={{width: 100, height:100}} > <StyledIcon>  < FaLess />  </StyledIcon> LESS </li>
+                    <li title="Gulp" style={{width: 100, height:100}} > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
+                    <li title="Grunt" style={{width: 100, height:100}} > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
+                    <li title="ReactJS" style={{width: 100, height:100}} > <StyledIcon>  < FaReact />  </StyledIcon> ReactJS </li>
+                    <li style={{width: 100}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
                     <li><Placeholder /></li> 
                 </ul>
             </nav>
             <StyledText >
+                
+            {!props.isEnglish && 
                 <div className="style">
                 <h3>Especialização</h3>
                 <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <p >                                
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
-                        Recentemente, tenho me concentrado em PHP e API REST.
+                        Recentemente, tenho me concentrado em Node e API REST.
                         Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
                     </p>
                 </div>
+            }
+
+            {props.isEnglish && 
+                <div className="style">
+                <h3>Specialization</h3>
+                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                    <p >                                
+                        I have dedicated myself to improving skills from HTML, CSS and JavaScript to frameworks such as
+                        Bootstrap and libraries like jQuery. Recently, I have been focusing on Node and REST API.
+                        I have been studying day after day to obtain better knowledge and good practices.
+                    </p>
+                </div>
+            }
             </StyledText>   
         </DivGlobal>
     )
@@ -143,6 +157,11 @@ const DivGlobal = styled.div`
             margin-top: 30px;
             width: 50%;
             border-radius: 0 50px 50px 0;
+            li{
+                text-align: center;
+                font-size: 10px;
+                color: aquamarine;
+            }
     }
     
     @media (max-width: 768px) {
@@ -173,7 +192,7 @@ const DivGlobal = styled.div`
     list-style: none;
     display: flex;
     justify-content: space-between;
-    min-height: 380px;
+    min-height: 450px;
     width: 60%;
     flex-wrap: wrap;
     gap: 2px;

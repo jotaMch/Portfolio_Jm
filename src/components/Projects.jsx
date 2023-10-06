@@ -20,12 +20,13 @@ import { FaBootstrap } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
 //grunt,less,jquery
 
-function Projects() {
+function Projects(props) {
     return(
         <div className="main__project" id='projects'>
+            {!props.isEnglish && 
             <div className="project">
-            <h3>Projects</h3>
-                <div className="project-class">
+                <h3>Projetos</h3>
+                    <div className="project-class">
 
                         <div class="cardContainer">
                             <div className="sobre-project"></div>
@@ -133,8 +134,99 @@ function Projects() {
                         </div>                                       
                 
                 </div>
-
             </div>
+            }
+
+            {props.isEnglish && 
+            <div className="project">
+                <h3>Projects</h3>
+                <div className="project-class">          
+                    <div className="cardContainer">
+                        <div className="about-project"></div>
+                        <div className="profileDiv">
+                        <BiCloset />
+                        Clothing Store
+                        <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                        </div>
+                        <div className="infoDiv">
+                        <div className="nameDiv">
+                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Grif Shopp</p>
+                            <p style={{ padding: 8 }} className="role">
+                            A clothing store project with carousel, interactive menu, images, products, and a form with validations in JQuery.
+                            </p>
+                        </div>
+                        <div className="socialDiv">
+                            <a href="https://github.com/jotaMch/Grif-shop-jm"><BiLogoGithub /></a>
+                            <a href="https://grif-shop-jm.vercel.app/"><BiLayout /></a>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div className="cardContainer">
+                        <div className="about-project"></div>
+                        <div className="profileDiv">
+                        <BiSolidCar />
+                        Car Store
+                        <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                        </div>
+                        <div className="infoDiv">
+                        <div className="nameDiv">
+                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Jota Motors</p>
+                            <p style={{ padding: 8 }} className="role">
+                            A project for selling cars with an interactive menu and carousel. Also with sections about space, with interactive car cards and the form.
+                            </p>
+                        </div>
+                        <div className="socialDiv">
+                            <a href="https://github.com/jotaMch/loja_de_carros"><BiLogoGithub /></a>
+                            <a href="https://loja-jm.vercel.app/"><BiLayout /></a>
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div className="cardContainer">
+                        <div className="about-project"></div>
+                        <div className="profileDiv">
+                        <BiCloset />
+                        E-commerce
+                        <div><FaHtml5/><BiLogoJavascript/> <SiVite/><BiLogoTailwindCss/> </div>
+                        </div>
+                        <div className="infoDiv">
+                        <div className="nameDiv">
+                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Project E-commerce</p>
+                            <p style={{ padding: 8 }} className="role">
+                            E-commerce project, I used pure JavaScript for product and card integration. I used Tailwind for styling, achieving better organization.
+                            </p>
+                        </div>
+                        <div className="socialDiv">
+                            <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
+                            <a href="https://jotamch.github.io/E-commerce_js/"><BiLayout /></a>
+                        </div>
+                        </div>
+                    </div> 
+                
+                    <div className="cardContainer">
+                        <div className="about-project"></div>
+                        <div className="profileDiv">
+                        <BiBriefcaseAlt />
+                        Form
+                        <div> < FaReact /> <SiStyledcomponents/> </div>
+                        </div>
+                        <div className="infoDiv">
+                        <div className="nameDiv">
+                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Easy Register</p>
+                            <p style={{ padding: 8 }} className="role">
+                            Data registration form with responses displayed in a list with options to view the details in a pop-up or reset.
+                            </p>
+                        </div>
+                        <div className="socialDiv">
+                            <a href="https://github.com/jotaMch/React_form_keys"><BiLogoGithub /></a>
+                            <a href="https://react-form-keys-jm.vercel.app/"><BiLayout /></a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            }
             
         </div>
     )

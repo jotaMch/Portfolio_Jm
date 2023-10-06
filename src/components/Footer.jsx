@@ -8,7 +8,7 @@ import { BiLogoGmail } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { BiSolidPhoneIncoming } from "react-icons/bi";
 
-function Footer(){
+function Footer(props){
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -21,12 +21,29 @@ function Footer(){
         <div>
             <footer id="contact">
             <div className="border_footer"></div>
-
+            {!props.isEnglish &&
                 <ul>
-                    {/* <li data-text="Home" onClick={() => scrollToSection('home')}>
-                        <span className="actual-text">Home</span>
+                    <li data-text="About" onClick={() => scrollToSection('about')}>
+                        <span className="actual-text">Sobre</span>
                         <span className="front-text"></span>
-                    </li> */}
+                    </li>
+                    <li data-text="Skills" onClick={() => scrollToSection('skills')}>
+                        <span className="actual-text">Habilidades</span>
+                        <span className="front-text"></span>
+                    </li>
+                    <li data-text="Project" onClick={() => scrollToSection('projects')}>
+                        <span className="actual-text">Projetos</span>
+                        <span className="front-text"></span>
+                    </li>
+                    <li data-text="Contact" onClick={() => scrollToSection('contact')}>
+                        <span className="actual-text">Contato</span>
+                        <span className="front-text"></span>
+                    </li>
+                </ul>
+            }
+
+            {props.isEnglish &&
+                <ul>
                     <li data-text="About" onClick={() => scrollToSection('about')}>
                         <span className="actual-text">About</span>
                         <span className="front-text"></span>
@@ -44,12 +61,20 @@ function Footer(){
                         <span className="front-text"></span>
                     </li>
                 </ul>
-                
+            }
 
+                {!props.isEnglish &&
                 <p>
                     Desenvolvido por Jânderson Machado
                 </p>
-                
+                }
+
+                {props.isEnglish && 
+                <p>
+                    Developed by Jânderson Machado
+                </p>
+                }
+
                 <ul className="contact">
                     <li>
                         <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">

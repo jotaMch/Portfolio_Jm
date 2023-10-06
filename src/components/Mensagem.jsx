@@ -5,7 +5,7 @@ import '../styles/mensagem.css';
 /* import { BiMailSend } from "react-icons/bi"; */
 
 
-export default function Mensagem() {
+export default function Mensagem(props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
@@ -55,14 +55,22 @@ export default function Mensagem() {
 
     return (
         <div className="main">
+            {!props.isEnglish &&
             <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
                 Entre em contato comigo!
             </h3>
+            }
+            {props.isEnglish &&
+            <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
+                Contact me!
+            </h3>
+            }
             <form
                 style={{ display: 'flex', flexDirection: 'column', paddingBottom: 80 }}
                 onSubmit={sendEmail}
             >
                 <div style={{ marginBottom: 20 }}>
+                {!props.isEnglish &&
                     <input
                         className="borderInput"
                         placeholder="Seu nome"
@@ -71,10 +79,22 @@ export default function Mensagem() {
                         value={name}
                         onChange={(e) => {setName(e.target.value); clearConfirmation();}}
                     />
+                }
+                {props.isEnglish &&
+                <input
+                    className="borderInput"
+                    placeholder="Your name"
+                    style={{ padding: 2, width: '100%' }}
+                    type="text"
+                    value={name}
+                    onChange={(e) => {setName(e.target.value); clearConfirmation();}}
+                />
+                }
                     {isError && name.trim() === '' && <TextError>Por favor, insira seu nome</TextError>}
                 </div>
 
                 <div style={{ marginBottom: 20 }}>
+                {!props.isEnglish &&
                     <input
                         className="borderInput"
                         placeholder="Seu email"
@@ -83,10 +103,23 @@ export default function Mensagem() {
                         value={email}
                         onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
                     />
+                }
+                {props.isEnglish &&
+                    <input
+                        className="borderInput"
+                        placeholder="Your email"
+                        style={{ padding: 2, width: '100%' }}
+                        type="email"
+                        value={email}
+                        onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
+                    />
+                }
+                
                     {isError && email.trim() === '' && <TextError>Por favor, insira seu email</TextError>}
                 </div>
 
                 <div>
+                    {!props.isEnglish &&
                     <textarea
                         className="borderInput"
                         style={{ width: '100%', height: 58, overflowY: 'none' }}
@@ -95,9 +128,25 @@ export default function Mensagem() {
                         type="text"
                         onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
                     />
+                    }
+                    {props.isEnglish &&
+                    <textarea
+                        className="borderInput"
+                        style={{ width: '100%', height: 58, overflowY: 'none' }}
+                        placeholder="Your message"
+                        value={message}
+                        type="text"
+                        onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
+                    />
+                    }
                     {isError && message.trim() === '' && <TextError>Por favor, insira sua mensagem</TextError>}
                 </div>
+                {!props.isEnglish &&
                 <StyledSubmitButton type="submit">Enviar</StyledSubmitButton>
+                }
+                {props.isEnglish && 
+                <StyledSubmitButton type="submit">Send</StyledSubmitButton>
+                }
                 {valido && <TextError>Sua mensagem foi enviada</TextError>}
             </form>
         </div>
