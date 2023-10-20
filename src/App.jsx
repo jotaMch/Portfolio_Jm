@@ -9,15 +9,12 @@ import Educacao from './components/Educacao';
 import Footer from './components/Footer';
 import Mensagem from './components/Mensagem'; 
 import Techskill from './components/TechSkills';
-
 import Usd from './assets/usd.png';
 import Br from './assets/brasil.png';
 import styled from 'styled-components';
 
-
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
-
   const handleLanguage = () => {
     console.log(isEnglish);
     setIsEnglish(prevIsEnglish => !prevIsEnglish); 

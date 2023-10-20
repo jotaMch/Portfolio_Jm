@@ -1,7 +1,5 @@
 import React from "react";
 import '../styles/footer.css';
-
-
 import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoGithub} from "react-icons/bi";
 import { BiLogoGmail } from "react-icons/bi";

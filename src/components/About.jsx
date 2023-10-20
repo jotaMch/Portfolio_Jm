@@ -25,13 +25,11 @@ function About(props) {
                                             Desenvolvedor <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'>Front-end</span> 
                                         </h1>
                                     }
-
                                     {props.isEnglish && 
                                         <h1 style={{ fontFamily: 'Sarabun, sem serifa',fontWeight: 200,}}>
                                             <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'>Front-end</span> Developer
                                         </h1>
-                                    }
-                                
+                                    }                                
                                     {!props.isEnglish && 
                                     <p>
                                         Desenvolvendo experiências digitais 
@@ -39,15 +37,14 @@ function About(props) {
                                         em realidade.
                                     </p>
                                     }
-
                                     {props.isEnglish && 
                                     <p>
                                         Developing digital and interactive experiences 
                                         to turn ideas into reality.
                                     </p>}
                                 </div>
-                                {props.isEnglish && <h2 className="onUp">Sobre mim</h2>}
-                                {!props.isEnglish && <h2 className="onUp">About me</h2>}
+                                {!props.isEnglish && <h2 className="onUp">Sobre mim</h2>}
+                                {props.isEnglish && <h2 className="onUp">About me</h2>}
                                 <div className="border_bottom onUp"></div>
                                 {!props.isEnglish && 
                                     <p  className='text-sobre onUp'>
