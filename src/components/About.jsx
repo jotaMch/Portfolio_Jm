@@ -15,9 +15,9 @@ function About(props) {
                 <article className="img" id="about">
                     <div className="img__content">
                         <div className="area__perfil">
-                            <div className="relativ-img">
+                           {/*  <div className="relativ-img">
                                 <img className='perfil' src={Perfil} alt="imagem-perfil" />  
-                            </div>                                                                   
+                            </div> */}                                                                   
                             <div className="espaco">
                                 <div className='name-text'>
                                     {!props.isEnglish && 
