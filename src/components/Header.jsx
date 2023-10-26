@@ -1,10 +1,29 @@
 // Header.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../assets/logo.png';
 import BurguerCode from './Hamburguer.jsx';
 
 function Header(props) {
     const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+    const header = document.querySelector('header');
+
+    const handleScroll = () => {
+    if (window.scrollY > 50) {
+        header.classList.add('header-top'); // Adiciona a classe quando rola para baixo
+    } else {
+        header.classList.remove('header-top'); // Remove a classe quando volta ao topo
+    }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+        window.removeEventListener('scroll', handleScroll);
+    };
+}, []);
+
 
 const toggleNav = () => {
     setIsVisible(!isVisible);
@@ -27,7 +46,7 @@ const handleMenuItemClick = () => {
 
 return (
 <div>
-<header>
+<header className='header-top'>
         <div className="whitee">
             <img src={Logo} alt="logo jm" />
         </div>

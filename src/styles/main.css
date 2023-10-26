@@ -46,6 +46,12 @@ header {
   width: 100%;
   height: 60px;
   z-index: 80;
+  transition: top 0.3s ease;
+}
+
+.header-top {
+  top: 0%;
+  background-color:  #0d0d0d;
 }
 
 
@@ -375,7 +381,6 @@ header li:hover .front-text {
 
   
   .whitee {
-    background-color: #EFF1EA;
     width: 26%;
     height: 100%;
     border-radius: 30px;
@@ -441,6 +446,12 @@ header li:hover .front-text {
     left: 50%;
     translate: -50%;
   }
+
+  
+.header-top {
+  max-width: 100%;
+  width: 100%;
+}
 
     
   .whitee {
