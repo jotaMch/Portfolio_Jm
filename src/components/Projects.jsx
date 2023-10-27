@@ -18,7 +18,11 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
-//grunt,less,jquery
+//images of projects
+import roupas from '../assets/project-image/roupas.png';
+import carros from '../assets/project-image/carros.png';
+import comercioEletronico from '../assets/project-image/e-commerce.png';
+import formReact from '../assets/project-image/form-react.png';
 
 function Projects(props) {
     return(
@@ -30,10 +34,12 @@ function Projects(props) {
 
                         <div class="cardContainer">
                             <div className="sobre-project"></div>
-                            <div className="profileDiv">
-                                    <BiCloset />
-                                    Loja de Roupas
-                                    <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                            <div className="profileDiv" style={{backgroundImage: `url(${roupas})`,backgroundSize: 'cover'}}>
+                                    <div className='sub-info'>
+                                        <BiCloset />
+                                        Loja de Roupas
+                                        <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                                    </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -54,10 +60,12 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv">
+                            <div className="profileDiv" style={{backgroundImage: `url(${carros})`,backgroundSize: 'cover'}}>
+                                <div className='sub-info'>
                                     <BiSolidCar />
                                     Loja de carros
                                     <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                                </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -78,10 +86,12 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv">
+                            <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
+                                <div className='sub-info'>
                                     <BiCloset />
                                     E-commerce 
                                     <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
+                                </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -102,10 +112,12 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv">
+                            <div className="profileDiv" style={{backgroundImage: `url(${formReact})`,backgroundSize: 'cover'}}>
+                                <div className='sub-info'>
                                     <BiBriefcaseAlt />
                                     Formulário
                                     <div> < FaReact/> <SiStyledcomponents/></div>
+                                </div>
                             </div>
                             {/* <div className="infoDiv">
                                 <div className="nameDiv">
@@ -143,10 +155,12 @@ function Projects(props) {
                 <div className="project-class">          
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv">
-                        <BiCloset />
-                        Clothing Store
-                        <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                        <div className="profileDiv" style={{backgroundImage: `url(${roupas})`,backgroundSize: 'cover'}}>
+                            <div className='sub-info'>
+                                <BiCloset />
+                                Clothing Store
+                                <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                            </div>
                         </div>
                         <div className="infoDiv">
                         <div className="nameDiv">
@@ -164,10 +178,12 @@ function Projects(props) {
                 
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv">
-                        <BiSolidCar />
-                        Car Store
-                        <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                        <div className="profileDiv" style={{backgroundImage: `url(${carros})`,backgroundSize: 'cover'}}>
+                            <div className='sub-info'>
+                                <BiSolidCar />
+                                Car Store
+                                <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                            </div>
                         </div>
                         <div className="infoDiv">
                         <div className="nameDiv">
@@ -185,10 +201,12 @@ function Projects(props) {
                 
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv">
-                        <BiCloset />
-                        E-commerce
-                        <div><FaHtml5/><BiLogoJavascript/> <SiVite/><BiLogoTailwindCss/> </div>
+                        <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
+                            <div className='sub-info'>
+                                <BiCloset />
+                                E-commerce
+                                <div><FaHtml5/><BiLogoJavascript/> <SiVite/><BiLogoTailwindCss/> </div>
+                            </div>
                         </div>
                         <div className="infoDiv">
                         <div className="nameDiv">
@@ -206,10 +224,12 @@ function Projects(props) {
                 
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv">
-                        <BiBriefcaseAlt />
-                        Form
-                        <div> < FaReact /> <SiStyledcomponents/> </div>
+                        <div className="profileDiv" style={{backgroundImage: `url(${formReact})`,backgroundSize: 'cover'}}>
+                            <div className='sub-info'>
+                                <BiBriefcaseAlt />
+                                Form
+                                <div> < FaReact /> <SiStyledcomponents/> </div>
+                            </div>
                         </div>
                         <div className="infoDiv">
                         <div className="nameDiv">
