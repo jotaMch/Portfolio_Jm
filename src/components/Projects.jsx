@@ -86,32 +86,6 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
-                                <div className='sub-info'>
-                                    <BiCloset />
-                                    E-commerce 
-                                    <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
-                                </div>
-                            </div>
-                            <div className="infoDiv">
-                                <div className="nameDiv">
-                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Project E-commerce</p>
-                                    <p style={{padding: 8}} className="role">
-                                        Projeto para E-commerce, usei JavaScript puro fazendo a integração dos produtos e cards.
-                                        Fiz o uso de Tailwind para estilização, assim obtendo mais organização .
-                                    </p>
-                                </div>
-                                <div className="socialDiv">
-                                    <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
-
-                                    <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
-                                
-                                </div>
-                            </div>
-                        </div> 
-
-                        <div className="cardContainer">
-                            <div classNameName="sobre-project"></div>
                             <div className="profileDiv" style={{backgroundImage: `url(${formReact})`,backgroundSize: 'cover'}}>
                                 <div className='sub-info'>
                                     <BiBriefcaseAlt />
@@ -143,7 +117,33 @@ function Projects(props) {
                                 
                                 </div>
                             </div>
-                        </div>                                       
+                        </div>   
+
+                        <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
+                                <div className='sub-info'>
+                                    <BiCloset />
+                                    E-commerce 
+                                    <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
+                                </div>
+                            </div>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Project E-commerce</p>
+                                    <p style={{padding: 8}} className="role">
+                                        Projeto para E-commerce, usei JavaScript puro fazendo a integração dos produtos e cards.
+                                        Fiz o uso de Tailwind para estilização, assim obtendo mais organização .
+                                    </p>
+                                </div>
+                                <div className="socialDiv">
+                                    <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
+
+                                    <a href="https://jotamch.github.io/E-commerce_js/">< BiLayout /></a>
+                                
+                                </div>
+                            </div>
+                        </div>                                                           
                 
                 </div>
             </div>
