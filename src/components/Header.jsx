@@ -2,9 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import Logo from '../assets/logo.png';
 import BurguerCode from './Hamburguer.jsx';
+import styled from 'styled-components';
+import Usd from '../assets/usd.png';
+import Br from '../assets/brasil.png';
 
 function Header(props) {
     const [isVisible, setIsVisible] = useState(false);
+
+    const { isEnglish, handleLanguage } = props;
 
     useEffect(() => {
     const header = document.querySelector('header');
@@ -75,9 +80,16 @@ return (
                 <li data-text="Contato" onClick={() => {handleMenuItemClick(); scrollToSection('contact')}}>
                     <span className="actual-text">Contato</span>
                     <span className="front-text"></span>
-                </li>
-            </ul>
-      
+                </li>    
+                
+                <li style={{alignItems: 'center'}} onClick={handleLanguage}>                    
+                        English                    
+                </li>  
+            </ul>          
+            
+            
+
+                
             <ul className='telaG'>
                 <li data-text="Sobre" onClick={() => scrollToSection('about')}>
                     <span className="actual-text">Sobre</span>
@@ -95,6 +107,9 @@ return (
                     <span className="actual-text">Contato</span>
                     <span className="front-text"></span>
                 </li>
+                <li style={{alignItems: 'center'}} onClick={handleLanguage}>                    
+                        English                    
+                </li>  
             </ul>
         </nav>
         }
@@ -123,6 +138,9 @@ return (
                     <span className="actual-text">Contact</span>
                     <span className="front-text"></span>
                 </li>
+                <li style={{ alignItems: 'center'}} onClick={handleLanguage}>
+                        Português
+                </li>
             </ul>
 
             <ul className='telaG'>
@@ -142,6 +160,11 @@ return (
                     <span className="actual-text">Contact</span>
                     <span className="front-text"></span>
                 </li>
+                <li style={{ alignItems: 'center'}} onClick={handleLanguage}>
+                    
+                        Português
+                    {/* Estou colocando os botoes de idioma no header, falta as bandeiras e estilizar para mobile */}
+                </li>
             </ul>
     </nav>
     }
@@ -152,3 +175,15 @@ return (
 
 export default Header;
 
+
+
+/* 
+
+
+const Button = styled.button`
+    background-color: #99d5da5c;
+    color: #fff;
+    padding: 4px;
+    cursor: pointer;
+`
+ */

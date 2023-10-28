@@ -10,9 +10,8 @@ import Educacao from './components/Educacao';
 import Footer from './components/Footer';
 import Mensagem from './components/Mensagem'; 
 import Techskill from './components/TechSkills';
-import Usd from './assets/usd.png';
-import Br from './assets/brasil.png';
 import styled from 'styled-components';
+
 
 function App() {
   const [isEnglish, setIsEnglish] = useState(false);
@@ -26,10 +25,10 @@ function App() {
       <main>
             <About isEnglish={isEnglish} />
         <div className="container">
-          <Header isEnglish={isEnglish}  />
+          <Header isEnglish={isEnglish} handleLanguage={handleLanguage} />
           <div className='flex-inicio'>
             
-          {!isEnglish &&
+          {/* {!isEnglish &&
           <Button style={{display: 'flex', backgroundColor: 'blue', alignItems: 'center'}} onClick={handleLanguage}>
             En
             <img style={{height: 18, marginLeft: 4}} src={Usd} alt="bandeira En" />
@@ -42,7 +41,7 @@ function App() {
             Pt
             <img style={{height: 18, marginLeft: 4}} src={Br} alt="bandeira Br" />
           </Button>
-          }
+          } */}
           </div>
         </div>
       </main>
