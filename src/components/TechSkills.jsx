@@ -11,10 +11,12 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa"; 
+import { TbBrandTailwind } from "react-icons/tb";
 
 export default  function Techskill(props) {
     return (
         <DivGlobal id="skills" >
+            
             <nav className="nav__style" >
                 <ul >                                        
                     <li title="HTML" style={{width: 100, height:100}} > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
@@ -27,8 +29,9 @@ export default  function Techskill(props) {
                     <li title="Gulp" style={{width: 100, height:100}} > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
                     <li title="Grunt" style={{width: 100, height:100}} > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
                     <li title="ReactJS" style={{width: 100, height:100}} > <StyledIcon>  < FaReact />  </StyledIcon> ReactJS </li>
-                    <li style={{width: 100}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
-                    <li><Placeholder /></li> 
+                    <li title="Styled-components" style={{width: 100, height:100}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
+                    <li title="TailWind" style={{width: 100, height:100}} > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
+                    
                 </ul>
             </nav>
             <StyledText >

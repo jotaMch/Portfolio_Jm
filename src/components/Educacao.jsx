@@ -80,7 +80,7 @@ const EducacaoText = styled.p `
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    padding-top: 180px;
+    padding-bottom: 180px;
 
     nav {
         @media (max-width: 768px) {
@@ -109,7 +109,7 @@ const EducacaoText = styled.p `
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
     }
     100% {
-        box-shadow: 0 -14px 20px -20px rgba(255, 255, 255, 0.35), 0 14px 20px -20px rgba(255, 255, 255, 0.314);
+        box-shadow: 8px -14px 20px -20px #7fffd4, 8px 14px 20px -20px #7fffd4;
     }
     }
 
@@ -118,6 +118,7 @@ const EducacaoText = styled.p `
         padding: 22px;
         width: 46%;
         min-height: 243px;
+        border-radius: 0 24px 24px 0;
         @media (max-width: 768px) {
             width: 90%;
             margin-top: 28px;

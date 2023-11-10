@@ -18,7 +18,6 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { SiStyledcomponents } from "react-icons/si";
-import { GrNext } from "react-icons/gr"
 //images of projects
 import roupas from '../assets/project-image/roupas.png';
 import carros from '../assets/project-image/carros.png';
@@ -28,13 +27,16 @@ import formReact from '../assets/project-image/form-react.png';
 import { Link } from "react-router-dom";
 
 
-function Projects(props) {
+function OthersProjects(props) {
     return(
+        <div className="twu__found">
         <div className="main__project" id='projects'>
+            <Link to="/">
+                <button style={{backgroundColor: 'white', padding: '10px 18px', border: 'none'}}>voltar</button> 
+            </Link>
             {!props.isEnglish && 
             <div className="project">
                 <h3>Projetos</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <div className="project-class">
 
                         <div class="cardContainer">
@@ -154,8 +156,6 @@ function Projects(props) {
             {props.isEnglish && 
             <div className="project">
                 <h3>Projects</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
-
                 <div className="project-class">          
                     <div className="cardContainer">
                         <div className="about-project"></div>
@@ -251,12 +251,11 @@ function Projects(props) {
                     </div>
                 </div>
             }
-            {/* {!props.isEnglish && 
+            {!props.isEnglish && 
                 <Link to='/project'>
                     <div>
                         <button className='outer'>
                             Outros
-                            < GrNext />
                         </button>
                     </div>
                 </Link>
@@ -266,15 +265,15 @@ function Projects(props) {
                     <div>
                         <button className='outer'>
                             Other
-                            < GrNext />
                         </button>
                     </div>
                 </Link>
-            } */}
+            }
         </div>
+    </div>
     )
 } 
 
-export default Projects;
+export default OthersProjects;
 
 

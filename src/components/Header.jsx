@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../assets/logo.png';
 import BurguerCode from './Hamburguer.jsx';
 import styled from 'styled-components';
-import Usd from '../assets/usd.png';
-import Br from '../assets/brasil.png';
 
 function Header(props) {
     const [isVisible, setIsVisible] = useState(false);

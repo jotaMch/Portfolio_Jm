@@ -11,13 +11,15 @@ article .flex{
 }
 
 article .title-soft {
-    padding: 6px;
+    padding: 6px 0;
     margin: 0 auto;
     color:#EFF1EA;
     background-color: transparent;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    text-transform: uppercase;
 }
+
 
 article .card {
     background-image: linear-gradient(-45deg, aquamarine, #0d0d0d 10%);
