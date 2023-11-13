@@ -10,14 +10,14 @@ function Habilidades(props) {
                 <article>
                     
                 {!props.isEnglish && 
-                <div className='border-soft'>
+                <div>
                     <h3 className='title-soft'>Habilidades interpessoais e tecnicas </h3>
                     <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                 </div>
                 }
                 
                 {props.isEnglish && 
-                    <div className='border-soft'>
+                    <div>
                     <h3 className='title-soft'>Interpersonal and technical skills </h3>
                     <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                 </div>

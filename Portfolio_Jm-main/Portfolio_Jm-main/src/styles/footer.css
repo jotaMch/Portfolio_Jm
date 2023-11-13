@@ -1,29 +1,22 @@
 
+.border_footer {
+    height: 4px;
+    width: 30%;
+    border-radius: 30px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
 
 footer {/* 
     background-color: rgb(0,0,0,0.8);   */
     width: 100%;
     display: flex;
-    justify-content: end;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px 0 10px;
+    flex-direction: column;
+    padding: 20px 0;
     height: 250px;
 }
-
-footer div {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.main-form {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-}
-
 
 footer ul {
     list-style: none;
@@ -33,24 +26,13 @@ footer ul {
     margin: 8px auto;
 }
 
-.sub-contact{
-    display: flex;
-    flex-direction: column;
-    max-width: 360px;
-    width: 100%;
-}
-
-.contact {    
+footer .contact {
+    
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    width: 70%;
-}
-
-.contact svg {
-    color: aquamarine;
-    width: 26px;
-    height: 26px;
+    justify-content: space-around;
+    width: 40%;
+    margin: 8px auto;
 }
 
 footer svg {
@@ -66,7 +48,7 @@ footer svg:hover {
 
 footer p {
     color:  #EFF1EA;
-    margin: 10px 0 20px;
+    margin: 40px 0 10px;
 }
 
 footer .actual-text {
@@ -101,18 +83,6 @@ footer > ul:nth-child(1) {
     margin-right: 4px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .main {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    footer div {
-        width: 90%;
-        justify-content: space-around;
-    }
-}
-
 
 @media screen and (max-width: 767px) {
 
@@ -124,10 +94,6 @@ footer > ul:nth-child(1) {
         margin: 8px auto;
     }
 
-    .main-form {
-        flex-direction: column;
-    }
-
     .contato-comigo {
         margin: 0 auto;
     }
@@ -136,24 +102,11 @@ footer > ul:nth-child(1) {
         width: 80%;
         margin: 0 auto;
     }
-
-    .sub-contact {
-        margin: 70px auto 10px;
-        width: 80%;
-    }
-
-    footer div {
-        width: 80%;
-        flex-direction: column;
-    }
-
-    .contact {
-        width: 50%;
-    }
 }
 
 form {
     width: 360px;
+    margin: 0 auto;
 }
 
 .borderInput {

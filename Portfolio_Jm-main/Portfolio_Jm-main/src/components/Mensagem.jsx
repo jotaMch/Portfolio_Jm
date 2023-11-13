@@ -2,12 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import emailjs from '@emailjs/browser';
 import '../styles/mensagem.css';
-import '../styles/footer.css';
-import { BiLogoLinkedin } from "react-icons/bi";
-import { BiLogoGithub} from "react-icons/bi";
-import { BiLogoGmail } from "react-icons/bi";
-import { BiLogoWhatsapp } from "react-icons/bi";
-import { BiSolidPhoneIncoming } from "react-icons/bi";
+/* import { BiMailSend } from "react-icons/bi"; */
 
 
 export default function Mensagem(props) {
@@ -60,21 +55,20 @@ export default function Mensagem(props) {
 
     return (
         <div className="main">
-                {!props.isEnglish &&
-                <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
-                    Entre em contato comigo!
-                </h3>
-                }
-                {props.isEnglish &&
-                <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
-                    Contact me!
-                </h3>
-                }
-            <div className='main-form'>
-                <form
-                style={{ display: 'flex', flexDirection: 'column' }}
+            {!props.isEnglish &&
+            <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
+                Entre em contato comigo!
+            </h3>
+            }
+            {props.isEnglish &&
+            <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
+                Contact me!
+            </h3>
+            }
+            <form
+                style={{ display: 'flex', flexDirection: 'column', paddingBottom: 80 }}
                 onSubmit={sendEmail}
-                >
+            >
                 <div style={{ marginBottom: 20 }}>
                 {!props.isEnglish &&
                     <input
@@ -155,35 +149,7 @@ export default function Mensagem(props) {
                 }
                 {valido && <TextError>Sua mensagem foi enviada</TextError>}
             </form>
-
-            <div className='sub-contact'>
-                <ul className="contact">
-                    <li>
-                        <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
-                            <BiLogoLinkedin />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jotaMch">
-                            <BiLogoGithub />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:jandersonmachado090@gmail.com">
-                            <BiLogoGmail />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/552194707188">
-                            <BiLogoWhatsapp />
-                        </a>
-                    </li> 
-                </ul>
-                <span className="number-tell">< BiSolidPhoneIncoming /> (21) 99470-7188 | (21) 96432-4139</span>
-            </div>
-            
         </div>
-    </div>
     );
 }
 
