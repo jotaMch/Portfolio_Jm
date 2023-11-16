@@ -81,6 +81,7 @@ header li {
   position: relative;
   letter-spacing: 3px;
   color: #000000;
+  padding-bottom: 2px;
 }
 
 li .front-text {

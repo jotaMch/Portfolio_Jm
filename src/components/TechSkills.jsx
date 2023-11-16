@@ -12,6 +12,8 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaReact } from "react-icons/fa"; 
 import { TbBrandTailwind } from "react-icons/tb";
+import { SiJest  } from "react-icons/si"
+import {} from "react-icons/"
 
 export default  function Techskill(props) {
     return (
@@ -19,19 +21,20 @@ export default  function Techskill(props) {
             
             <nav className="nav__style" >
                 <ul >                                        
-                    <li title="HTML" style={{width: 100, height:100}} > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
-                    <li title="css" style={{width: 100, height:100}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon> CSS</li>
-                    <li title="javaScript" style={{width: 100, height:100}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon> JavaScript </li>
-                    <li title="Bootstrap" style={{width: 100, height:100}} > <StyledIcon>  < FaBootstrap />  </StyledIcon> Bootstrap </li>
-                    <li title="JQuery" style={{width: 100, height:100}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon> JQuery </li>                            
-                    <li title="SASS" style={{width: 100, height:100}} > <StyledIcon>  < FaSass /> </StyledIcon> SASS </li>
-                    <li title="LESS" style={{width: 100, height:100}} > <StyledIcon>  < FaLess />  </StyledIcon> LESS </li>
-                    <li title="Gulp" style={{width: 100, height:100}} > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
-                    <li title="Grunt" style={{width: 100, height:100}} > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
-                    <li title="ReactJS" style={{width: 100, height:100}} > <StyledIcon>  < FaReact />  </StyledIcon> ReactJS </li>
-                    <li title="Styled-components" style={{width: 100, height:100}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
-                    <li title="TailWind" style={{width: 100, height:100}} > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
-                    
+                    <li title="HTML" style={{width: 110, height:110}} > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
+                    <li title="CSS" style={{width: 110, height:110}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon> CSS</li>
+                    <li title="javaScript" style={{width: 110, height:110}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon> JavaScript </li>
+                    <li title="Bootstrap" style={{width: 110, height:110}} > <StyledIcon>  < FaBootstrap />  </StyledIcon> Bootstrap </li>
+                    <li title="JQuery" style={{width: 110, height:110}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon> JQuery </li>                            
+                    <li title="SASS" style={{width: 110, height:110}} > <StyledIcon>  < FaSass /> </StyledIcon> SASS </li>
+                    <li title="LESS" style={{width: 110, height:110}} > <StyledIcon>  < FaLess />  </StyledIcon> LESS </li>
+                    <li title="Gulp" style={{width: 110, height:110}} > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
+                    <li title="Grunt" style={{width: 110, height:110}} > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
+                    <li title="React" style={{width: 110, height:110}} > <StyledIcon>  < FaReact />  </StyledIcon> React </li>
+                    <li title="Styled-components" style={{width: 110, height:110}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
+                    <li title="TailWind" style={{width: 110, height:110}} > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
+                    <li title="Jest" style={{width: 110, height:110}} > <StyledIcon>  <SiJest />  </StyledIcon> Jest </li>
+
                 </ul>
             </nav>
             <StyledText >
@@ -195,13 +198,13 @@ const DivGlobal = styled.div`
     list-style: none;
     display: flex;
     justify-content: space-between;
-    min-height: 450px;
+    min-height: 550px;
     width: 60%;
     flex-wrap: wrap;
     gap: 2px;
     align-items: center;
     margin-left: auto;
-    padding: 14px 36px 14px 0;
+    padding: 0px 36px 14px 0;
 
     @media (max-width: 768px) {
         padding: 0;
