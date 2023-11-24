@@ -16,10 +16,24 @@ import { SiJest  } from "react-icons/si"
 import { FaGitAlt } from "react-icons/fa6";
 import { SiVite } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 
 export default  function Techskill(props) {
     return (
         <DivGlobal id="skills" >
+                {!props.isEnglish && 
+                    <div className='border-soft'>
+                        <h3 className='title-soft'>Habilidades tecnicas </h3>
+                        <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                    </div>
+                }
+                
+                {props.isEnglish && 
+                    <div className='border-soft'>
+                        <h3 className='title-soft'>Technical skills </h3>
+                    <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                </div>
+                } 
             
             <nav className="nav__style" >
                 <ul >                                        
@@ -38,7 +52,9 @@ export default  function Techskill(props) {
                     <li title="Styled-components" style={{width: 110, height:110}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
                     <li title="TailWind" style={{width: 110, height:110}} > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
                     <li title="Jest" style={{width: 110, height:110}} > <StyledIcon>  <SiJest />  </StyledIcon> Jest </li>
-                    <li title="Mongodb Atlas" style={{width: 110, height:110}} > <StyledIcon>  <SiMongodb />  </StyledIcon> Mongodb Atlas </li>
+{/*                 <li title="Mongodb Atlas" style={{width: 110, height:110}} > <StyledIcon>  <SiMongodb />  </StyledIcon> Mongodb Atlas </li>
+ */}                <li title="Node.js" style={{width: 110, height:110}} > <StyledIcon>  <FaNodeJs />  </StyledIcon> Node.js </li>
+
                 </ul>
             </nav>
             <StyledText >
@@ -46,11 +62,10 @@ export default  function Techskill(props) {
             {!props.isEnglish && 
                 <div className="style">
                 <h3>Especialização</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <p >                                
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
-                        Recentemente, tenho me concentrado em Node e API REST.
+                        Recentemente, tenho me concentrado em Node e Jest.
                         Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
                     </p>
                 </div>
@@ -59,10 +74,9 @@ export default  function Techskill(props) {
             {props.isEnglish && 
                 <div className="style">
                 <h3>Specialization</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
                     <p >                                
                         I have dedicated myself to improving skills from HTML, CSS and JavaScript to frameworks such as
-                        Bootstrap and libraries like jQuery. Recently, I have been focusing on Node and REST API.
+                        Bootstrap and libraries like jQuery. Recently, I have been focusing on Node and Jest.
                         I have been studying day after day to obtain better knowledge and good practices.
                     </p>
                 </div>
@@ -73,16 +87,29 @@ export default  function Techskill(props) {
 }
 
 const StyledText = styled.div`
-    width: 50%;
     color: #fff;
-    padding-left: 90px;
     margin-left: auto;
 
     .style {
-        width: 100%;
-        background-color: rgb(0,0,0,0.9);
-        padding: 24px;
+        width: 100%;/* 
+        background-color: rgb(0,0,0,0.9); */
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
         border-radius: 4px;
+
+        h3 {
+            background-color: aquamarine;
+            height: 40px;
+            padding: 0 16px;
+            color: #0d0d0d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
 
         @media (max-width: 768px) {
             width: 100%;
@@ -91,9 +118,8 @@ const StyledText = styled.div`
     }
 
     p {
-        width: 400px;
-        font-size: 14px;
         line-height: 1.6;
+        font-size: 16px;
     }
 
     
@@ -107,11 +133,6 @@ const StyledText = styled.div`
 
     
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        padding-left: 38px;
-        margin-left: auto;
-        p {
-            width: 90%;
-        }
     }
 `
 
@@ -156,16 +177,20 @@ const Placeholder = styled.div`
 `;
 
 const DivGlobal = styled.div`
+    max-width: 1100px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin-bottom: 150px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: start;
+
+    h3 {
+        color: #FFF;
+    }
 
     nav {
             margin-left: none;
-            background-color: #0d0d0d;
-            background-image: linear-gradient(to right, aquamarine -500%, #0d0d0d);
             margin-top: 30px;
-            width: 50%;
             border-radius: 0 50px 50px 0;
             li{
                 text-align: center;
@@ -175,52 +200,28 @@ const DivGlobal = styled.div`
     }
     
     @media (max-width: 768px) {
-        flex-direction: column-reverse;
-
-        nav {
-            margin-left: none;
-            background-color: #0d0d0d;
-            background-image: none;
-
-            margin-top: 0;
-            width: 100%;
-            border-radius: 0 0 0 0;
-        }
+        margin-top: 80px;
+        width: 90%;
     }
     
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        
-        width: 100%;
-        .nav__style {
-            margin-right: auto;
-        }
-
+        width: 90%;
     }
 
 
     ul {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
-    min-height: 550px;
-    width: 60%;
     flex-wrap: wrap;
-    gap: 2px;
-    align-items: center;
-    margin-left: auto;
-    padding: 0px 36px 14px 0;
+    list-style: none;
+    width: 80%;
+    margin-bottom: 40px;
 
     @media (max-width: 768px) {
-        padding: 0;
-        margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1200px) {
-        
-        margin-left: auto;
-        width: 90%;
-        gap: 0;
+        width: 100%;
     }
 }
 

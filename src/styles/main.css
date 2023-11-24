@@ -299,6 +299,7 @@ header li:hover .front-text {
   margin: 8px 0 22px;
 }
 .text-sobre {
+  font-size: 16px;
   width: 70%;
 }
 
@@ -415,7 +416,7 @@ header li:hover .front-text {
     border: none;
   }
 
-.img {
+  .img {
     width: 90%;
     box-shadow: none;
   } 
@@ -508,7 +509,7 @@ header li:hover .front-text {
   
   
   .img {
-    
+    width: 100%;
     border-radius: 0 0 0px 120px;
   }
   
@@ -525,7 +526,7 @@ header li:hover .front-text {
   .area__perfil {
     flex-direction: column-reverse;
     align-items: start;
-    width: 80%;
+    width: 90%;
   }
     
   .name-text {

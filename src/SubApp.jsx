@@ -4,7 +4,6 @@ import './styles/main.css';
 import './styles/colorText.css';
 import Header from './components/Header';
 import About from './components/About';
-import Habilidades from './components/Skills';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
 import Footer from './components/Footer';
@@ -30,10 +29,7 @@ function SubApp() {
             </div>
             </main>
                 <div className="container">
-                    <Habilidades isEnglish={isEnglish} />  
-                </div>
                     < Techskill isEnglish={isEnglish} />     
-                <div className="container">
                     <Projects isEnglish={isEnglish} />            
                     <Educacao isEnglish={isEnglish} />
                 < Mensagem isEnglish={isEnglish} />  

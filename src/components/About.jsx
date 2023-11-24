@@ -1,11 +1,6 @@
 import React from "react";
-import Perfil from '../assets/perfil.png';
 import CvDocx from "../assets/curriculo_janderson_.docx";
 import { BiAlignLeft } from "react-icons/bi";
-/* import { BiLogoLinkedin } from "react-icons/bi";
-import { BiLogoGithub} from "react-icons/bi";
-import { BiLogoGmail } from "react-icons/bi";
-import { BiLogoWhatsapp } from "react-icons/bi"; */
 
 
 function About(props) {
@@ -14,10 +9,7 @@ function About(props) {
                 
                 <article className="img" id="about">
                     <div className="img__content">
-                        <div className="area__perfil">
-                           {/*  <div className="relativ-img">
-                                <img className='perfil' src={Perfil} alt="imagem-perfil" />  
-                            </div> */}                                                                   
+                        <div className="area__perfil">                                                         
                             <div className="espaco">
                                 <div className='name-text'>
                                     {!props.isEnglish && 
