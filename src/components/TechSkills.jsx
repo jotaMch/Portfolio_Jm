@@ -139,13 +139,12 @@ const StyledText = styled.div`
 const StyledIcon = styled.div`
     width: 100px;
     height: 100px;
-    color: #9a5656;
     display: flex;
     align-items: center;
     justify-content: center;
 
     svg {
-        color: #0d0d0d;
+        color: #0d0d0d; 
         filter: drop-shadow(0 0 1px aquamarine);
         width: 90%;
         height: 90%;

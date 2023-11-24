@@ -109,7 +109,7 @@ const EducacaoText = styled.p `
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
     }
     100% {
-        box-shadow: 8px -14px 20px -20px #7fffd4, 8px 14px 20px -20px #7fffd4;
+        box-shadow: 8px -14px 20px -30px #7fffd4, 8px 14px 20px -30px #7fffd4;
     }
     }
 

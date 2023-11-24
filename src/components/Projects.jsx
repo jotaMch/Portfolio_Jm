@@ -21,15 +21,15 @@ import { SiStyledcomponents } from "react-icons/si";/*
 import { GrNext } from "react-icons/gr" */
 import { BiLogoCss3 } from "react-icons/bi"
 //images of projects
-import roupas from '../assets/project-image/roupas.png';
-import carros from '../assets/project-image/carros.png';
-import comercioEletronico from '../assets/project-image/e-commerce.png';
-import formReact from '../assets/project-image/form-react.png';
-import fipe from '../assets/project-image/fipe.png';
-import turismo from '../assets/project-image/turismo.png';
+import mobile1 from '../assets/project-image/mobile1.png'; 
+import mobile2 from '../assets/project-image/mobile2.png';
+import mobile3 from '../assets/project-image/mobile3.png';
+import mobile4 from '../assets/project-image/mobile4.png';
+import mobile5 from '../assets/project-image/mobile5.png';
+import mobile6 from '../assets/project-image/mobile6.png';
 
-
-import { Link } from "react-router-dom";
+/* 
+import { Link } from "react-router-dom"; */
 
 
 function Projects(props) {
@@ -43,11 +43,14 @@ function Projects(props) {
 
                         <div class="cardContainer">
                             <div className="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${roupas})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv" >
                                     <div className='sub-info'>
                                         <BiCloset />
                                         Loja de Roupas
                                         <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                                    </div>
+                                    <div className='mobClass' >
+                                        <img src={mobile1} alt="" />
                                     </div>
                             </div>
                             <div className="infoDiv">
@@ -69,11 +72,14 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${carros})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv">
                                 <div className='sub-info'>
                                     <BiSolidCar />
                                     Loja de carros
                                     <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                                </div>
+                                <div className='mobClass' >
+                                        <img src={mobile2} alt="" />
                                 </div>
                             </div>
                             <div className="infoDiv">
@@ -94,12 +100,15 @@ function Projects(props) {
                         </div>
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${formReact})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv" >
                                 <div className='sub-info'>
                                     <BiBriefcaseAlt />
                                     Formulário
                                     <div> < FaReact/> <SiStyledcomponents/></div>
                                 </div>
+                                <div className='mobClass' >
+                                        <img src={mobile3} alt="" />
+                                    </div>
                             </div>                            
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -116,12 +125,15 @@ function Projects(props) {
                         </div>   
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv" >
                                 <div className='sub-info'>
                                     <BiCloset />
                                     E-commerce 
                                     <div><FaHtml5/><BiLogoJavascript/> < SiVite/>< BiLogoTailwindCss/> </div>
                                 </div>
+                                <div className='mobClass' >
+                                <img src={mobile4} alt="" />
+                            </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -142,12 +154,15 @@ function Projects(props) {
 
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${fipe})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv" >
                                 <div className='sub-info'>
                                     <BiCloset />
                                     Formulário de carros 
                                     <div>< FaReact/> <BiLogoCss3/>  </div>
                                 </div>
+                                <div className='mobClass' >
+                                <img src={mobile5} alt="" />
+                            </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -165,31 +180,17 @@ function Projects(props) {
                                 </div>
                             </div>
                         </div> 
-
-
-
-                            {/* <div className="infoDiv">
-                                <div className="nameDiv">
-                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Focus Tourism</p>
-                                </div>
-                                <div className="socialDiv">
-                                    <a href="https://github.com/jotaMch/turismo-jm"><BiLogoGithub /></a>
-                                    <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>                                
-                                </div>
-                            </div> */}
-
-
-
-
-
                         <div className="cardContainer">
                             <div classNameName="sobre-project"></div>
-                            <div className="profileDiv" style={{backgroundImage: `url(${turismo})`,backgroundSize: 'cover'}}>
+                            <div className="profileDiv" >
                                 <div className='sub-info'>
                                     <BiCloset />
                                     Focus Tourism
                                     <div><FaHtml5/> <BiLogoCss3/> <BiLogoJavascript/>  </div>
                                 </div>
+                                <div className='mobClass' >
+                                <img src={mobile6} alt="" />
+                            </div>
                             </div>
                             <div className="infoDiv">
                                 <div className="nameDiv">
@@ -217,11 +218,14 @@ function Projects(props) {
                 <div className="project-class">          
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${roupas})`,backgroundSize: 'cover'}}>
+                        <div className="profileDiv" >
                             <div className='sub-info'>
                                 <BiCloset />
                                 Clothing Store
                                 <div><FaBootstrap/>  <FaLess/> <FaGrunt/> <BiLogoJquery/></div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile1} alt="" />
                             </div>
                         </div>
                         <div className="infoDiv">
@@ -240,11 +244,14 @@ function Projects(props) {
                 
                     <div className="cardContainer">
                         <div className="about-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${carros})`,backgroundSize: 'cover'}}>
+                        <div className="profileDiv" >
                             <div className='sub-info'>
                                 <BiSolidCar />
                                 Car Store
                                 <div><FaHtml5/> <FaSass /> <BiLogoJquery/></div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile2} alt="" />
                             </div>
                         </div>
                         <div className="infoDiv">
@@ -262,35 +269,15 @@ function Projects(props) {
                     </div>
                 
                     <div className="cardContainer">
-                        <div className="about-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${comercioEletronico})`,backgroundSize: 'cover'}}>
-                            <div className='sub-info'>
-                                <BiCloset />
-                                E-commerce
-                                <div><FaHtml5/><BiLogoJavascript/> <SiVite/><BiLogoTailwindCss/> </div>
-                            </div>
-                        </div>
-                        <div className="infoDiv">
-                        <div className="nameDiv">
-                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Project E-commerce</p>
-                            <p style={{ padding: 8 }} className="role">
-                            E-commerce project, I used pure JavaScript for product and card integration. I used Tailwind for styling, achieving better organization.
-                            </p>
-                        </div>
-                        <div className="socialDiv">
-                            <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
-                            <a href="https://jotamch.github.io/E-commerce_js/"><BiLayout /></a>
-                        </div>
-                        </div>
-                    </div> 
-                
-                    <div className="cardContainer">
-                        <div className="about-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${formReact})`,backgroundSize: 'cover'}}>
+                    <div className="about-project"></div>
+                        <div className="profileDiv" >
                             <div className='sub-info'>
                                 <BiBriefcaseAlt />
                                 Form
                                 <div> < FaReact /> <SiStyledcomponents/> </div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile3} alt="" />
                             </div>
                         </div>
                         <div className="infoDiv">
@@ -305,15 +292,45 @@ function Projects(props) {
                             <a href="https://react-form-keys-jm.vercel.app/"><BiLayout /></a>
                         </div>
                         </div>
+                    </div> 
+                
+                    <div className="cardContainer">
+                        
+                    <div className="about-project"></div>
+                        <div className="profileDiv" >
+                            <div className='sub-info'>
+                                <BiCloset />
+                                E-commerce
+                                <div><FaHtml5/><BiLogoJavascript/> <SiVite/><BiLogoTailwindCss/> </div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile4} alt="" />
+                            </div>
+                        </div>
+                        <div className="infoDiv">
+                        <div className="nameDiv">
+                            <p style={{ marginRight: 'auto', padding: 8 }} className="role">Project E-commerce</p>
+                            <p style={{ padding: 8 }} className="role">
+                            E-commerce project, I used pure JavaScript for product and card integration. I used Tailwind for styling, achieving better organization.
+                            </p>
+                        </div>
+                        <div className="socialDiv">
+                            <a href="https://github.com/jotaMch/E-commerce_js"><BiLogoGithub /></a>
+                            <a href="https://jotamch.github.io/E-commerce_js/"><BiLayout /></a>
+                        </div>
+                        </div>
                     </div>
 
                     <div className="cardContainer">
                         <div className="sobre-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${fipe})`, backgroundSize: 'cover'}}>
+                        <div className="profileDiv" >
                             <div className='sub-info'>
                                 <BiCloset />
                                 Car Form
                                 <div><FaReact/> <BiLogoCss3/> </div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile5} alt="" />
                             </div>
                         </div>
                         <div className="infoDiv">
@@ -333,11 +350,14 @@ function Projects(props) {
 
                     <div className="cardContainer">
                         <div classNameName="sobre-project"></div>
-                        <div className="profileDiv" style={{backgroundImage: `url(${turismo})`, backgroundSize: 'cover'}}>
+                        <div className="profileDiv" >
                             <div className='sub-info'>
                                 <BiCloset />
                                 Focus Tourism
                                 <div><FaHtml5/> <BiLogoCss3/> <BiLogoJavascript/> </div>
+                            </div>
+                            <div className='mobClass' >
+                                <img src={mobile6} alt="" />
                             </div>
                         </div>
                         <div className="infoDiv">
