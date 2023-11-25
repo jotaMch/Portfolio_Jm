@@ -6,7 +6,6 @@ import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
 import Educacao from './components/Educacao';
-import Footer from './components/Footer';
 import Mensagem from './components/Mensagem'; 
 import Techskill from './components/TechSkills';
 
@@ -32,9 +31,8 @@ function SubApp() {
                     < Techskill isEnglish={isEnglish} />     
                     <Projects isEnglish={isEnglish} />            
                     <Educacao isEnglish={isEnglish} />
-                < Mensagem isEnglish={isEnglish} />  
                 </div>
-                <Footer isEnglish={isEnglish} />
+                < Mensagem isEnglish={isEnglish} />  
             </div>
         </>
     )

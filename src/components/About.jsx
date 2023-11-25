@@ -13,13 +13,13 @@ function About(props) {
                             <div className="espaco">
                                 <div className='name-text'>
                                     {!props.isEnglish && 
-                                        <h1 style={{ fontFamily: 'Sarabun, sem serifa',fontWeight: 200,}}>
-                                            Desenvolvedor <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'>Front-end</span> 
+                                        <h1 style={{ fontFamily: 'Sarabun, sem serifa'}}>
+                                            Desenvolvedor {/* <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'> */}Front-end{/* </span> */} 
                                         </h1>
                                     }
                                     {props.isEnglish && 
-                                        <h1 style={{ fontFamily: 'Sarabun, sem serifa',fontWeight: 200,}}>
-                                            <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'>Front-end</span> Developer
+                                        <h1 style={{ fontFamily: 'Sarabun, sem serifa'}}>
+                                            {/* <span style={{ fontFamily: 'Sarabun, sem serifa'}}className='destaque-color'> */}Front-end{/* </span> */} Developer
                                         </h1>
                                     }                                
                                     {!props.isEnglish && 
@@ -61,14 +61,14 @@ function About(props) {
                                     <div className="buttons-informacao onUp">
                                         {!props.isEnglish && 
                                         <button className="button__about">
-                                                <a style={{textDecoration: 'none', color: 'aquamarine'}} href="https://wa.me/552194707188">
+                                                <a style={{textDecoration: 'none', color: 'rgb(57, 169, 244)'}} href="https://wa.me/552194707188">
                                                 contate-me
                                                 </a>                                    
                                         </button>
                                         }
                                         {props.isEnglish && 
                                         <button className="button__about">
-                                            <a style={{textDecoration: 'none', color: 'aquamarine'}} href="https://wa.me/552194707188">
+                                            <a style={{textDecoration: 'none', color: 'rgb(57, 169, 244)'}} href="https://wa.me/552194707188">
                                             contact me
                                             </a>
                                         </button>

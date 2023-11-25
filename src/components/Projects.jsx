@@ -38,7 +38,7 @@ function Projects(props) {
             {!props.isEnglish && 
             <div className="project">
                 <h3>Projetos</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                <div style={{width: '100px', backgroundColor: 'rgb(57, 169, 244)', height: 4, margin: '14px 0 26px' }}></div>
                     <div className="project-class">
 
                         <div class="cardContainer">
@@ -213,7 +213,7 @@ function Projects(props) {
             {props.isEnglish && 
             <div className="project">
                 <h3>Projects</h3>
-                <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                <div style={{width: '100px', backgroundColor: 'rgb(57, 169, 244)', height: 4, margin: '14px 0 26px' }}></div>
 
                 <div className="project-class">          
                     <div className="cardContainer">
@@ -374,9 +374,6 @@ function Projects(props) {
                             </div>
                         </div>
                     </div>
-
-
-
                     </div>
                 </div>
             }

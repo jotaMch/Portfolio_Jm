@@ -1,43 +1,25 @@
 
-
-footer {/* 
-    background-color: rgb(0,0,0,0.8);   */
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0 10px;
-    height: 250px;
-}
-
-footer div {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    justify-content: space-between;
-}
-
 .main-form {
     display: flex;
-    justify-content: space-between;
-    align-items: end;
 }
 
-
-footer ul {
-    list-style: none;
+footer {
+    background-color: rgb(57, 169, 244);
+    border-radius: 150px 0 0 0;
+    width: 50%;
     display: flex;
-    justify-content: space-between;
-    width: 40%;
-    margin: 8px auto;
-}
-
-.sub-contact{
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    max-width: 360px;
-    width: 100%;
+    align-items: start;
+    height: 350px;
+}
+
+.info-footer {
+    width: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact {    
@@ -48,48 +30,12 @@ footer ul {
 }
 
 .contact svg {
-    color: aquamarine;
+    color: rgb(57, 169, 244);
     width: 26px;
     height: 26px;
 }
 
-footer svg {
-    height: 24px;
-    width: 24px;
-    color:  #EFF1EA;
-    transition: transform ease 0.5s;
-}
-
-footer svg:hover {
-    transform: scale(1.4);
-}
-
-footer p {
-    color:  #EFF1EA;
-    margin: 10px 0 20px;
-}
-
-footer .actual-text {
-    color: aquamarine;
-    box-shadow: 0 0 8px rgb(9, 9, 9);
-    border-radius: 30px;
-    padding: 2px 6px 4px;
-} 
-
-footer .actual-text:hover {
-    box-shadow: none;
-    cursor: pointer;
-}
-
-footer > ul:nth-child(1) {
-    padding: 8px;
-    height: 40px;
-    align-items: center;
-    border-radius: 30px;
-}
-
 .number-tell {
-    color: #EFF1EA;
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -101,81 +47,102 @@ footer > ul:nth-child(1) {
     margin-right: 4px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .main {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    footer div {
-        width: 90%;
-        justify-content: space-around;
-    }
+.form-width {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-
-@media screen and (max-width: 767px) {
-
-    footer ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        width: 88%;
-        margin: 8px auto;
-    }
-
-    .main-form {
-        flex-direction: column;
-    }
-
-    .contato-comigo {
-        margin: 0 auto;
-    }
-
-    form {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .sub-contact {
-        margin: 70px auto 10px;
-        width: 80%;
-    }
-
-    footer div {
-        width: 80%;
-        flex-direction: column;
-    }
-
-    .contact {
-        width: 50%;
-    }
-}
 
 form {
-    width: 360px;
+    margin-right: 40px;
+    width: 50%;
 }
 
 .borderInput {
     background-color: transparent;
     border: none;
-    border-bottom: 2px solid #EFF1EA;
-    color: #EFF1EA;
+    border-bottom: 2px solid #0d0d0d;
+    color: #0d0d0d;
 }
 
 .borderInput:focus {
     outline: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1100px) {             
+    form {
+        margin-right: 40px;
+        width: 82%;
+    }
+    
+    .info-footer {
+        width: 82%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .form-width {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        margin: 0;
+        width: 90%;
+    }
+    .main-form {
+        flex-direction: column;
+    }
+    
+    .info-footer {
+        width: 100%;
+    }
+    
+    footer {
+        background-color: rgb(57, 169, 244);
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 textarea::-webkit-scrollbar {
     width: 4px; /* Largura da scrollbar (WebKit) */
 }
 
 textarea::-webkit-scrollbar-thumb {
-    background-color: aquamarine; /* Cor da thumb (WebKit) */
+    background-color: #0d0d0d; /* Cor da thumb (WebKit) */
     border-radius: 4px; /* Borda arredondada da thumb (WebKit) */
 }
 
 textarea::-webkit-scrollbar-track {
     background-color: rgb(24, 24, 24); /* Cor do track (WebKit) */
+    
 }

@@ -24,36 +24,36 @@ export default  function Techskill(props) {
                 {!props.isEnglish && 
                     <div className='border-soft'>
                         <h3 className='title-soft'>Habilidades tecnicas </h3>
-                        <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                        <div style={{width: '100px', backgroundColor: 'rgb(57, 169, 244)', height: 4, margin: '14px 0 26px' }}></div>
                     </div>
                 }
                 
                 {props.isEnglish && 
                     <div className='border-soft'>
                         <h3 className='title-soft'>Technical skills </h3>
-                    <div style={{width: '100px', backgroundColor: 'aquamarine', height: 4, margin: '14px 0 26px' }}></div>
+                    <div style={{width: '100px', backgroundColor: 'rgb(57, 169, 244)', height: 4, margin: '14px 0 26px' }}></div>
                 </div>
                 } 
             
             <nav className="nav__style" >
                 <ul >                                        
-                    <li title="HTML" style={{width: 110, height:110}} > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
-                    <li title="CSS" style={{width: 110, height:110}} > <StyledIcon>  < FaCss3Alt />  </StyledIcon> CSS</li>
-                    <li title="javaScript" style={{width: 110, height:110}} > <StyledIcon>  < BiLogoJavascript />  </StyledIcon> JavaScript </li>
-                    <li title="Git" style={{width: 110, height:110}} > <StyledIcon>  < FaGitAlt />  </StyledIcon> Git </li>
-                    <li title="Bootstrap" style={{width: 110, height:110}} > <StyledIcon>  < FaBootstrap />  </StyledIcon> Bootstrap </li>
-                    <li title="JQuery" style={{width: 110, height:110}} > <StyledIcon>  < BiLogoJquery /> </StyledIcon> JQuery </li>                            
-                    <li title="SASS" style={{width: 110, height:110}} > <StyledIcon>  < FaSass /> </StyledIcon> SASS </li>
-                    <li title="LESS" style={{width: 110, height:110}} > <StyledIcon>  < FaLess />  </StyledIcon> LESS </li>
-                    <li title="Gulp" style={{width: 110, height:110}} > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
-                    <li title="Grunt" style={{width: 110, height:110}} > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
-                    <li title="Vite" style={{width: 110, height:110}} > <StyledIcon>  <SiVite />  </StyledIcon> Vite </li>
-                    <li title="React" style={{width: 110, height:110}} > <StyledIcon>  < FaReact />  </StyledIcon> React </li>
-                    <li title="Styled-components" style={{width: 110, height:110}} > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
-                    <li title="TailWind" style={{width: 110, height:110}} > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
-                    <li title="Jest" style={{width: 110, height:110}} > <StyledIcon>  <SiJest />  </StyledIcon> Jest </li>
-{/*                 <li title="Mongodb Atlas" style={{width: 110, height:110}} > <StyledIcon>  <SiMongodb />  </StyledIcon> Mongodb Atlas </li>
- */}                <li title="Node.js" style={{width: 110, height:110}} > <StyledIcon>  <FaNodeJs />  </StyledIcon> Node.js </li>
+                    <li title="HTML" > <StyledIcon> < FaHtml5 /></StyledIcon> HTML</li>
+                    <li title="CSS" > <StyledIcon>  < FaCss3Alt />  </StyledIcon> CSS</li>
+                    <li title="javaScript" > <StyledIcon>  < BiLogoJavascript />  </StyledIcon> JavaScript </li>
+                    <li title="Git" > <StyledIcon>  < FaGitAlt />  </StyledIcon> Git </li>
+                    <li title="Bootstrap" > <StyledIcon>  < FaBootstrap />  </StyledIcon> Bootstrap </li>
+                    <li title="JQuery" > <StyledIcon>  < BiLogoJquery /> </StyledIcon> JQuery </li>                            
+                    <li title="SASS" > <StyledIcon>  < FaSass /> </StyledIcon> SASS </li>
+                    <li title="LESS" > <StyledIcon>  < FaLess />  </StyledIcon> LESS </li>
+                    <li title="Gulp" > <StyledIcon>  < FaGulp />  </StyledIcon> Gulp </li>
+                    <li title="Grunt" > <StyledIcon>  < FaGrunt />  </StyledIcon> Grunt </li>
+                    <li title="Vite" > <StyledIcon>  <SiVite />  </StyledIcon> Vite </li>
+                    <li title="React" > <StyledIcon>  < FaReact />  </StyledIcon> React </li>
+                    <li title="Styled-components" > <StyledIcon >  < SiStyledcomponents />  </StyledIcon> Styled-components </li>    
+                    <li title="TailWind" > <StyledIcon>  < TbBrandTailwind />  </StyledIcon> TailWind </li>
+                    <li title="Jest" > <StyledIcon>  <SiJest />  </StyledIcon> Jest </li>
+{/*                 <li title="Mongodb Atlas" > <StyledIcon>  <SiMongodb />  </StyledIcon> Mongodb Atlas </li>
+ */}                <li title="Node.js" > <StyledIcon>  <FaNodeJs />  </StyledIcon> Node.js </li>
 
                 </ul>
             </nav>
@@ -87,7 +87,7 @@ export default  function Techskill(props) {
 }
 
 const StyledText = styled.div`
-    color: #fff;
+    color: #0d0d0d;
     margin-left: auto;
 
     .style {
@@ -101,10 +101,10 @@ const StyledText = styled.div`
         border-radius: 4px;
 
         h3 {
-            background-color: aquamarine;
+            background-color: rgb(57, 169, 244);
+            color: #fafafa;
             height: 40px;
             padding: 0 16px;
-            color: #0d0d0d;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -113,7 +113,6 @@ const StyledText = styled.div`
 
         @media (max-width: 768px) {
             width: 100%;
-            background-color: #0d0d0d;
         }
     }
 
@@ -144,12 +143,12 @@ const StyledIcon = styled.div`
     justify-content: center;
 
     svg {
-        color: #0d0d0d; 
-        filter: drop-shadow(0 0 1px aquamarine);
+        color: rgb(33, 169, 211); 
+        filter: drop-shadow(0 0 20px rgb(118, 200, 220));
         width: 90%;
         height: 90%;
     @media (max-width: 768px) {
-        width: 100%;
+        width: 80%;
         height: 80%;
     }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -159,7 +158,7 @@ const StyledIcon = styled.div`
 }
 
     @media (max-width: 768px) {
-        width: 70px;
+        width: 60px;
         margin: 0 auto;
     }
     @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -167,12 +166,6 @@ const StyledIcon = styled.div`
         margin: 0 auto;
     }
     
-`;
-
-const Placeholder = styled.div`
-    width: 100px;
-    height: 100px;
-    opacity: 0; /* Tornar o elemento invisível, mas ainda ocupando espaço */
 `;
 
 const DivGlobal = styled.div`
@@ -184,17 +177,18 @@ const DivGlobal = styled.div`
     align-items: start;
 
     h3 {
-        color: #FFF;
+        color: #0d0d0d;
     }
 
     nav {
             margin-left: none;
             margin-top: 30px;
-            border-radius: 0 50px 50px 0;
             li{
                 text-align: center;
                 font-size: 10px;
-                color: aquamarine;
+                color: #0d0d0d;
+                width: 110px;
+                height: 110px;
             }
     }
     
@@ -214,6 +208,7 @@ const DivGlobal = styled.div`
     list-style: none;
     width: 80%;
     margin-bottom: 40px;
+    padding: 40px 0;
 
     @media (max-width: 768px) {
         width: 100%;
@@ -246,40 +241,3 @@ const DivGlobal = styled.div`
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-            
-            
-            {/* <ul className='experiencia__skills'>
-                                        
-                                        <li> < FaHtml5 /> </li>
-                                        <li> < FaCss3Alt /> </li>
-                                        <li> < BiLogoJavascript /> </li>
-                                        <li> < FaBootstrap /> </li>
-                                        <li> < BiLogoJquery /></li>                            
-                                        <li> < FaSass /></li>
-                                        <li> < FaLess /> </li>
-                                        <li> < FaGulp /> </li>
-                                        <li> < FaGrunt /> </li>
-                                        <li> < FaReact /> </li>
-                                        
-                                    </ul>
-                                    <div className="experiencia__text">
-                                        <BiChevronsRight/>
-                                        <p className='experiencia__text--habilidades'>                                
-                                        Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como Bootstrap e bibliotecas como jQuery. 
-                                        Recentemente, tenho me concentrado em Vite, Styled-components, Tailwind e API REST.
-                                        </p>
-                                    </div>    */}    

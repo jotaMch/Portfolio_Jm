@@ -9,7 +9,6 @@ import { BiLogoGmail } from "react-icons/bi";
 import { BiLogoWhatsapp } from "react-icons/bi";
 import { BiSolidPhoneIncoming } from "react-icons/bi";
 
-
 export default function Mensagem(props) {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -60,130 +59,158 @@ export default function Mensagem(props) {
 
     return (
         <div className="main">
-                {!props.isEnglish &&
-                <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
-                    Entre em contato comigo!
-                </h3>
-                }
-                {props.isEnglish &&
-                <h3 className='contato-comigo' style={{ color: '#EFF1EA', fontWeight: '800', margin: '20px auto', width: '80%', textAlign: 'center', fontSize: 20 }}>
-                    Contact me!
-                </h3>
-                }
-            <div className='main-form'>
-                <form
-                style={{ display: 'flex', flexDirection: 'column' }}
-                onSubmit={sendEmail}
-                >
-                <div style={{ marginBottom: 20 }}>
-                {!props.isEnglish &&
-                    <input
-                        className="borderInput"
-                        placeholder="Seu nome"
-                        style={{ padding: 2, width: '100%' }}
-                        type="text"
-                        value={name}
-                        onChange={(e) => {setName(e.target.value); clearConfirmation();}}
-                    />
-                }
-                {props.isEnglish &&
-                <input
-                    className="borderInput"
-                    placeholder="Your name"
-                    style={{ padding: 2, width: '100%' }}
-                    type="text"
-                    value={name}
-                    onChange={(e) => {setName(e.target.value); clearConfirmation();}}
-                />
-                }
-                    {isError && name.trim() === '' && <TextError>Por favor, insira seu nome</TextError>}
-                </div>
+                <div className='main-form'>
+                    <div className='form-width'>
+                        <form
+                            style={{ display: 'flex', flexDirection: 'column' }}
+                            onSubmit={sendEmail}
+                            >
+                            <div style={{ marginBottom: 20 }}>
 
-                <div style={{ marginBottom: 20 }}>
-                {!props.isEnglish &&
-                    <input
-                        className="borderInput"
-                        placeholder="Seu email"
-                        style={{ padding: 2, width: '100%' }}
-                        type="email"
-                        value={email}
-                        onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
-                    />
-                }
-                {props.isEnglish &&
-                    <input
-                        className="borderInput"
-                        placeholder="Your email"
-                        style={{ padding: 2, width: '100%' }}
-                        type="email"
-                        value={email}
-                        onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
-                    />
-                }
+
+                            {!props.isEnglish &&
+                            <h3 className='contato-comigo' >
+                                Entre em contato comigo!
+                            </h3>
+                            }
+                            {props.isEnglish &&
+                            <h3 className='contato-comigo' >
+                                Contact me!
+                            </h3>
+                            }
+
+
+
+                            {!props.isEnglish &&
+                                <input
+                                    className="borderInput"
+                                    placeholder="Seu nome"
+                                    style={{ padding: 2, width: '100%' }}
+                                    type="text"
+                                    value={name}
+                                    onChange={(e) => {setName(e.target.value); clearConfirmation();}}
+                                />
+                            }
+                            {props.isEnglish &&
+                            <input
+                                className="borderInput"
+                                placeholder="Your name"
+                                style={{ padding: 2, width: '100%' }}
+                                type="text"
+                                value={name}
+                                onChange={(e) => {setName(e.target.value); clearConfirmation();}}
+                            />
+                            }
+                                {isError && name.trim() === '' && <TextError>Por favor, insira seu nome</TextError>}
+                            </div>
+
+                            <div style={{ marginBottom: 20 }}>
+                            {!props.isEnglish &&
+                                <input
+                                    className="borderInput"
+                                    placeholder="Seu email"
+                                    style={{ padding: 2, width: '100%' }}
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
+                                />
+                            }
+                            {props.isEnglish &&
+                                <input
+                                    className="borderInput"
+                                    placeholder="Your email"
+                                    style={{ padding: 2, width: '100%' }}
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => {setEmail(e.target.value); clearConfirmation();}}
+                                />
+                            }
+                            
+                                {isError && email.trim() === '' && <TextError>Por favor, insira seu email</TextError>}
+                            </div>
+
+                            <div>
+                                {!props.isEnglish &&
+                                <textarea
+                                    className="borderInput"
+                                    style={{ width: '100%', height: 58, overflowY: 'none' }}
+                                    placeholder="Sua mensagem"
+                                    value={message}
+                                    type="text"
+                                    onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
+                                />
+                                }
+                                {props.isEnglish &&
+                                <textarea
+                                    className="borderInput"
+                                    style={{ width: '100%', height: 58, overflowY: 'none' }}
+                                    placeholder="Your message"
+                                    value={message}
+                                    type="text"
+                                    onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
+                                />
+                                }
+                                {isError && message.trim() === '' && <TextError>Por favor, insira sua mensagem</TextError>}
+                            </div>
+                            {!props.isEnglish &&
+                            <StyledSubmitButton type="submit">Enviar</StyledSubmitButton>
+                            }
+                            {props.isEnglish && 
+                            <StyledSubmitButton type="submit">Send</StyledSubmitButton>
+                            }
+                            {valido && <TextError>Sua mensagem foi enviada</TextError>}
+                            <ul className="contact">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                        <BiLogoLinkedin />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/jotaMch">
+                                        <BiLogoGithub />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:jandersonmachado090@gmail.com">
+                                        <BiLogoGmail />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://wa.me/552194707188">
+                                        <BiLogoWhatsapp />
+                                    </a>
+                                </li> 
+                            </ul>
+                        </form>
+                    </div>
                 
-                    {isError && email.trim() === '' && <TextError>Por favor, insira seu email</TextError>}
-                </div>
 
-                <div>
+                <footer id="contact">
+
                     {!props.isEnglish &&
-                    <textarea
-                        className="borderInput"
-                        style={{ width: '100%', height: 58, overflowY: 'none' }}
-                        placeholder="Sua mensagem"
-                        value={message}
-                        type="text"
-                        onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
-                    />
+                    <div style={{color: 'rgb(224, 234, 237)'}} className="info-footer">
+                        <div>
+                            <p>
+                                &copy; 2023 / Desenvolvido por Jânderson Machado
+                            </p>
+                        </div>                    
+                        <span className="number-tell">< BiSolidPhoneIncoming style={{color: 'rgb(224, 234, 237)'}} /> (21) 99470-7188 | (21) 96432-4139</span>
+                    </div>
                     }
-                    {props.isEnglish &&
-                    <textarea
-                        className="borderInput"
-                        style={{ width: '100%', height: 58, overflowY: 'none' }}
-                        placeholder="Your message"
-                        value={message}
-                        type="text"
-                        onChange={(e) => {setMessage(e.target.value); clearConfirmation();}}
-                    />
-                    }
-                    {isError && message.trim() === '' && <TextError>Por favor, insira sua mensagem</TextError>}
-                </div>
-                {!props.isEnglish &&
-                <StyledSubmitButton type="submit">Enviar</StyledSubmitButton>
-                }
-                {props.isEnglish && 
-                <StyledSubmitButton type="submit">Send</StyledSubmitButton>
-                }
-                {valido && <TextError>Sua mensagem foi enviada</TextError>}
-            </form>
 
-            <div className='sub-contact'>
-                <ul className="contact">
-                    <li>
-                        <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
-                            <BiLogoLinkedin />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jotaMch">
-                            <BiLogoGithub />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:jandersonmachado090@gmail.com">
-                            <BiLogoGmail />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/552194707188">
-                            <BiLogoWhatsapp />
-                        </a>
-                    </li> 
-                </ul>
-                <span className="number-tell">< BiSolidPhoneIncoming /> (21) 99470-7188 | (21) 96432-4139</span>
+                    {props.isEnglish && 
+                    <div style={{color: 'rgb(224, 234, 237)'}} className="info-footer">
+                        <div>
+                            <p>
+                                &copy; 2023 / Developed by Jânderson Machado
+                            </p>
+                        </div>
+                        <span className="number-tell">< BiSolidPhoneIncoming style={{color: 'rgb(224, 234, 237)'}} /> (21) 99470-7188 | (21) 96432-4139</span>
+                    </div>
+                    }
+                </footer>
             </div>
-            
         </div>
-    </div>
     );
 }
 
@@ -191,8 +218,8 @@ export default function Mensagem(props) {
 
 
 const StyledSubmitButton = styled.button`
-    background-color: aquamarine;
-    color: #000;
+    background-color: rgb(57, 169, 244);
+    color: rgb(224, 234, 237);
     font-weight: bold;
     padding: 8px 20px;
     border: none;
@@ -203,14 +230,14 @@ const StyledSubmitButton = styled.button`
 
     &:hover {
         background-color: transparent;
-        border: 2px solid aquamarine;
-        color: aquamarine;
+        border: 2px solid rgb(57, 169, 244);
+        color: rgb(57, 169, 244);
     }
 `;
 
 
 const TextError = styled.p `
-    color: aquamarine;
+    color: rgb(57, 169, 244);
     font-size: 12px;
 `;
 

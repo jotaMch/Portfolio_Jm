@@ -13,9 +13,8 @@ h3 {
   letter-spacing: 2px; /* Ajuste o valor conforme necessário */
 }
 
-
 body {
-  background-color: #0d0d0d;
+  background-color: rgb(224, 234, 237);
 }
 
 main {
@@ -57,6 +56,10 @@ header {
   border-radius: 30px;
 }
 
+.header-top li {
+  color: #0d0d0d !important;
+}
+
 
 header img {
   padding: 10px;
@@ -70,7 +73,7 @@ ul.telaG {
 } 
 
 ul.telaG li {
-  color: #EFF1EA;
+  color: rgb(198, 206, 208);
   border-radius: 30px;
 }
 
@@ -80,7 +83,7 @@ header li {
   cursor: pointer;
   position: relative;
   letter-spacing: 3px;
-  color: #000000;
+  color: #0d0d0d;
   padding-bottom: 2px;
 }
 
@@ -97,7 +100,7 @@ li .front-text {
 header li:hover .front-text {
   background-size: 100%;
   width: 100%;
-  background-image: linear-gradient(to right, rgb(0,0,0,0.1), aquamarine);
+  background-image: linear-gradient(to right, rgb(0,0,0,0.1), rgb(57, 169, 244));
   border-radius: 30px;
 }
 
@@ -118,14 +121,14 @@ header li:hover .front-text {
 }
 
 .name-text h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bold;
-  color: #EFF1EA;
+  color: rgb(225, 229, 231);
+  text-shadow: 0 0 8px rgb(57, 169, 244) ;
 }
 
-
 .name-text p {
-  color: #EFF1EA;
+  color: #0d0d0d;
   margin: 0 0 50px;
 }
 
@@ -134,8 +137,8 @@ header li:hover .front-text {
 .img {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgba(0,0,0,0.1);
+  justify-content: space-between;/* 
+  background-color: rgba(0,0,0,0.1); */
   border-radius: 0 0 10px 40%;
 }
 
@@ -156,7 +159,7 @@ header li:hover .front-text {
   width: 100%;
   height: 100%;/* 
   background-color: rgba(0, 0, 0, 0.8);   */
-  background-image: linear-gradient(to top, #0d0d0d 30%, #0d0d0daa 80%,rgba(13, 13, 13, 0.274)); 
+  background-image: linear-gradient(to top, rgb(224, 234, 237) 30%, rgba(175, 174, 174, 0.588) 80%,rgba(123, 122, 122, 0.122)); 
 }
 
 .found {
@@ -164,7 +167,7 @@ header li:hover .front-text {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% calc(50% + 14%);
-  background-image: url(../assets/fundo_Tech.webp);
+  background-image: url(../assets/found-design.png);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -186,7 +189,7 @@ header li:hover .front-text {
   position: relative;
   height: 198px;
   width: 198px;
-  background-image: linear-gradient(to top, aqua, aquamarine 70%);
+  background-image: linear-gradient(to top, rgb(7, 91, 148), rgb(57, 169, 244) 70%);
   border-radius: 50%;
   border: 3px solid #fff;
 }
@@ -205,7 +208,7 @@ header li:hover .front-text {
 
 
 .espaco {
-  color: #EFF1EA;
+  color: #0d0d0d;
   width: 68%;
 }
 
@@ -219,8 +222,8 @@ header li:hover .front-text {
   max-width: 200px;
   width: 100%;
   height: 40px;
-  color: aquamarine;
-  border: 1px solid aquamarine;
+  color: rgb(57, 169, 244);
+  border: 1px solid rgb(57, 169, 244);
   margin-right: 10px;
   background-color: transparent;  
   text-align: center;
@@ -234,7 +237,7 @@ header li:hover .front-text {
   width: 100%;
   height: 40px;
   color: rgb(24, 24, 24);
-  background-color: aquamarine;
+  background-color: rgb(57, 169, 244);
   position: relative;
   text-align: center;
   border-radius: 4px;
@@ -245,7 +248,7 @@ header li:hover .front-text {
 }
 
 .button__curriculo .text {
-  color: rgb(24, 24, 24);
+  color: rgb(226, 218, 218);
   font-weight: bold;
 }
 
@@ -280,7 +283,7 @@ header li:hover .front-text {
 }
 
 .button__curriculo .icon {
-  color: rgb(24, 24, 24);
+  color: rgb(226, 218, 218);
 }
 
 .button__curriculo:hover .text {
@@ -293,7 +296,7 @@ header li:hover .front-text {
 }
 
 .espaco .border_bottom {
-  border-bottom: 3px solid aquamarine;
+  border-bottom: 3px solid rgb(57, 169, 244);
   height: 10px;
   width: 80px;
   margin: 8px 0 22px;
@@ -312,7 +315,7 @@ header li:hover .front-text {
   width: 150px;
   height: 40px;
   margin: 0 auto;
-  color: #EFF1EA;
+  color: #0d0d0d;
   background-color: #000000;
   position: relative;
   text-align: center;
@@ -334,7 +337,7 @@ header li:hover .front-text {
   width: 100%;
   height: 100%;
   left: 0;
-  color: #EFF1EA;
+  color: #0d0d0d;
 }
 
 .text {
@@ -346,7 +349,7 @@ header li:hover .front-text {
 }
 
 .icon {
-  color: aquamarine;
+  color: rgb(57, 169, 244);
   top: 100%;
   display: flex;
   align-items: center;
@@ -441,7 +444,19 @@ header li:hover .front-text {
 
 }
 
-@media screen and (max-width: 767px) {    
+@media screen and (max-width: 767px) {    /* 
+.found {
+  position: relative; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: ;
+  background-image: url(../assets/react-img.png);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+} */
 
   header {
     flex-direction: column;

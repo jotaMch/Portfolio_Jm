@@ -1,138 +1,278 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/educacao.css';
 import styled from 'styled-components';
 import { BiBadgeCheck } from "react-icons/bi";
 import { BiBookOpen } from "react-icons/bi";
+import { IoAddOutline } from "react-icons/io5";
+//img certificado
+import ReactImg from '../assets/certificado-image/react-matricula.png'
+import Web from '../assets/certificado-image/dev-web.png'
+import front from '../assets/certificado-image/front-end-ebac.png'
+import Introducao from '../assets/certificado-image/introducao-prg.png'
+import Ux from '../assets/certificado-image/ux-certificado.png'
+import Intensivo from '../assets/certificado-image/intensivo-js-hastag.png'
 
 
 function Educacao(props) {
+    const [certificado, setCertificado] = useState(null);
+
+    const openImg = (index) => {
+        setCertificado((prevState) => (prevState === index ? null : index));
+        index.styled.height = '160px'
+    };
 
     return (
-        <EducacaoText>      
-            {!props.isEnglish &&           
-            <nav className='obj' >
-            <h3>Certificações e estudos</h3>
-            <div className="border-aqua"></div>
+        <EducacaoText>
+            {!props.isEnglish &&  <h3>Meus certificados</h3>}
+            {props.isEnglish && <h3>My Certificates</h3>}
+            
+            {!props.isEnglish && (
                 <ul className='cursos'>
-                    <li><BiBookOpen /> React do zero ao pro - Estudanto / EBAC</li>
-                    <li><BiBadgeCheck /> Desenvolvimento web - Completo / Rockseat</li>
-                    <li><BiBadgeCheck/> Desenvolvimento Front-end do zero ao pro - Completo / EBAC</li>
-                    <li><BiBadgeCheck/> Introdução a programação - Completo / EBAC</li>
-                    <li><BiBadgeCheck/> Nano Course User Experience - Completo / FIAP</li>
-                    <li><BiBadgeCheck/> Fundamento da gestão de projetos - Completo / FM2S</li>
-                </ul>
-            </nav>
-            }
+                    <li  onClick={() => openImg(0)} 
+                    style={{  
+                    alignItems: certificado === 0 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBookOpen /> React do zero ao pro - Estudanto / EBAC
+                            </div>
+                            <IoAddOutline 
+                            className='mais'
+                            style={{transform: certificado === 0 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 0 && (
+                            <img src={ReactImg} className='certificadoClassMatricula' alt="React-curso" />
+                        )}
+                    </li>
 
-            {props.isEnglish && 
-            <nav className='obj' >
-            <h3>Certifications and Studies</h3>
-            <div className="border-aqua"></div>
+
+
+                    <li  onClick={() => openImg(1)} 
+                    style={{  
+                    alignItems: certificado === 1 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Desenvolvimento web - Completo / Rockseat
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 1 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 1 && (
+                            <img src={Web} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(2)} 
+                    style={{  
+                            alignItems: certificado === 2 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Desenvolvimento Front-end do zero ao pro - Completo / EBAC
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 2 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 2 && (
+                            <img src={front} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(3)} 
+                    style={{  
+                            alignItems: certificado === 3 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Introdução a programação - Completo / EBAC
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 3 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 3 && (
+                            <img src={Introducao} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(4)} 
+                    style={{  
+                            alignItems: certificado === 4 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Nano Course User Experience - Completo / FIAP
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 4 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 4 && (
+                            <img src={Ux} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                </ul>
+            )}
+
+
+            {props.isEnglish && (
                 <ul className='cursos'>
-                    <li><BiBookOpen /> React from Zero to Pro - Studying / EBAC</li>
-                    <li><BiBadgeCheck /> Web Development - Completed / Rockseat</li>
-                    <li><BiBadgeCheck/> Front-end Development from Zero to Pro - Completed / EBAC</li>
-                    <li><BiBadgeCheck/> Introduction to Programming - Completed / EBAC</li>
-                    <li><BiBadgeCheck/> Nano Course User Experience - Completed / FIAP</li>
-                    <li><BiBadgeCheck/> Project Management Fundamentals - Completed / FM2S</li>  
-                </ul>
-            </nav>
-            }
-                                
-            {!props.isEnglish && 
-            <div className='obj'>
-                <h3>Meu objetivo</h3>
-                <div className="border-aqua"></div>
-                <p>
-                    Desejo contribuir com equipes criativas, onde irei trabalhar em projetos 
-                    desafiadores que me permitam aprender e crescer profissionalmente. Estou 
-                    comprometido em seguir as melhores práticas de desenvolvimento. Acima de tudo, 
-                    criar produtos digitais com melhor performace, que atendam às necessidades dos 
-                    usuários e proporcionem uma experiência agradável.
-                </p> 
-            </div>
-            }
+                    <li  onClick={() => openImg(0)} 
+                    style={{  
+                    alignItems: certificado === 0 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBookOpen />React from Scratch to Pro - Studying / EBAC
+                            </div>
+                            <IoAddOutline 
+                            className='mais'
+                            style={{transform: certificado === 0 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 0 && (
+                            <img src={ReactImg} className='certificadoClassMatricula' alt="React-curso" />
+                        )}
+                    </li>
 
-            
-            {props.isEnglish && 
-            
-            <div className='obj'>
-                <h3>My objective</h3>
-                <div className="border-aqua"></div>
-                <p>
-                    I aim to contribute to creative teams, where I will work on challenging 
-                    projects that allow me to learn and grow professionally. I am committed to following best development 
-                    practices. Above all, creating digital products with optimal performance that meet 
-                    user needs and provide a pleasant experience.
-                </p> 
-            </div>
-            }
-            
+
+
+                    <li  onClick={() => openImg(1)} 
+                    style={{  
+                    alignItems: certificado === 1 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck />  Web Development - Complete / Rockseat
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 1 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 1 && (
+                            <img src={Web} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(2)} 
+                    style={{  
+                            alignItems: certificado === 2 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Front-end Development from Scratch to Pro - Complete / EBAC
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 2 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 2 && (
+                            <img src={front} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(3)} 
+                    style={{  
+                            alignItems: certificado === 3 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Introduction to Programming - Complete / EBAC
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 3 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 3 && (
+                            <img src={Introducao} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                    <li  onClick={() => openImg(4)} 
+                    style={{  
+                            alignItems: certificado === 4 ? 'start' : 'center'}} 
+                    >
+                        <div className='sub-lista'>
+                            <div>
+                                <BiBadgeCheck /> Nano Course User Experience - Complete / FIAP
+                            </div>
+                            <IoAddOutline className='mais' 
+                            style={{transform: certificado === 4 ? 'rotate(45deg)' : '' }} />
+                        </div>
+                        {certificado === 4 && (
+                            <img src={Ux} className='certificadoClass' alt="certificado" />
+                        )}
+                    </li>
+                </ul>
+            )}
         </EducacaoText>
-    )
-}
+    );
+    }
 
-export default Educacao;
+    export default Educacao;
 
-
-const EducacaoText = styled.p `
+    const EducacaoText = styled.ul`
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: #fff;
+    color: #0d0d0d;
     padding-bottom: 180px;
 
-    nav {
-        @media (max-width: 768px) {
+    h3 {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 34px;
+        @media screen and (min-width: 768px) and (max-width: 1100px) {  
+            width: 90%;
+        }
+        @media screen and (max-width: 767px) {
             width: 90%;
         }
     }
-    
-    @media (max-width: 768px) {
+    ul {
+        width: 100%;               
+        @media screen and (min-width: 768px) and (max-width: 1100px) {  
+            width: 90%;
+        }
+        @media screen and (max-width: 767px) {
+            width: 90%;
+        }
+    }
+
+    li {
+        font-size: 16px;
+        padding: 20px 0 20px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-direction: column;
-    }
+        box-shadow: 0 0 14px 1px rgb(180, 195, 197);
+        border-radius: 30px;
+        margin-bottom: 8px;
+        list-style: none;
+        cursor: pointer;
+        position: relative;
 
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .border-aqua {
-            width: 100px;
-            height: 4px;
-            margin: 12px 0 36px;
-            background-color: aquamarine;
+        .sub-lista {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
         }
 
-    @keyframes obj {
-    0% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-        box-shadow: 8px -14px 20px -30px #7fffd4, 8px 14px 20px -30px #7fffd4;
-    }
-    }
+        .mais {
+            margin-right: 22px;
+            height: 22px;
+            width: 22px;
+        }
 
-    .obj {
-        animation: obj 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        padding: 22px;
-        width: 46%;
-        min-height: 243px;
-        border-radius: 0 24px 24px 0;
-        @media (max-width: 768px) {
-            width: 90%;
-            margin-top: 28px;
+        .certificadoClass {
+            width: 380px;
+            height: 250px;
+            margin: 30px auto 0;
+            box-shadow: 0 0 12px 2px rgb(198, 233, 237);
+            border-radius: 16px;
         }
         
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-        width: 46%;
-        min-height: 280px;
-    }
+        .certificadoClassMatricula {            
+            width: 380px;
+            height: 450px;
+            margin: 30px auto 0;
+            box-shadow: 0 0 12px 2px rgb(198, 233, 237);
+            border-radius: 16px;
+        }
     }
 
-    li{
-        list-style: none;
+    article {
+        background-color: rgb(57, 169, 244);
     }
 `;
-
-
