@@ -261,6 +261,13 @@ function Educacao(props) {
             margin: 30px auto 0;
             box-shadow: 0 0 12px 2px rgb(198, 233, 237);
             border-radius: 16px;
+                
+            @media screen and (min-width: 768px) and (max-width: 1100px) {  
+                width: 90%;
+            }
+            @media screen and (max-width: 767px) {
+                width: 90%;
+            }
         }
         
         .certificadoClassMatricula {            
@@ -269,6 +276,13 @@ function Educacao(props) {
             margin: 30px auto 0;
             box-shadow: 0 0 12px 2px rgb(198, 233, 237);
             border-radius: 16px;
+                
+            @media screen and (min-width: 768px) and (max-width: 1100px) {  
+                width: 90%;
+            }
+            @media screen and (max-width: 767px) {
+                width: 90%;
+            }
         }
     }
 

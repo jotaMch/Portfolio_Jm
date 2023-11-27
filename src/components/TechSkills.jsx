@@ -210,8 +210,17 @@ const DivGlobal = styled.div`
     margin-bottom: 40px;
     padding: 40px 0;
 
+    
+    @media (max-width: 368px) {
+        li {
+            width: 30.3%;
+        }
+
+    }
     @media (max-width: 768px) {
         width: 100%;
+        gap: 1px;
+        justify-content: space-between;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1200px) {
