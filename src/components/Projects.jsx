@@ -5,6 +5,9 @@ import { BiLogoGithub } from "react-icons/bi";
 import { BiLayout } from "react-icons/bi";
 import { BiCloset } from "react-icons/bi";
 import { BiSolidCar } from "react-icons/bi";
+import { FaCar } from "react-icons/fa";
+import { GiAirplaneDeparture } from "react-icons/gi";
+import { IoIosContacts } from "react-icons/io";
 import { BiBriefcaseAlt } from "react-icons/bi";
 import { BiLogoJavascript } from "react-icons/bi";
 import { BiLogoTailwindCss } from "react-icons/bi";
@@ -17,8 +20,7 @@ import { FaSass } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
-import { SiStyledcomponents } from "react-icons/si";/* 
-import { GrNext } from "react-icons/gr" */
+import { SiStyledcomponents } from "react-icons/si";
 import { BiLogoCss3 } from "react-icons/bi"
 //images of projects
 import mobile1 from '../assets/project-image/mobile1.png'; 
@@ -27,6 +29,8 @@ import mobile3 from '../assets/project-image/mobile3.png';
 import mobile4 from '../assets/project-image/mobile4.png';
 import mobile5 from '../assets/project-image/mobile5.png';
 import mobile6 from '../assets/project-image/mobile6.png';
+import mobile7 from '../assets/project-image/mobile7.png';
+
 
 /* 
 import { Link } from "react-router-dom"; */
@@ -156,7 +160,7 @@ function Projects(props) {
                             <div classNameName="sobre-project"></div>
                             <div className="profileDiv" >
                                 <div className='sub-info'>
-                                    <BiCloset />
+                                    <FaCar />
                                     Formulário de carros 
                                     <div>< FaReact/> <BiLogoCss3/>  </div>
                                 </div>
@@ -184,7 +188,7 @@ function Projects(props) {
                             <div classNameName="sobre-project"></div>
                             <div className="profileDiv" >
                                 <div className='sub-info'>
-                                    <BiCloset />
+                                    <GiAirplaneDeparture />
                                     Focus Tourism
                                     <div><FaHtml5/> <BiLogoCss3/> <BiLogoJavascript/>  </div>
                                 </div>
@@ -205,10 +209,44 @@ function Projects(props) {
                                     <a href="https://turismo-jm.vercel.app/">< BiLayout /></a>                                
                                 </div>
                             </div>
+                        </div>   
+
+
+                        <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv" >
+                                <div className='sub-info'>
+                                    <IoIosContacts />
+                                    Jm Contact
+                                    <div><FaReact/> <BiLogoCss3/>  </div>
+                                </div>
+                                <div className='mobClass' >
+                                <img src={mobile7} alt="" />
+                            </div>
+                            </div>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Jm Contact</p>
+                                    <p style={{padding: 8}} className="role">
+                                    Aplicação de gerenciamento de contatos baseado em React, utilizando 
+                                    tecnologias como React Hooks e conponentes funcionais.
+                                    </p>
+                                </div>
+                                <div className="socialDiv">
+                                    <a href="https://github.com/jotaMch/desafio_lest_contact_janderson/tree/master"><BiLogoGithub /></a>
+                                    <a href="https://desafio-lest-contact-janderson.vercel.app/">< BiLayout /></a>                                
+                                </div>
+                            </div>
                         </div>                
                 </div>
             </div>
             }
+
+
+
+           {/* ########################################## */}
+
+
 
             {props.isEnglish && 
             <div className="project">
@@ -325,7 +363,7 @@ function Projects(props) {
                         <div className="sobre-project"></div>
                         <div className="profileDiv" >
                             <div className='sub-info'>
-                                <BiCloset />
+                                <FaCar />
                                 Car Form
                                 <div><FaReact/> <BiLogoCss3/> </div>
                             </div>
@@ -352,7 +390,7 @@ function Projects(props) {
                         <div classNameName="sobre-project"></div>
                         <div className="profileDiv" >
                             <div className='sub-info'>
-                                <BiCloset />
+                                <GiAirplaneDeparture />
                                 Focus Tourism
                                 <div><FaHtml5/> <BiLogoCss3/> <BiLogoJavascript/> </div>
                             </div>
@@ -374,6 +412,32 @@ function Projects(props) {
                             </div>
                         </div>
                     </div>
+                    <div className="cardContainer">
+                            <div classNameName="sobre-project"></div>
+                            <div className="profileDiv" >
+                                <div className='sub-info'>
+                                    <IoIosContacts />
+                                    Jm Contact
+                                    <div><FaReact/> <BiLogoCss3/>  </div>
+                                </div>
+                                <div className='mobClass' >
+                                <img src={mobile7} alt="" />
+                            </div>
+                            </div>
+                            <div className="infoDiv">
+                                <div className="nameDiv">
+                                    <p style={{marginRight: 'auto', padding: 8}} className="role">Jm Contact</p>
+                                    <p style={{padding: 8}} className="role">
+                                    Contact management application based on React, using
+                                    technologies such as React Hooks and functional components.
+                                    </p>
+                                </div>
+                                <div className="socialDiv">
+                                    <a href="https://github.com/jotaMch/desafio_lest_contact_janderson/tree/master"><BiLogoGithub /></a>
+                                    <a href="https://desafio-lest-contact-janderson.vercel.app/">< BiLayout /></a>                                
+                                </div>
+                            </div>
+                        </div>   
                     </div>
                 </div>
             }
