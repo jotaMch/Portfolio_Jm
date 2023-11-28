@@ -143,8 +143,8 @@ const StyledIcon = styled.div`
     justify-content: center;
 
     svg {
-        color: rgb(33, 169, 211); 
-        filter: drop-shadow(0 0 20px rgb(118, 200, 220));
+        color: rgb(57, 169, 244); 
+        filter: drop-shadow(0 0 10px rgb(143, 198, 234));
         width: 90%;
         height: 90%;
     @media (max-width: 768px) {
