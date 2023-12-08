@@ -66,7 +66,7 @@ export default  function Techskill(props) {
                         Tenho me dedicado a aprimorar habilidades desde HTML, CSS e JavaScript até frameworks como 
                         Bootstrap e bibliotecas como jQuery. 
                         Recentemente, tenho me concentrado em Node e Jest.
-                        Venho estudando dia após dia para obter melhores conhecimmentos e boas práticas.
+                        Venho estudando dia após dia para obter melhores conhecimentos e boas práticas.
                     </p>
                 </div>
             }
