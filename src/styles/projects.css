@@ -273,7 +273,7 @@ p.card-content {
     }
 
     .mobClass {  
-        background-image: url(../assets/project-image/fundo/nightDark.jpeg);
+        background-image: url('https://cdn.pixabay.com/photo/2022/06/23/17/13/ball-7280265_1280.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         width: 50%;

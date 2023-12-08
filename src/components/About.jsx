@@ -40,7 +40,7 @@ function About(props) {
                                 <div className="border_bottom onUp"></div>
                                 {!props.isEnglish && 
                                     <p  className='text-sobre onUp'>
-                                    Oi, sou Jânderson Machado, estudo Analise e Desenvolvimento de sistemas na Estácio. 
+                                    Oi, sou Antonio Jânderson, estudo Analise e Desenvolvimento de sistemas na Estácio. 
                                     Venho desenvolvendo novas habilidades dia após dia, busco sempre manter as boas práticas 
                                     de escrita de código e uma boa comunicação com equipes em que trabalho.
                                     Minha busca contínua por aprendizado e abordagem curiosa me motivam a enfrentar 
@@ -51,7 +51,7 @@ function About(props) {
                                     
                                     {props.isEnglish && 
                                     <p  className='text-sobre onUp'>
-                                    Hello, I'm Jânderson Machado, studying Systems Analysis and Development at Estácio. 
+                                    Hello, I'm Antonio Jânderson, studying Systems Analysis and Development at Estácio. 
                                     I've been continuously developing new skills day by day, always striving to maintain 
                                     good coding practices and effective communication within the teams I work with. My ongoing 
                                     quest for learning and a curious approach motivate me to tackle challenges and create 
