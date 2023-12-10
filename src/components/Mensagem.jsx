@@ -161,10 +161,11 @@ export default function Mensagem(props) {
                             {valido && <TextError>Sua mensagem foi enviada</TextError>}
                             <ul className="contact">
                                 <li>
-                                    <a href="https://www.linkedin.com/in/j%C3%A2nderson-machado-082b54259/">
+                                    <a href="https://www.linkedin.com/in/antonio-j%C3%A2nderson-082b54259/">
                                         <BiLogoLinkedin />
                                     </a>
                                 </li>
+                                {/* https://www.linkedin.com/in/antonio-j%C3%A2nderson-082b54259/ */}
                                 <li>
                                     <a href="https://github.com/jotaMch">
                                         <BiLogoGithub />
