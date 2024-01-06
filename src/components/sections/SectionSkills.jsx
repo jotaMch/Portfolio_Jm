@@ -1,8 +1,5 @@
 import React from "react";
-import { BiLogoJavascript, BiLogoJquery } from "react-icons/bi";
-import { FaGrunt, FaGulp, FaLess, FaSass, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { TbBrandTailwind } from "react-icons/tb";
-import { SiJest, SiMongodb, SiStyledcomponents  } from "react-icons/si"
+import { FaNodeJs } from "react-icons/fa";
 import Skills from "./skills/Skills";
 const MySkills = () => {
     return(
