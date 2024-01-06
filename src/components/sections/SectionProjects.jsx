@@ -33,7 +33,7 @@ const SectionProjects = ({ projects, newProject }) => {
 
     
     return (
-        <div className="">  
+        <div className="w-11/12 mx-auto">  
             {isVisible &&       
             <button
             onClick={scrollToTop}
@@ -44,7 +44,7 @@ const SectionProjects = ({ projects, newProject }) => {
             </button>
             }
             < Cabecalho />
-            <section className="flex flex-col justify-center md:pt-36 lg:pt-40 pt-0 xl:pt-40 w-11/12 mx-auto">
+            <section className="flex flex-col justify-center md:pt-36 lg:pt-40 pt-0 xl:pt-40">
                 <div className="flex flex-col justify-center bg-[#111] p-4">
                     <h2 className="text-3xl text-white text-center mb-6" >Projeto mais recente</h2>
                     <div className="
