@@ -35,13 +35,13 @@ const SectionInit = ({scrollToTop, isVisible}) => {
                         Sou um desenvolvedor front-end dedicado e apaixonado por criar novas experiências web.
                         </p>
                         <div className="w-full flex gap-2 justify-center items-center">
-                            <button
+                            <a 
                             className="
                             bg-green-500 w-[46%] md:w-[46%] lg:w-1/5 xl:w-1/5 h-14 mt-12
-                            hover:scale-105 duration-300" 
-                            type="button">
-                                Contate-me
-                            </button>
+                            hover:scale-105 duration-300 flex justify-center items-center"
+                            href="https://wa.me/552194707188">
+                                Contate-me 
+                            </a>
                         </div>
                     </div>
                 </article>
