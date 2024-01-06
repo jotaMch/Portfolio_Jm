@@ -58,10 +58,10 @@ const Contact = () => {
     }
 
     return (
-        <div className="h-[1400px] md:h-[1500px] lg:h-screen xl:h-screen flex flex-col justify-between items-center">
+        <div className="h-[1400px] md:h-[1500px] lg:h-screen xl:h-screen flex flex-col justify-between items-center w-11/12 mx-auto">
             < Cabecalho />
             <div className="
-            w-11/12 z-10 overflow-hidden p-8 rounded-lg bg-[#111] text-white flex 
+            z-10 overflow-hidden p-8 rounded-lg bg-[#111] text-white flex 
             flex-col md:flex-col lg:flex-row xl:flex-row justify-around md:items-center items-end
             mt-0 md:mt-40 lg:mt-40 xl:mt-40 responsive-contact h-full md:h-full lg:h-[700px] xl:h-[700px]">
                 <div className="w-full md:w-5/6 lg:w-3/6 xl:w-3/6">
