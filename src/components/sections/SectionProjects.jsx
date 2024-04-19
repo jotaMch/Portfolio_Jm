@@ -156,31 +156,31 @@ const SectionProjects = ({ projects, newProject }) => {
                                     {project.technologies.map((TechIcon, index) => (
                                         <TechIcon key={index} className="mr-1 w-6 h-6" />
                                     ))}
+                                    </div>
+                                    <div className="text-sm py-2 ">
+                                        {project.about}
+                                    </div>
+                                    <div  className="flex gap-2 mt-2">
+                                        <a
+                                            href={project.link.project}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-green-100 text-green-700 rounded-xl px-3 py-1 text-sm
+                                            hover:bg-[#111] hover:shadow hover:shadow-green-700 transition-all duration-300 ease-in-out"
+                                        >
+                                            Projeto
+                                        </a>
+                                        <a
+                                            href={project.link.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="bg-green-100 text-green-700 rounded-xl px-3 py-1 text-sm
+                                            hover:bg-[#111] hover:shadow hover:shadow-green-700 transition-all duration-300 ease-in-out"
+                                        >
+                                            GitHub
+                                        </a>
+                                    </div>
                                 </div>
-                                <div className="text-sm py-2 ">
-                                    {project.about}
-                                </div>
-                                <div  className="flex gap-2 mt-2">
-                                    <a
-                                        href={project.link.project}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="bg-green-100 text-green-700 rounded-xl px-3 py-1 text-sm
-                                        hover:bg-[#111] hover:shadow hover:shadow-green-700 transition-all duration-300 ease-in-out"
-                                    >
-                                        Projeto
-                                    </a>
-                                    <a
-                                        href={project.link.github}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="bg-green-100 text-green-700 rounded-xl px-3 py-1 text-sm
-                                        hover:bg-[#111] hover:shadow hover:shadow-green-700 transition-all duration-300 ease-in-out"
-                                    >
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
                             {project.mobileImg.map((mobile, index) => (
                                 <div key={index} className="h-full w-2/5 flex justify-center items-center">
                                     <img src={mobile} className="h-3/6 md:h-4/6 lg:h-4/6 xl:h-4/6 w-3/6 md:w-2/6 lg:w-3/6 xl:w-3/6" alt="image mobile" />

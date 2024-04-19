@@ -16,7 +16,7 @@ const Project = () => {
     const [newProject, setNewProject] = useState([
         {
             name: "Gestão de Recursos & Produtos",
-            about: "Este projeto foi desenvolvido com o objetivo de criar uma aplicação de gerenciamento de produtos, proporcionando funcionalidades como adição, edição, exclusão e filtragem. ",
+            about: "Este projeto foi desenvolvido com o objetivo de criar uma aplicação de gerenciamento de produtos, proporcionando funcionalidades como adicionar, editar, excluir e filtrar. ",
             technologies: [FaReact, BiLogoTailwindCss, FaNodeJs, SiMongodb],
             link: {
                 front: 'https://github.com/jotaMch/CRUD-Front-REACT', 
