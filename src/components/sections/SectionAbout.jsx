@@ -1,6 +1,6 @@
 import React from "react";
 import { BiLogoLinkedin, BiLogoGithub, BiLogoGmail, BiLogoWhatsapp } from "react-icons/bi";
-import CvJota from '../../assets/curriculo/CV_Antonio.docx';
+import CvJota from '../../assets/curriculo/CV Antonio Jânderson.docx';
 const SectionAbout = () => {
 
     return(
