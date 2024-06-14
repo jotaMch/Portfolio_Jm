@@ -7,6 +7,9 @@ const Home = ({scrollToTop, isVisible}) => {
     
     return(
         <div className="">
+            <p style={{color: 'red'}}>
+                Portfólio em manutenção!
+            </p>
             < SectionInit scrollToTop={scrollToTop} isVisible={isVisible} />
             < SectionAbout  />
             < SectionSkills />

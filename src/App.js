@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
+  
 
   const handleScroll = () => {
     const Scroll = window.scrollY;
